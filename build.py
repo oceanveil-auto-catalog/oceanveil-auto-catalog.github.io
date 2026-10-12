@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate a static Stremio/Nuvio metadata catalog from PUBLIC listings only.
+"""Build daily static Stremio/Nuvio catalogs from *public* OceanVeil metadata.
 
-No authentication, stream scraping, paywall access, or DRM handling.
-Only newly found titles are appended to state.json; removals require checking manually.
+Preserves homepage sections in source order. Doesn't scrape videos or infer that
+an OceanVeil page is playable through Stremio. All sources may be incomplete.
 """
 from __future__ import annotations
 
@@ -10,447 +10,788 @@ import json
 import os
 import re
 import shutil
-import hashlib
-import unicodedata
 import time
+import unicodedata
+from collections import OrderedDict, deque
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlparse, urldefrag
+from urllib.parse import parse_qs, urljoin, urlparse, urldefrag
 from urllib.robotparser import RobotFileParser
-from xml.etree import ElementTree
+from xml.etree import ElementTree as ET
 
 import requests
 from bs4 import BeautifulSoup
+from metadata_enrichment import TMDBMatcher, add_metadata, IMDb
 
 ROOT = Path(__file__).resolve().parent
-STATE_FILE = ROOT / "state.json"
-OUT = ROOT / "public"
-OFFICIAL = "https://oceanveil.net"
-SECONDARY = "https://manhwaindex.com/platform/oceanveil"
-UA = "OceanVeilCatalogBot/1.0 (personal metadata catalog; public pages only)"
-PAGE_TIMEOUT = 20
-RATE_DELAY = 1.0  # Limit requests to each source
-MAX_SITEMAP_LINKS = 180  # Keep first run modest
-URL_PATTERN = re.compile(r"^/anime_titles/(\d+)(?:/)?$")
+STATE_FILE = ROOT / 'state.json'
+OUT = ROOT / 'public'
+OFFICIAL = 'https://oceanveil.net'
+SECONDARY = 'https://manhwaindex.com/platform/oceanveil'
+UA = 'OceanVeilCatalogBot/3.0 (public metadata only)'
+TIMEOUT = 18
+DELAY = 0.7
+MAX_SITEMAP_URLS = 8000
+MAX_XML_FILES = 60
+MAX_DETAILS = int(os.environ.get('MAX_DETAILS', '180'))
+MAX_BROWSE_PAGES = 24
+MAX_SECONDARY_PAGES = 65
+TITLE_PATH = re.compile(r'^/anime_titles/(\d+)/?$')
+
+# Stable ID/name mappings let installed addons keep their rows after updates.
+HOME_SECTIONS = OrderedDict([
+    ('simulcast-lineup', 'Simulcast Lineup'),
+    ('newest-additions', 'Newest Additions'),
+    ('newly-streaming', 'Newly Streaming'),
+    ('others-are-watching', 'Others Are Watching'),
+    ('special-pick-up', 'Special Pick Up'),
+    ('ranking', 'Ranking'),
+    ('english-dubbed-titles', 'English Dubbed Titles'),
+    ('our-recommendations', 'Our Recommendations'),
+    ('going-viral', 'Going Viral'),
+    ('sweet-female-breaths', 'Sweet Female Breaths'),
+    ('completed', 'Completed'),
+    ('suitable-ladies-titles', 'Suitable Ladies Titles'),
+    ('romance-section', 'Romance Section'),
+    ('young-adult-section', 'Young Adult Section'),
+    ('bl-section', 'BL Section'),
+    ('suiseisha-collection', 'Suiseisha Collection'),
+])
+FILTERS = OrderedDict([
+    ('oceanveil-anime', 'OceanVeil — All Titles'),
+    ('simulcast', 'OceanVeil — Simulcast'),
+    ('dubbed', 'OceanVeil — Dubbed'),
+    ('sfw', 'OceanVeil — SFW (PG/13+)'),
+    ('nsfw', 'OceanVeil — Adult (18+/Mature)'),
+    ('mix', 'OceanVeil — SFW + Adult Mix'),
+    ('top', 'OceanVeil — Top & Trending'),
+    ('mix-all', 'OceanVeil — Mix of Everything'),
+    ('unclassified', 'OceanVeil — 16+/Unclassified'),
+])
+GENERIC_TITLES = {'welcome', 'oceanveil', 'image', 'more', 'anime', 'all titles',
+                  'read more', 'watch now', 'watch', 'niche anime', 'details'}
+HOME_IGNORES = {'news', 'faq', 'why choose oceanveil', 'why chose oceanveil',
+                'about us', 'home', 'plans', 'free trial', 'subscription'}
+
+
+def now_utc() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec='seconds')
 
 
 def pages_base_url() -> str:
-    if os.environ.get("PAGES_BASE_URL"):
-        return os.environ["PAGES_BASE_URL"].rstrip("/")
-    repo = os.environ.get("GITHUB_REPOSITORY", "example/oceanveil-auto-catalog")
-    owner, name = repo.split("/", 1)
-    return f"https://{owner}.github.io/{name}".rstrip("/")
+    if os.environ.get('PAGES_BASE_URL'):
+        return os.environ['PAGES_BASE_URL'].rstrip('/')
+    owner, repo = os.environ.get('GITHUB_REPOSITORY', 'example/oceanveil-auto-catalog').split('/', 1)
+    if repo.lower() == f'{owner.lower()}.github.io':
+        return f'https://{owner}.github.io'
+    return f'https://{owner}.github.io/{repo}'
 
 
 class GentleFetcher:
     def __init__(self):
-        self.events = []
         self.session = requests.Session()
-        self.session.headers.update({"User-Agent": UA, "Accept": "text/html,application/xml;q=0.9,*/*;q=0.7"})
-        self.robots: dict[str, RobotFileParser | None] = {}
-        self.last_request: dict[str, float] = {}
+        self.session.headers.update({'User-Agent': UA, 'Accept': 'text/html,application/xml;q=0.9,*/*;q=0.7'})
+        self.robots = {}
+        self.last_request = {}
 
     def allowed(self, url: str) -> bool:
-        p = urlparse(url)
-        host = f"{p.scheme}://{p.netloc}"
+        host = urlparse(url).netloc
         if host not in self.robots:
             try:
-                r = self.session.get(host + "/robots.txt", timeout=PAGE_TIMEOUT)
-                if r.status_code == 200:
-                    robots = RobotFileParser()
-                    robots.parse(r.text.splitlines())
-                    self.robots[host] = robots
+                resp = self.session.get(f'https://{host}/robots.txt', timeout=TIMEOUT)
+                if resp.status_code == 200:
+                    rp = RobotFileParser()
+                    rp.parse(resp.text.splitlines())
+                    self.robots[host] = rp
                 else:
-                    self.robots[host] = None  # no readable policy
+                    self.robots[host] = None
             except requests.RequestException:
                 self.robots[host] = None
         rp = self.robots[host]
         return rp is None or rp.can_fetch(UA, url)
 
     def get(self, url: str) -> str | None:
-        if not self.allowed(url):
-            print("Blocked by robots.txt:", url)
-            self.events.append({"url": url, "result": "robots_denied"})
+        if urlparse(url).scheme != 'https' or not self.allowed(url):
+            print('Not fetching (scheme or robots.txt):', url)
             return None
-        p = urlparse(url)
-        host = p.netloc
-        wait = RATE_DELAY - (time.monotonic() - self.last_request.get(host, 0))
+        host = urlparse(url).netloc
+        wait = DELAY - (time.monotonic() - self.last_request.get(host, 0))
         if wait > 0:
             time.sleep(wait)
         self.last_request[host] = time.monotonic()
         try:
-            r = self.session.get(url, timeout=PAGE_TIMEOUT)
-            r.raise_for_status()
-            self.events.append({"url": url, "result": "ok"})
-            if len(r.content) > 5_000_000:
-                print("Skipping overly large page", url)
+            resp = self.session.get(url, timeout=TIMEOUT)
+            resp.raise_for_status()
+            if len(resp.content) > 6_000_000:
                 return None
-            return r.text
-        except requests.RequestException as e:
-            print("Source unavailable:", url, str(e)[:140])
-            self.events.append({"url": url, "result": f"error: {str(e)[:100]}"})
+            return resp.text
+        except requests.RequestException as exc:
+            print('Fetch failed:', url, str(exc)[:160])
             return None
 
 
-def absolute_media(raw: str | None, origin: str) -> str:
-    if not raw:
-        return ""
-    u = urljoin(origin, raw.strip())
-    return u if urlparse(u).scheme in {"https", "http"} else ""
+def norm(text: str | None) -> str:
+    return ' '.join((text or '').split())
 
 
-def title_ok(value: str | None) -> bool:
-    if not value:
-        return False
-    value = " ".join(value.split())
-    if not (2 < len(value) < 250):
-        return False
-    generic = {"welcome", "image", "all titles", "watch now", "watch", "anime", "more", "details", "read more", "newly streaming", "oceanveil"}
-    return value.lower() not in generic and "oceanveil watch anime" not in value.lower() and "dive for anime" not in value.lower()
+def clean_title(text: str | None) -> str:
+    value = norm(text)
+    value = re.sub(r'^Cover of\s+', '', value, flags=re.I)
+    value = re.sub(r'\s*\|\s*OceanVeil.*$', '', value, flags=re.I)
+    if (len(value) < 3 or len(value) > 220 or value.lower() in GENERIC_TITLES
+            or re.fullmatch(r'episode[\s.\-_:]*(?:\d+|\d+\s*[-.]\s*\d+)', value, re.I)
+            or re.fullmatch(r'ep[\s.\-_:]*\d+', value, re.I)):
+        return ''
+    if any(s in value.lower() for s in ['oceanveil watch anime', 'dive for anime', 'leave with secrets']):
+        return ''
+    return value
 
 
-def clean_title(value: str | None) -> str:
-    t = " ".join((value or "").split())
-    t = re.sub(r"^Cover of\s+", "", t, flags=re.I)
-    t = re.sub(r"\s*\|\s*OceanVeil.*$", "", t, flags=re.I)
-    return t if title_ok(t) else ""
+def slugify(name: str) -> str:
+    slug = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode().lower()
+    return re.sub(r'-{2,}', '-', re.sub(r'[^a-z0-9]+', '-', slug)).strip('-')[:60]
+
+
+def media_url(raw: str | None, origin: str) -> str:
+    result = urljoin(origin, norm(raw)) if raw else ''
+    return result if urlparse(result).scheme == 'https' and urlparse(result).netloc else ''
 
 
 def ocean_id(url: str) -> str:
+    parsed = urlparse(url)
+    match = TITLE_PATH.fullmatch(parsed.path)
+    if parsed.netloc.lower() in ('oceanveil.net', 'www.oceanveil.net') and match:
+        return match.group(1)
+    return ''
+
+
+def is_browse_url(url: str) -> bool:
     p = urlparse(url)
-    if p.netloc not in {"oceanveil.net", "www.oceanveil.net"}:
-        return ""
-    m = URL_PATTERN.fullmatch(p.path)
-    return m.group(1) if m else ""
+    if p.netloc not in ('oceanveil.net', 'www.oceanveil.net') or p.path.rstrip('/') != '/anime_titles':
+        return False
+    params = parse_qs(p.query)
+    return not params or (set(params) <= {'page'} and params['page'][0].isdigit())
 
 
-def details_from_official(html: str, url: str) -> tuple[str, str]:
-    soup = BeautifulSoup(html, "html.parser")
-    name = ""
-    for css in ['meta[property="og:title"]', 'meta[name="twitter:title"]']:
-        node = soup.select_one(css)
-        name = clean_title(node.get("content") if node else "")
-        if name:
+def label_for_heading(label: str) -> str | None:
+    normalized = slugify(re.sub(r'\|.*$', '', norm(label)))
+    if not normalized or norm(label).lower() in HOME_IGNORES:
+        return None
+    aliases = {
+        'simulcast-lineup-new-every-week': 'simulcast-lineup',
+        'simulcast-lineup': 'simulcast-lineup',
+        'newest-addition': 'newest-additions',
+        'newest-additions': 'newest-additions',
+        'english-dub-titles': 'english-dubbed-titles',
+        'newly-streaming': 'newly-streaming',
+        'recommendations': 'our-recommendations',
+        'suitable-ladies': 'suitable-ladies-titles',
+        'romance': 'romance-section',
+        'young-adult': 'young-adult-section',
+        'bl': 'bl-section',
+    }
+    if normalized in aliases:
+        return aliases[normalized]
+    if normalized in HOME_SECTIONS:
+        return normalized
+    if normalized.startswith('simulcast-lineup'):
+        return 'simulcast-lineup'
+    # Dynamically accommodate newly introduced promotional/genre rows.
+    if 3 <= len(label) <= 75 and len(normalized) >= 4 and not any(k in normalized for k in ('subscribe', 'news', 'why-choose', 'streaming-service')):
+        return normalized
+    return None
+
+
+def card_record(link, origin: str) -> tuple[str, dict] | None:
+    url = urljoin(origin, link.get('href', ''))
+    oid = ocean_id(url)
+    if not oid:
+        return None
+    img = link.find('img')
+    pic = media_url(img.get('data-src') or img.get('data-original') or img.get('src') or img.get('srcset', '').split(',')[0].split(' ')[0], origin) if img else ''
+    title = (clean_title(img.get('alt') if img else '')
+             or clean_title(link.get('aria-label'))
+             or clean_title(link.get('title'))
+             or clean_title(link.get_text(' ', strip=True)))
+    parent = link.parent
+    # Source often uses one <a> on poster, with the title in an adjacent <h3>.
+    # Never take text from a wrapper containing several different anime links.
+    for _ in range(3):
+        if not parent or title:
             break
-    if not name:
-        for css in ["main h1", "main h2", "h1"]:
-            node = soup.select_one(css)
-            name = clean_title(node.get_text(" ", strip=True) if node else "")
-            if name and not re.search(r"^(niche anime|unedited titles)", name, flags=re.I):
+        distinct = {ocean_id(urljoin(origin, a.get('href', ''))) for a in parent.select('a[href]')}
+        distinct.discard('')
+        if len(distinct) > 1:
+            break
+        for h in parent.select('h2,h3,h4,h5,[class*=title]'):
+            title = clean_title(h.get_text(' ', strip=True))
+            if title:
                 break
-            name = ""
-    poster = ""
-    for css in ['meta[property="og:image"]', 'meta[name="twitter:image"]']:
-        node = soup.select_one(css)
-        poster = absolute_media(node.get("content") if node else "", url)
-        if poster:
+        parent = parent.parent
+    if not title:
+        return None
+    container = link.parent
+    for _ in range(3):
+        if not container:
             break
-    return name, poster
+        other = {ocean_id(urljoin(origin, a.get('href',''))) for a in container.select('a[href]')}
+        other.discard('')
+        if len(other) > 1:
+            container = link  # sibling titles share this parent: never read their labels
+            break
+        if any(word in container.get_text(' ', strip=True).lower() for word in ('simcast', '18+', '16+', 'pg', 'new', 'dub', 'mature')):
+            break
+        container = container.parent
+    info = norm(container.get_text(' ', strip=True))[:400] if container else ''
+    # These fields come from the page, not from a guessed TMDB classification.
+    flags = {
+        'dubbed': bool(re.search(r'\[\s*dub\s*\]|\bdubbed\b', title, re.I) or re.search(r'\bdub\b', info, re.I)),
+        'simulcast': bool(re.search(r'\bsim\s*cast\b|\bsimulcast\b', info, re.I)),
+        'rating': detect_rating(info),
+        'genre': detect_genre(info),
+    }
+    return oid, {'title': title, 'poster': pic, 'url': f'{OFFICIAL}/anime_titles/{oid}', **flags}
 
 
-def official_cards(html: str, page_url: str) -> dict[str, dict]:
-    soup = BeautifulSoup(html, "html.parser")
-    result = {}
-    for a in soup.select('a[href]'):
-        href = urljoin(page_url, a.get("href", ""))
-        oid = ocean_id(href)
-        if not oid:
+def detect_rating(text: str) -> str:
+    for pattern, value in [(r'\b18\s*\+', '18+'), (r'\b16\s*\+', '16+'),
+                           (r'\b13\s*\+', '13+'), (r'\bPG\b', 'PG')]:
+        if re.search(pattern, text, flags=re.I):
+            return value
+    return ''
+
+
+def detect_genre(text: str) -> str:
+    for genre in ('Mature OVA', 'Mature', 'Young Adult', 'Romance', 'BL'):
+        if re.search(r'\b' + re.escape(genre) + r'\b', text, flags=re.I):
+            return genre
+    return ''
+
+
+def merge_record(before: dict, incoming: dict) -> dict:
+    merged = dict(before)
+    for key, value in incoming.items():
+        if key in ('simulcast', 'dubbed'):
+            merged[key] = bool(merged.get(key) or value)
+        elif value or key not in merged:
+            merged[key] = value
+    return merged
+
+
+def parse_homepage(html: str, origin: str) -> tuple[dict, OrderedDict]:
+    """Track heading → anime cards in DOM order, never sort away promotions.
+
+    Supports headings in h1–h4 and common CSS section-title nodes; ignores
+    heading-like text inside title cards unless it matches an expected row.
+    """
+    soup = BeautifulSoup(html, 'html.parser')
+    found: dict[str, dict] = {}
+    sections: OrderedDict[str, dict] = OrderedDict()
+    current: str | None = None
+    for tag in soup.find_all(True):
+        if tag.name in ('script', 'style', 'footer', 'nav'):
             continue
-        img = a.find("img")
-        title = clean_title(img.get("alt") if img else None) or clean_title(a.get_text(" ", strip=True))
-        # Some sites wrap the title next to the linked poster.
-        if not title:
-            parent = a.parent
-            if parent:
-                for h in parent.select("h2,h3,h4"):
-                    title = clean_title(h.get_text(" ", strip=True))
-                    if title:
-                        break
-        if title:
-            poster = ""
-            if img:
-                poster = absolute_media(img.get("data-src") or img.get("src"), page_url)
-            result[oid] = {"title": title, "poster": poster, "url": f"{OFFICIAL}/anime_titles/{oid}"}
-    return result
+        if tag.name in ('h1', 'h2', 'h3', 'h4') or (tag.name in ('div', 'p', 'span') and any('section-title' in x or 'section-heading' in x for x in (tag.get('class') or []))):
+            # Do not treat an h3 anime title as a new row.
+            candidate = norm(tag.get_text(' ', strip=True))
+            new_id = label_for_heading(candidate)
+            if new_id and (tag.name in ('h1', 'h2') or new_id in HOME_SECTIONS or 'section' in ' '.join(tag.get('class') or [])):
+                if candidate.lower() not in HOME_IGNORES:
+                    current = new_id
+                    sections.setdefault(new_id, {'name': candidate[:75], 'ids': []})
+            elif tag.name in ('h1', 'h2') and current and candidate.lower() in HOME_IGNORES:
+                current = None
+        if tag.name != 'a' or not tag.get('href'):
+            continue
+        card = card_record(tag, origin)
+        if not card:
+            continue
+        oid, record = card
+        found[oid] = merge_record(found.get(oid, {}), record)
+        if current:
+            ids = sections[current]['ids']
+            if oid not in ids:
+                ids.append(oid)
+    sections = OrderedDict((k, v) for k, v in sections.items() if v['ids'])
+    return found, sections
 
 
-def scan_sitemaps(fetcher: GentleFetcher) -> list[str]:
-    candidates = [OFFICIAL + "/sitemap.xml", OFFICIAL + "/sitemap_index.xml"]
+
+def reconcile_homepage(previous: dict, discovered: OrderedDict) -> dict:
+    """Keep catalog *IDs and positions* while changing their labels and contents.
+
+    Fixed sections retain their historical semantic IDs (such as `ranking`).
+    Unknown/renamable promotional rows are assigned stable slots by their
+    order *among promotional rows*, never by the current heading text.
+
+    Backwards compatibility: v2 used the heading slug as the ID. Reuse each
+    v2 promotional catalog ID as its slot instead of breaking Nuvio sorting.
+    A missing row stays registered with zero items, not its outdated titles.
+    """
+    old_sections = OrderedDict(previous.get('sections') or {})
+    old_order = list(previous.get('row_order') or old_sections)
+    slots = list(previous.get('promo_slots') or [])
+    for key in old_sections:
+        if key not in HOME_SECTIONS and key not in slots:
+            slots.append(key)  # migrate v2 slug IDs without changing identity
+
+    fresh = OrderedDict()
+    next_promo = 0
+    for source_id, data in discovered.items():
+        if source_id in HOME_SECTIONS:
+            stable_id = source_id
+        else:
+            if next_promo < len(slots):
+                stable_id = slots[next_promo]
+            else:
+                number = 1
+                while f'promo-slot-{number:02d}' in slots or f'promo-slot-{number:02d}' in HOME_SECTIONS:
+                    number += 1
+                stable_id = f'promo-slot-{number:02d}'
+                slots.append(stable_id)
+            next_promo += 1
+        fresh[stable_id] = {'name': data['name'], 'ids': list(dict.fromkeys(data['ids']))}
+
+    # A catalog's location in a Nuvio user's customized homepage should not
+    # jump when the source website rearranges promotions or changes headings.
+    order = list(dict.fromkeys([*old_order, *old_sections, *fresh]))
+    sections = OrderedDict()
+    for stable_id in order:
+        if stable_id in fresh:
+            sections[stable_id] = fresh[stable_id]
+        else:
+            old = old_sections.get(stable_id, {})
+            # Keep the row/ID but clear a vanished promotion, otherwise
+            # yesterday's featured shows would still look current.
+            sections[stable_id] = {
+                'name': old.get('name') or HOME_SECTIONS.get(stable_id, stable_id),
+                'ids': [],
+            }
+    return {
+        'sections': sections,
+        'row_order': order,
+        'promo_slots': slots,
+        'last_success_utc': now_utc(),
+    }
+
+
+
+def parse_cards(html: str, origin: str) -> dict:
+    soup = BeautifulSoup(html, 'html.parser')
+    found = {}
+    for a in soup.select('a[href]'):
+        card = card_record(a, origin)
+        if card:
+            oid, record = card
+            found[oid] = merge_record(found.get(oid, {}), record)
+    return found
+
+
+def browse_index(fetcher) -> tuple[dict, set]:
+    # Follow *observed* pagination links only; do not guess page numbers.
+    queue = deque([f'{OFFICIAL}/anime_titles'])
     seen = set()
-    urls = []
-    while candidates and len(seen) < 16:
-        url = candidates.pop(0)
+    found = {}
+    details = set()
+    while queue and len(seen) < MAX_BROWSE_PAGES:
+        url = queue.popleft()
         if url in seen:
             continue
         seen.add(url)
+        html = fetcher.get(url)
+        if not html:
+            continue
+        found.update(parse_cards(html, url))
+        soup = BeautifulSoup(html, 'html.parser')
+        for a in soup.select('a[href]'):
+            href = urldefrag(urljoin(url, a['href']))[0]
+            if ocean_id(href):
+                details.add(href)
+            elif is_browse_url(href) and href not in seen and href not in queue:
+                queue.append(href)
+        # Capture title links embedded in public HTML bootstrap JSON.
+        for number in re.findall(r'/anime_titles/(\d+)(?:\b|[/?#])', html):
+            details.add(f'{OFFICIAL}/anime_titles/{number}')
+    print(f'Browse pages scanned={len(seen)} cards={len(found)} observed_links={len(details)}')
+    return found, details
+
+
+def scan_sitemaps(fetcher) -> set[str]:
+    queue = deque([f'{OFFICIAL}/sitemap.xml', f'{OFFICIAL}/sitemap_index.xml'])
+    visited = set()
+    found = set()
+    while queue and len(visited) < MAX_XML_FILES and len(found) < MAX_SITEMAP_URLS:
+        url = queue.popleft()
+        if url in visited:
+            continue
+        visited.add(url)
         xml = fetcher.get(url)
         if not xml:
             continue
         try:
-            root = ElementTree.fromstring(xml)
-        except ElementTree.ParseError:
+            root = ET.fromstring(xml)
+        except ET.ParseError:
             continue
-        for loc in root.findall(".//{*}loc"):
-            if not loc.text:
-                continue
-            value = loc.text.strip()
+        for loc in root.findall('.//{*}loc'):
+            value = norm(loc.text)
             if ocean_id(value):
-                urls.append(value)
-            elif value.endswith(".xml") and value.startswith(OFFICIAL) and len(seen) + len(candidates) < 16:
-                candidates.append(value)
-    return list(dict.fromkeys(urls))[:MAX_SITEMAP_LINKS]
+                found.add(f'{OFFICIAL}/anime_titles/{ocean_id(value)}')
+            elif urlparse(value).netloc in ('oceanveil.net', 'www.oceanveil.net') and urlparse(value).path.endswith('.xml') and value not in visited:
+                queue.append(value)
+            if len(found) >= MAX_SITEMAP_URLS:
+                break
+    print(f'Sitemap files scanned={len(visited)} detail_links={len(found)}')
+    return found
 
 
-def secondary_index(fetcher: GentleFetcher) -> dict[str, dict]:
-    """The third-party index publicly shows only a subset (e.g. 24 of 104)."""
+def details_from_official(html: str, url: str) -> dict | None:
+    soup = BeautifulSoup(html, 'html.parser')
+    title = ''
+    for css in ('meta[property="og:title"]', 'meta[name="twitter:title"]', 'main h1', 'h1'):
+        node = soup.select_one(css)
+        if node:
+            title = clean_title(node.get('content') if node.name == 'meta' else node.get_text(' ', strip=True))
+            if title:
+                break
+    if not title or title.lower().startswith(('welcome ', 'oceanveil:')):
+        # Some OceanVeil title routes send the homepage shell, not title metadata.
+        return None
+    img = soup.select_one('meta[property="og:image"]') or soup.select_one('meta[name="twitter:image"]')
+    body = soup.select_one('main') or soup
+    summary = norm(body.get_text(' ', strip=True))[:600]
+    return {'title': title, 'poster': media_url(img.get('content'), url) if img else '',
+            'url': f'{OFFICIAL}/anime_titles/{ocean_id(url)}',
+            'dubbed': bool(re.search(r'\[\s*dub\s*\]', title, re.I)),
+            'rating': detect_rating(summary), 'genre': detect_genre(summary), 'simulcast': False}
+
+
+def secondary_index(fetcher) -> dict:
+    """Supplementary only: never assume this index contains the whole catalog."""
     html = fetcher.get(SECONDARY)
     if not html:
         return {}
-    soup = BeautifulSoup(html, "html.parser")
-    paths = []
-    for a in soup.select("a[href]"):
-        p = urlparse(urljoin(SECONDARY, a.get("href", "")))
-        if p.netloc == "manhwaindex.com" and re.fullmatch(r"/anime/[^/]+", p.path):
-            paths.append(f"https://manhwaindex.com{p.path}")
-    paths = list(dict.fromkeys(paths))[:30]
-    result = {}
-    for path in paths:
-        body = fetcher.get(path)
+    page = BeautifulSoup(html, 'html.parser')
+    links = []
+    for a in page.select('a[href]'):
+        u = urljoin(SECONDARY, a['href'])
+        if urlparse(u).netloc == 'manhwaindex.com' and re.fullmatch(r'/anime/[^/]+/?', urlparse(u).path) and u not in links:
+            links.append(u)
+    found = {}
+    for u in links[:MAX_SECONDARY_PAGES]:
+        body = fetcher.get(u)
         if not body:
             continue
-        page = BeautifulSoup(body, "html.parser")
-        h1 = page.find("h1")
-        title = clean_title(h1.get_text(" ", strip=True)) if h1 else ""
+        s = BeautifulSoup(body, 'html.parser')
+        h1 = s.select_one('h1')
+        title = clean_title(h1.get_text(' ', strip=True) if h1 else '')
         if not title:
             continue
-        poster = ""
-        for img in page.find_all("img"):
-            if "cover" in (img.get("alt") or "").lower():
-                poster = absolute_media(img.get("src") or img.get("data-src"), path)
-                if poster:
-                    break
-        if not poster:
-            og = page.select_one('meta[property="og:image"]')
-            poster = absolute_media(og.get("content") if og else "", path)
-        for a in page.select('a[href]'):
-            link = urljoin(path, a.get("href", ""))
-            oid = ocean_id(link)
+        pic = s.select_one('meta[property="og:image"]')
+        for a in s.select('a[href]'):
+            oid = ocean_id(urljoin(u, a.get('href', '')))
             if oid:
-                result[oid] = {"title": title, "poster": poster, "url": f"{OFFICIAL}/anime_titles/{oid}"}
+                found[oid] = {'title': title, 'poster': media_url(pic.get('content'), u) if pic else '',
+                              'url': f'{OFFICIAL}/anime_titles/{oid}', 'dubbed': '[dub]' in title.lower(),
+                              'rating': '', 'genre': '', 'simulcast': False}
                 break
-    print("Secondary index provided", len(result), "linked titles")
-    return result
+    print('Secondary index linked titles=', len(found))
+    return found
 
 
-def rendered_official_cards(fetcher: GentleFetcher) -> dict[str, dict]:
-    """Optional JS-rendered public listings (no accounts, cookies or stream requests).
-
-    This is best-effort: a browser may still be blocked on CI. Only use it if
-    the official site robots policy allows the relevant URLs.
-    """
-    if os.getenv("ENABLE_BROWSER_DISCOVERY") != "1":
-        return {}
-    if not fetcher.allowed(OFFICIAL + "/") or not fetcher.allowed(OFFICIAL + "/anime_titles"):
-        print("Skipping rendered discovery: robots policy does not permit official page")
-        return {}
-    try:
-        from playwright.sync_api import sync_playwright
-        records = {}
-        with sync_playwright() as pw:
-            browser = pw.chromium.launch(headless=True, args=["--no-sandbox"])
-            context = browser.new_context(viewport={"width": 1365, "height": 950})
-            page = context.new_page()
-            for url in [OFFICIAL + "/", OFFICIAL + "/anime_titles"]:
-                try:
-                    page.goto(url, wait_until="domcontentloaded", timeout=35000)
-                    page.wait_for_timeout(2200)
-                    # Catch cards that load after scrolling; bounded and polite.
-                    for _ in range(4):
-                        page.mouse.wheel(0, 900)
-                        page.wait_for_timeout(400)
-                    found = official_cards(page.content(), url)
-                    print("Browser-rendered cards", url, len(found))
-                    records.update(found)
-                    fetcher.events.append({"url": url, "result": f"browser: {len(found)} titles"})
-                except Exception as exc:
-                    print("Browser page unavailable", url, repr(exc)[:180])
-                    fetcher.events.append({"url": url, "result": f"browser_error: {str(exc)[:100]}"})
-            browser.close()
-        return records
-    except Exception as exc:
-        print("Browser fallback not available:", repr(exc)[:180])
-        fetcher.events.append({"url": OFFICIAL, "result": f"browser_start_error: {str(exc)[:100]}"})
-        return {}
-
-
-def slug_key(title: str) -> str:
-    """Stable ID for a seed title whose real OceanVeil page ID is not known."""
-    text = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode("ascii").lower()
-    slug = re.sub(r"[^a-z0-9]+", "-", text).strip("-")[:60]
-    suffix = hashlib.sha256(title.casefold().encode("utf8")).hexdigest()[:8]
-    return f"seed-{slug}-{suffix}"
-
-
-def title_key(title: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "", unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode("ascii").lower())
-
-
-def read_seed() -> dict[str, dict]:
-    path = ROOT / "seed.json"
-    if not path.exists():
-        return {}
-    data = json.loads(path.read_text(encoding="utf8"))
-    result = {}
-    for item in data["titles"]:
-        title = clean_title(item["title"])
-        if not title:
-            continue
-        source_url = SECONDARY if item.get("source") == "index" else OFFICIAL + "/"
-        result[slug_key(title)] = {
-            "title": title, "poster": "", "url": source_url,
-            "source": "starter-snapshot", "first_seen": "2026-10-12",
-            "last_seen": "2026-10-12",
-        }
-    return result
-
-
-def read_old_state() -> dict[str, dict]:
+def load_state() -> dict:
     if not STATE_FILE.exists():
-        return {}
-    data = json.loads(STATE_FILE.read_text(encoding="utf8"))
-    return {str(k): v for k, v in data.get("titles", {}).items()}
+        return {'titles': {}, 'homepage': {}, 'homepage_updated_utc': None}
+    data = json.loads(STATE_FILE.read_text(encoding='utf8'))
+    return {'titles': data.get('titles', {}), 'homepage': data.get('homepage', {}),
+            'homepage_updated_utc': data.get('homepage_updated_utc')}
 
 
-def dump_json(path: Path, obj: dict) -> None:
+def dump_json(path: Path, value) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf8")
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + '\n', encoding='utf8')
+
+
+def put_title(titles: dict, oid: str, data: dict, today: str) -> None:
+    previous = titles.get(oid, {})
+    if not data.get('title'):
+        return
+    fields = {'title': data['title'], 'poster': data.get('poster') or previous.get('poster', ''),
+              'url': f'{OFFICIAL}/anime_titles/{oid}',
+              'first_seen': previous.get('first_seen', today), 'last_seen': today}
+    for key in ('dubbed', 'simulcast'):
+        fields[key] = bool(data.get(key) or previous.get(key) or (key == 'dubbed' and re.search(r'\[\s*dub\s*\]', data['title'], re.I)))
+    for key in ('rating', 'genre'):
+        fields[key] = data.get(key) or previous.get(key, '')
+    if previous.get('title') == data['title']:
+        for retained in ('match', 'match_checked_utc', 'year'):
+            if retained in previous and retained not in fields:
+                fields[retained] = previous[retained]
+    if data.get('year'):
+        fields['year'] = data['year']
+    titles[oid] = fields
+
+
+def adult_level(item: dict) -> str:
+    if item.get('rating') == '18+' or item.get('genre', '').lower() in ('mature', 'mature ova'):
+        return 'adult'
+    if item.get('rating') in ('PG', '13+'):
+        return 'sfw'
+    return 'unknown'  # 16+ alone is NOT proof of SFW or explicit adult content.
+
+
+def interleave(left: list, right: list) -> list:
+    result, seen = [], set()
+    for n in range(max(len(left), len(right))):
+        for group in (left, right):
+            if n < len(group) and group[n] not in seen:
+                result.append(group[n]); seen.add(group[n])
+    return result
+
+
+def catalogs(titles: dict, homepage: dict) -> OrderedDict:
+    by_recent = sorted(titles, key=lambda oid: (titles[oid].get('first_seen',''), int(oid)), reverse=True)
+    # Full-library and mix-all deliberately contain ALL discovered entries.
+    result = OrderedDict([(cid, list()) for cid in FILTERS])
+    result['oceanveil-anime'] = by_recent
+    result['mix-all'] = by_recent.copy()
+    home_rows = homepage.get('sections', {})
+    for oid in by_recent:
+        item = titles[oid]
+        if item.get('simulcast') or any(oid in home_rows.get(k, {}).get('ids', []) for k in ('simulcast-lineup',)):
+            result['simulcast'].append(oid)
+        if item.get('dubbed') or any(oid in home_rows.get(k, {}).get('ids', []) for k in ('english-dubbed-titles',)):
+            result['dubbed'].append(oid)
+        level = adult_level(item)
+        if level == 'adult':
+            result['nsfw'].append(oid)
+        elif level == 'sfw':
+            result['sfw'].append(oid)
+        else:
+            result['unclassified'].append(oid)
+    result['mix'] = interleave(result['sfw'], result['nsfw'])
+    for k in ('ranking', 'others-are-watching', 'going-viral'):
+        for oid in home_rows.get(k, {}).get('ids', []):
+            if oid in titles and oid not in result['top']:
+                result['top'].append(oid)
+    for section_id, section in home_rows.items():
+        if section_id in HOME_SECTIONS or section.get('ids'):
+            result[f'home-{section_id}'] = [oid for oid in section.get('ids', []) if oid in titles]
+    # Important: don't forge rankings when homepage provides none.
+    return result
+
+
+def emit_pages(cid: str, metas: list, kind: str = 'series') -> None:
+    base = OUT / 'catalog' / kind
+    for offset in range(0, len(metas) + 100, 100):
+        page = {'metas': metas[offset:offset + 100]}
+        if offset == 0:
+            dump_json(base / f'{cid}.json', page)
+        dump_json(base / cid / f'skip={offset}.json', page)
+
+
+def proper_poster(item: dict, base: str) -> str:
+    # TMDB CDN images are more reliable for client rendering than site login images.
+    return (item.get('match') or {}).get('poster') or item.get('poster') or f'{base}/placeholder.png'
+
+
+def good_titles(titles: dict) -> tuple[dict, list]:
+    """Quarantine malformed imported entries rather than re-publishing junk."""
+    valid, rejected = {}, []
+    for oid, item in titles.items():
+        title = clean_title(item.get('title'))
+        if not str(oid).isdigit() or not title:
+            rejected.append({'oceanveil_id': oid, 'title': item.get('title', '')})
+            continue
+        valid[oid] = item
+    return valid, rejected
+
+
+def publish(titles: dict, homepage: dict, stats: dict) -> None:
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    OUT.mkdir(parents=True)
+    shutil.copy(ROOT / 'static' / 'placeholder.png', OUT / 'placeholder.png')
+    (OUT / '.nojekyll').touch()
+    base = pages_base_url()
+    feeds = catalogs(titles, homepage)
+    home = homepage.get('sections', {})
+    ordered = OrderedDict()
+    # Stable order and IDs: not derived from daily rotating promo names.
+    for slug in dict.fromkeys([*homepage.get('row_order', []), *home]):
+        section = home.get(slug, {})
+        ordered[f'home-{slug}'] = section.get('name') or HOME_SECTIONS.get(slug, slug)
+    for slug, name in HOME_SECTIONS.items():
+        ordered.setdefault(f'home-{slug}', name)
+    ordered.update(FILTERS)
+    ordered.setdefault('oceanveil-linked', 'OceanVeil — IMDb-matched (compatible sources)')
+    feeds['oceanveil-linked'] = [oid for oid, item in titles.items() if (item.get('match') or {}).get('imdb_id')]
+
+    previews = {}
+    # Every record retains its own OceanVeil ID in the persistent state, but
+    # verified matches use IMDb meta IDs when published to clients.
+    for oid, item in titles.items():
+        match = item.get('match') or {}
+        imdb_id = match.get('imdb_id', '')
+        linked = bool(IMDb.fullmatch(imdb_id))
+        meta_id = imdb_id if linked else f'oceanveil:{oid}'
+        kind = match.get('type', 'series') if linked else 'series'
+        poster = proper_poster(item, base)
+        name = match.get('name') if linked else item['title']
+        preview = {'id': meta_id, 'type': kind, 'name': name or item['title'],
+                   'poster': poster, 'posterShape': 'poster'}
+        previews[oid] = preview
+        summary = []
+        if match.get('description'):
+            summary.append(match['description'])
+        else:
+            summary.append('Listed on OceanVeil. No verified IMDb metadata match was found. Playback through other addons is not assured.')
+        if item.get('rating'):
+            summary.append(f'Website age label: {item["rating"]}.')
+        if item.get('genre'):
+            summary.append(f'Website category: {item["genre"]}.')
+        meta = {**preview,
+                'description': ' '.join(summary),
+                'website': item['url'],
+                'links': [{'name': 'OceanVeil title page', 'category': 'watch', 'url': item['url']}],
+                'videos': match.get('videos', []) if linked else []}
+        if match.get('year'):
+            meta['releaseInfo'] = str(match['year'])
+        if match.get('background'):
+            meta['background'] = match['background']
+        if match.get('genres'):
+            meta['genres'] = match['genres']
+        if linked:
+            # Two different site rows (Dub/Sub) may resolve to one shared IMDb ID.
+            # One file per IMDb identity; keep a complete episode list if available.
+            target = OUT / 'meta' / kind / f'{meta_id}.json'
+            if target.exists():
+                old = json.loads(target.read_text('utf8')).get('meta', {})
+                if len(old.get('videos', [])) > len(meta['videos']):
+                    continue
+        dump_json(OUT / 'meta' / kind / f'{meta_id}.json', {'meta': meta})
+
+    catalog_defs = []
+    catalog_counts = {}
+    movie_defs = []
+    # Preserve legacy series catalog IDs. Put movies in a SECOND row rather
+    # than incorrectly labeling a movie as a series (breaks stream lookup).
+    for cid, name in ordered.items():
+        seen = set()
+        by_type = {'series': [], 'movie': []}
+        for oid in feeds.get(cid, []):
+            if oid not in previews:
+                continue
+            preview = previews[oid]
+            key = (preview['type'], preview['id'])
+            if key in seen:
+                continue
+            seen.add(key)
+            by_type[preview['type']].append(preview)
+        catalog_defs.append({'type': 'series', 'id': cid, 'name': name,
+                            'extra': [{'name': 'skip', 'isRequired': False}]})
+        emit_pages(cid, by_type['series'], 'series')
+        catalog_counts[cid] = len(by_type['series'])
+        if by_type['movie']:
+            movie_id = cid + '-movies'
+            movie_defs.append({'type': 'movie', 'id': movie_id, 'name': name + ' · Films',
+                              'extra': [{'name': 'skip', 'isRequired': False}]})
+            emit_pages(movie_id, by_type['movie'], 'movie')
+            catalog_counts[movie_id] = len(by_type['movie'])
+    catalog_defs += movie_defs
+    dump_json(OUT / 'manifest.json', {
+        'id': 'community.oceanveil.auto.catalog', 'version': '4.0.0',
+        'name': 'OceanVeil Auto Catalog',
+        'description': 'Daily OceanVeil discovery with verified IMDb matching and detailed metadata. Streams require separately installed, compatible sources.',
+        'resources': [
+            'catalog',
+            {'name': 'meta', 'types': ['series', 'movie'], 'idPrefixes': ['tt', 'oceanveil:']},
+        ],
+        'types': ['series', 'movie'], 'catalogs': catalog_defs,
+        'behaviorHints': {'configurable': False}
+    })
+    dump_json(OUT / 'status.json', {
+        'last_build_utc': now_utc(),
+        'known_title_count': len(titles),
+        'imdb_matched_count': sum(1 for t in titles.values() if (t.get('match') or {}).get('imdb_id')),
+        'unmatched_count': sum(1 for t in titles.values() if not (t.get('match') or {}).get('imdb_id')),
+        'new_titles_this_run': stats.get('new', 0),
+        'official_homepage_fetched': stats.get('home_ok', False),
+        'homepage_rows_fresh': stats.get('home_fresh', False),
+        'homepage_last_success_utc': homepage.get('last_success_utc'),
+        'homepage_row_counts': {v['name']: len(v['ids']) for v in home.values()},
+        'sticky_home_rows': [{'catalog_id': f'home-{key}', 'display_name': value['name'],
+                              'items': len(value['ids']), 'kind': 'fixed' if key in HOME_SECTIONS else 'promo-slot'}
+                             for key, value in home.items()],
+        'catalog_counts': catalog_counts,
+        'discovered_direct_links': stats.get('discovered_urls', 0),
+        'detail_pages_attempted': stats.get('details_attempted', 0),
+        'metadata': stats.get('metadata', {}),
+        'pages_base_url': base,
+        'notice': 'Matching an IMDb ID does NOT guarantee playable streams. Stream providers are separate; no source bypass or video extraction.'
+    })
 
 
 def build() -> None:
     fetcher = GentleFetcher()
-    saved = read_old_state()
-    seed = read_seed()
-    titles = dict(seed)
-    titles.update(saved)
-    fresh = secondary_index(fetcher)
-
-    seen = {}
-    for page in [OFFICIAL + "/", OFFICIAL + "/anime_titles"]:
-        html = fetcher.get(page)
-        if html:
-            seen.update(official_cards(html, page))
-    fresh.update({k: v for k, v in seen.items() if k not in fresh})
-    if not seen:
-        seen.update(rendered_official_cards(fetcher))
-        fresh.update({k: v for k, v in seen.items() if k not in fresh})
-    print("Official pages provided", len(seen), "linked titles (including rendered fallback)")
-
-    for url in scan_sitemaps(fetcher):
+    state = load_state()
+    old_ids = set(state['titles'])
+    titles, rejected = good_titles(state['titles'])
+    if rejected:
+        print('Quarantined previously imported invalid titles:', len(rejected))
+    today = now_utc()[:10]
+    homepage = state.get('homepage') or {'sections': {}}
+    homepage.setdefault('sections', {})
+    homepage.setdefault('last_success_utc', state.get('homepage_updated_utc'))
+    home_html = fetcher.get(f'{OFFICIAL}/')
+    home_fresh = False
+    fresh = {}
+    if home_html:
+        home_titles, sections = parse_homepage(home_html, f'{OFFICIAL}/')
+        fresh.update(home_titles)
+        if sections:
+            homepage = reconcile_homepage(homepage, sections)
+            home_fresh = True
+        else:
+            print('WARNING: homepage loaded but no identifiable card sections; retaining cached sections.')
+    else:
+        print('WARNING: official homepage unreachable; retaining cached promotional rows.')
+    browse_titles, observed = browse_index(fetcher)
+    fresh.update({oid: entry for oid, entry in browse_titles.items() if oid not in fresh})
+    sitemap_urls = scan_sitemaps(fetcher)
+    secondary = secondary_index(fetcher)
+    fresh.update({oid: entry for oid, entry in secondary.items() if oid not in fresh})
+    # Try detail pages for observed links without a title, including sitemap-only IDs.
+    # This budget is per build. A large sitemap takes several days to fill safely.
+    urls = sorted(sitemap_urls | observed, key=lambda s: int(ocean_id(s)))
+    attempted = 0
+    for url in urls:
         oid = ocean_id(url)
-        if not oid or oid in fresh or oid in titles:
+        if not oid or oid in titles or oid in fresh:
             continue
+        if attempted >= MAX_DETAILS:
+            break
+        attempted += 1
         html = fetcher.get(url)
-        if not html:
-            continue
-        title, poster = details_from_official(html, url)
-        if title:
-            fresh[oid] = {"title": title, "poster": poster, "url": f"{OFFICIAL}/anime_titles/{oid}"}
-
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    by_name = {title_key(v["title"]): k for k, v in titles.items()}
-    fresh_usable = {}
+        if html:
+            record = details_from_official(html, url)
+            if record:
+                fresh[oid] = record
+    if not titles and not fresh:
+        raise RuntimeError('No metadata sources accessible and no previous state. Refusing empty first deployment.')
     for oid, record in fresh.items():
-        if not title_ok(record.get("title")):
-            continue
-        fresh_usable[oid] = record
-        duplicate_key = by_name.get(title_key(record["title"]))
-        previous = titles.get(oid) or (titles.get(duplicate_key, {}) if duplicate_key else {})
-        if duplicate_key and duplicate_key != oid and duplicate_key.startswith("seed-"):
-            del titles[duplicate_key]
-        titles[oid] = {
-            "title": record["title"],
-            "poster": record.get("poster") or previous.get("poster", ""),
-            "url": record["url"],
-            "source": "live-discovery",
-            "first_seen": previous.get("first_seen", today),
-            "last_seen": today,
-        }
-        by_name[title_key(record["title"])] = oid
-
-    if not titles:
-        raise RuntimeError("No seed or saved records, and no live titles. Refusing to publish empty data.")
-    dump_json(STATE_FILE, {"titles": titles})
-
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    OUT.mkdir(parents=True)
-    shutil.copy(ROOT / "static" / "placeholder.png", OUT / "placeholder.png")
-    (OUT / ".nojekyll").touch()
-    base_url = pages_base_url()
-    manifest = {
-        "id": "community.oceanveil.auto.catalog",
-        "version": "1.1.0",
-        "name": "OceanVeil Auto Catalog",
-        "description": "Public OceanVeil title directory: an initial snapshot plus scheduled discovery checks. Metadata only; no video streams.",
-        "resources": ["catalog", {"name": "meta", "types": ["series"], "idPrefixes": ["oceanveil:"]}],
-        "types": ["series"],
-        "catalogs": [{"type": "series", "id": "oceanveil-anime", "name": "OceanVeil Anime", "extra": [{"name": "skip", "isRequired": False}]}],
-        "idPrefixes": ["oceanveil:"],
-        "behaviorHints": {"configurable": False},
-    }
-    dump_json(OUT / "manifest.json", manifest)
-
-    listing = []
-    for oid, data in sorted(titles.items(), key=lambda kv: (kv[1].get("last_seen", ""), kv[1].get("first_seen", ""), kv[1]["title"]), reverse=True):
-        item_id = f"oceanveil:{oid}"
-        poster = data.get("poster") or f"{base_url}/placeholder.png"
-        item = {"id": item_id, "type": "series", "name": data["title"], "poster": poster}
-        listing.append(item)
-        link = data.get("url") or OFFICIAL
-        source_label = "Official OceanVeil title page" if ocean_id(link) else "Public OceanVeil title source"
-        meta = {
-            **item,
-            "description": "Listed in public OceanVeil-related sources. This catalog does not provide playback; regional availability can change.",
-            "website": link,
-            "links": [{"name": source_label, "category": "watch", "url": link}],
-            "videos": [],
-        }
-        dump_json(OUT / "meta" / "series" / f"{item_id}.json", {"meta": meta})
-    for skip in range(0, len(listing) + 100, 100):
-        result = {"metas": listing[skip:skip + 100]}
-        catalog_dir = OUT / "catalog" / "series"
-        if skip == 0:
-            dump_json(catalog_dir / "oceanveil-anime.json", result)
-        dump_json(catalog_dir / "oceanveil-anime" / f"skip={skip}.json", result)
-
-    live_count = sum(r.get("source") == "live-discovery" for r in titles.values())
-    newly_found = sum(oid not in saved for oid in fresh_usable)
-    status = {
-        "known_title_count": len(listing),
-        "starter_snapshot_count": len(seed),
-        "stored_live_title_count": live_count,
-        "live_titles_extracted_this_run": len(fresh_usable),
-        "new_live_title_ids_this_run": newly_found,
-        "updated_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "source_checks": getattr(fetcher, "events", []),
-        "notes": ("Live sources provided titles this run." if fresh_usable else
-                  "No live titles extracted this run. The seeded/saved list was published, "
-                  "but discovery of future additions is not verified while source access is blocked."),
-    }
-    dump_json(OUT / "status.json", status)
-    page = ("<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' "
-            "content='width=device-width,initial-scale=1'><title>OceanVeil Auto Catalog</title>"
-            "<style>body{font:16px/1.6 system-ui;max-width:720px;margin:10vh auto;padding:20px;"
-            "background:#101823;color:white}a{color:#9dc9ff}code{overflow-wrap:anywhere}</style>"
-            f"<h1>OceanVeil Auto Catalog</h1><p>{len(listing)} catalog titles.</p>"
-            "<p><a href='manifest.json'>Addon manifest</a> · <a href='status.json'>Update status</a></p>"
-            f"<p>Addon URL: <code>{base_url}/manifest.json</code></p>"
-            "<p>Metadata only. Unofficial. Public source access may restrict new-title detection.</p></html>")
-    (OUT / "index.html").write_text(page, encoding="utf8")
-    if not fresh_usable:
-        print("::warning::No live titles extracted. Publishing starter/saved snapshot; discovery of new releases is NOT currently verified.")
-    print(f"Generated {len(listing)} titles; seeded {len(seed)}, saved live {live_count}, fetched this run {len(fresh_usable)}. Base: {base_url}")
+        put_title(titles, oid, record, today)
+    # A row can contain a link without usable title: keep order but filter
+    # unknown IDs during publish so no fabricated shows enter the feed.
+    metadata_stats = add_metadata(titles, TMDBMatcher())
+    state = {'titles': titles, 'homepage': homepage, 'quarantine': rejected}
+    dump_json(STATE_FILE, state)
+    stats = {'new': len(set(titles) - old_ids), 'home_ok': bool(home_html),
+             'home_fresh': home_fresh, 'discovered_urls': len(sitemap_urls | observed),
+             'details_attempted': attempted, 'metadata': metadata_stats}
+    publish(titles, homepage, stats)
+    print(f'Build finished: {len(titles)} titles, +{stats["new"]} this run, '
+          f'{len(homepage["sections"])} homepage rows, fresh={home_fresh}')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     build()

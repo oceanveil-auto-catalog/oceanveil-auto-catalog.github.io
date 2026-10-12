@@ -25,11 +25,14 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt
-      - name: Install browser for JavaScript-rendered official catalog
-        run: python -m playwright install --with-deps chromium
-      - name: Update catalog
+      - name: Offline parser and Stremio protocol tests
+        run: python -m unittest discover -s tests -v
+      - name: Update catalog with verified TMDB to IMDb matching
         env:
-          ENABLE_BROWSER_DISCOVERY: "1"
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          MAX_MATCHES_PER_RUN: '80'
+          MAX_SEASONS_PER_TITLE: '12'
+          MAX_EPISODES_PER_TITLE: '600'
         run: python build.py
       - name: Preserve titles between runs
         run: |
