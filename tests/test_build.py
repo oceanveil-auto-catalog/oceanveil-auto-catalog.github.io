@@ -1,4 +1,6 @@
 import json
+import os
+import shutil
 import sys
 import tempfile
 import unittest
@@ -6,206 +8,165 @@ from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-import build as mod
+import build as generator
+import enrichment
 
 
-HOME1 = '''<html><body>
-<h1>Niche Anime</h1><h2>SimulCast Lineup | New Every Week</h2>
-<div class="anime"><a href="/anime_titles/101"><img alt="[Dub] Seaside Story" src="https://cdn.test/101.jpg"></a><span>SimCast New 16+</span></div>
-<div class="anime"><a href="/anime_titles/102"><img alt="Sea Hearts" src="https://cdn.test/102.jpg"></a><span>SimCast New PG</span></div>
-<h2>Newest Addition</h2><div><a href="/anime_titles/103"><img alt="New Princess"></a>18+ Mature</div>
-<h2>Ranking</h2><a href="/anime_titles/102"><img alt="Sea Hearts"></a><a href="/anime_titles/103"><img alt="New Princess"></a>
-<h2>English Dubbed Titles</h2><a href="/anime_titles/101"><img alt="[Dub] Seaside Story"></a>
-<h2>Going Viral</h2><a href="/anime_titles/103"><img alt="New Princess"></a>
-<h2>BL Section</h2><a href="/anime_titles/101"><img alt="[Dub] Seaside Story"></a>
-<h2>News</h2><a href="/anime_titles/104"><img alt="A News Link Not A Row"></a>
-</body></html>'''
-HOME2 = '''<h2>SimulCast Lineup | New Every Week</h2>
-<a href="/anime_titles/102"><img alt="Sea Hearts" /></a>
-<h2>Ranking</h2><a href="/anime_titles/101"><img alt="[Dub] Seaside Story" /></a>
-<h2>Special Pick Up</h2><a href="/anime_titles/105"><img alt="Special Spotlight" /></a>'''
-
-
-class Feed:
+class OfflineFeed:
+    events = []
     pages = {
-        f'{mod.OFFICIAL}/': HOME1,
-        f'{mod.OFFICIAL}/anime_titles': '''<a href="/anime_titles/104"><img alt="Browse Anime" /></a>
-          <a href="/anime_titles?page=2">Next</a>''',
-        f'{mod.OFFICIAL}/anime_titles?page=2': '<a href="/anime_titles/105"><img alt="Special Spotlight" /></a>',
-        f'{mod.OFFICIAL}/sitemap.xml': '''<sitemapindex><sitemap><loc>https://oceanveil.net/sitemap-anime.xml</loc></sitemap></sitemapindex>''',
-        f'{mod.OFFICIAL}/sitemap-anime.xml': '''<urlset><url><loc>https://oceanveil.net/anime_titles/106</loc></url></urlset>''',
-        f'{mod.OFFICIAL}/sitemap_index.xml': '',
-        f'{mod.OFFICIAL}/anime_titles/106': '''<meta property="og:title" content="Official Sitemap Title | OceanVeil" />''',
-        mod.SECONDARY: '',
+        generator.SECONDARY: '<html><a href="/anime/angel-beats">Angel Beats!</a></html>',
+        'https://manhwaindex.com/anime/angel-beats': '<h1>Angel Beats!</h1><a href="https://oceanveil.net/anime_titles/434">Watch</a>',
+        'https://oceanveil.net/': '<a href="/anime_titles/500"><img alt="Added from OceanVeil" src="/poster500.jpg"></a>',
+        'https://oceanveil.net/anime_titles': '',
+        'https://oceanveil.net/sitemap.xml': '<urlset><url><loc>https://oceanveil.net/anime_titles/501</loc></url></urlset>',
+        'https://oceanveil.net/sitemap_index.xml': '',
+        'https://oceanveil.net/anime_titles/501': '<meta property="og:title" content="New from sitemap" />',
     }
 
     def get(self, url):
         return self.pages.get(url)
 
 
+class FakeEnricher:
+    tmdb_key = 'fakekey'
+    tvdb_key = 'fakekey'
+    mdb_key = 'fakekey'
+    events = []
+
+    def enrich(self, title, previous=None):
+        if title == 'Angel Beats!':
+            return {'id': 'tmdb:1234', 'tmdb_id': '1234', 'tmdb_type': 'tv', 'tvdb_id': '5678',
+                    'ratings': {'imdb': 8.9}, 'poster': 'https://image.tmdb.org/t/p/w500/poster.jpg',
+                    'description': 'Anime description', 'refresh_after': '2099-01-01'}
+        if title == 'New from sitemap':
+            return {'id': 'tmdb:9999', 'tmdb_id': '9999', 'tmdb_type': 'movie',
+                    'refresh_after': '2099-01-01'}
+        return {'id': 'kitsu:888', 'refresh_after': '2099-01-01'} if title == 'Added from OceanVeil' else {}
+
+
 class Tests(unittest.TestCase):
-    def test_section_parser_preserves_homepage_order(self):
-        titles, secs = mod.parse_homepage(HOME1, mod.OFFICIAL)
-        self.assertEqual(list(secs), ['simulcast-lineup', 'newest-additions', 'ranking',
-                                      'english-dubbed-titles', 'going-viral', 'bl-section'])
-        self.assertEqual(secs['ranking']['ids'], ['102', '103'])
-        self.assertEqual(secs['simulcast-lineup']['ids'], ['101', '102'])
-        self.assertTrue(titles['101']['dubbed'])
-        self.assertEqual(titles['102']['rating'], 'PG')
-        self.assertEqual(titles['103']['rating'], '18+')
-        self.assertNotIn('104', secs['bl-section']['ids'])
+    def test_user_site_vs_project_site_url(self):
+        with patch.dict(os.environ, {"GITHUB_REPOSITORY": "oceanveil-auto-catalog/oceanveil-auto-catalog.github.io"}, clear=True):
+            self.assertEqual(generator.pages_base_url(), 'https://oceanveil-auto-catalog.github.io')
+        with patch.dict(os.environ, {"GITHUB_REPOSITORY": "oceanveil-auto-catalog/oceanveil-auto-catalog"}, clear=True):
+            self.assertEqual(generator.pages_base_url(), 'https://oceanveil-auto-catalog.github.io/oceanveil-auto-catalog')
 
-    def test_16_is_unclassified(self):
-        self.assertEqual(mod.adult_level({'rating': '16+'}), 'unknown')
-        self.assertEqual(mod.adult_level({'rating': '18+'}), 'adult')
-        self.assertEqual(mod.adult_level({'rating': 'PG'}), 'sfw')
-        self.assertEqual(mod.adult_level({'rating': '', 'genre': 'BL'}), 'unknown')
-        self.assertEqual(mod.interleave(['a', 'b'], ['c', 'd']), ['a', 'c', 'b', 'd'])
-
-    def test_build_daily_changes_keep_old_titles_not_old_featured_rows(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
+    def test_nuvio_compatible_ids_and_metadata(self):
+        with tempfile.TemporaryDirectory() as dirname:
+            root = Path(dirname)
             (root / 'static').mkdir()
-            (root / 'static' / 'placeholder.png').write_bytes(b'fake')
-            with patch.object(mod, 'ROOT', root), patch.object(mod, 'STATE_FILE', root/'state.json'), \
-                 patch.object(mod, 'OUT', root/'public'), patch.object(mod, 'GentleFetcher', Feed):
-                mod.build()
-                status = json.loads((root/'public/status.json').read_text())
-                self.assertEqual(status['known_title_count'], 6)
-                self.assertEqual(status['homepage_row_counts']['Ranking'], 2)
-                self.assertEqual(json.loads((root/'public/catalog/series/home-ranking.json').read_text())['metas'][0]['id'], 'oceanveil:102')
-                manifest = json.loads((root/'public/manifest.json').read_text())
-                self.assertIn('home-special-pick-up', [x['id'] for x in manifest['catalogs']])
-                self.assertIn('mix-all', [x['id'] for x in manifest['catalogs']])
-                self.assertEqual(len(json.loads((root/'public/catalog/series/oceanveil-anime.json').read_text())['metas']), 6)
-                # Day 2: homepage promotions shuffle and one row disappears.
-                newpages = dict(Feed.pages)
-                newpages[f'{mod.OFFICIAL}/'] = HOME2
-                with patch.object(mod, 'GentleFetcher', type('Changed', (), {'get': lambda self, url: newpages.get(url)})):
-                    mod.build()
-                status2 = json.loads((root/'public/status.json').read_text())
-                self.assertTrue(status2['homepage_rows_fresh'])
-                self.assertNotIn('Newest Additions', status2['homepage_row_counts'])
-                ranked = json.loads((root/'public/catalog/series/home-ranking.json').read_text())['metas']
-                self.assertEqual([x['id'] for x in ranked], ['oceanveil:101'])
-                self.assertEqual(len(json.loads((root/'public/catalog/series/oceanveil-anime.json').read_text())['metas']), 6)
-                # If source becomes inaccessible, old latest-known homepage remains but reports stale.
-                with patch.object(mod, 'GentleFetcher', type('Down', (), {'get': lambda self, url: None})):
-                    mod.build()
-                status3 = json.loads((root/'public/status.json').read_text())
-                self.assertFalse(status3['homepage_rows_fresh'])
-                self.assertEqual(status3['homepage_row_counts']['Ranking'], 1)
+            (root / 'static' / 'placeholder.png').write_bytes(b'poster')
+            env = {'GITHUB_REPOSITORY': 'oceanveil-auto-catalog/oceanveil-auto-catalog.github.io', 'ENABLE_BROWSER_DISCOVERY': '0'}
+            with patch.dict(os.environ, env), patch.object(generator, 'ROOT', root), patch.object(generator, 'STATE_FILE', root/'state.json'), patch.object(generator, 'OUT', root/'public'), patch.object(generator, 'GentleFetcher', OfflineFeed), patch.object(generator, 'Enricher', FakeEnricher):
+                generator.build()
+                pub = root / 'public'
+                manifest = json.loads((pub / 'manifest.json').read_text())
+                self.assertEqual(manifest['catalogs'][0]['name'], 'OceanVeil • Simulcast')
+                self.assertEqual(len([c for c in manifest['catalogs'] if c['type']=='series']), 8)
+                self.assertTrue((pub/'catalog/series/oceanveil-mix-all.json').exists())
+                self.assertEqual(manifest['catalogs'][0]['extra'][0]['name'], 'skip')
+                series = json.loads((pub/'catalog/series/oceanveil-anime.json').read_text())['metas']
+                movies = json.loads((pub/'catalog/movie/oceanveil-movies.json').read_text())['metas']
+                self.assertEqual(len(series), 1)
+                self.assertEqual(len(movies), 0)
+                self.assertIn('tmdb:1234', [m['id'] for m in series])
+                self.assertNotIn('tmdb:9999', [m['id'] for m in movies])  # no trusted poster, not listed
+                entry = next(m for m in series if m['id'] == 'tmdb:1234')
+                self.assertEqual(entry['imdbRating'], '8.9')
+                self.assertEqual(entry['poster'], 'https://image.tmdb.org/t/p/w500/poster.jpg')
+                self.assertEqual(json.loads((pub/'status.json').read_text())['identifier_counts']['tmdb'], 1)
+                self.assertEqual(json.loads((pub/'status.json').read_text())['enrichment_counts']['mdb_ratings'], 1)
+                # Rerun with source inaccessible, no loss of saved standard IDs.
+                with patch.object(generator, 'GentleFetcher', type('Empty', (), {'events': [], 'get': lambda self, url: None})):
+                    generator.build()
+                    items = json.loads((pub/'catalog/series/oceanveil-anime.json').read_text())['metas']
+                    self.assertIn('tmdb:1234', [m['id'] for m in items])
 
-    def test_promotional_rows_reuse_ids_across_new_headings_and_new_titles(self):
-        # Rename a promo without creating or reordering any Nuvio catalog IDs.
-        day1 = '''<h2>Ranking</h2><a href="/anime_titles/1"><img alt="First Ranked" /></a>
-        <h2>Halloween Specials</h2><a href="/anime_titles/2"><img alt="Pumpkin Show" /></a>
-        <h2>BL Section</h2><a href="/anime_titles/3"><img alt="BL Show" /></a>
-        <h2>Weekend Spotlight</h2><a href="/anime_titles/4"><img alt="Weekend Show" /></a>'''
-        day2 = '''<h2>BL Section</h2><a href="/anime_titles/3"><img alt="BL Show" /></a>
-        <h2>Romance Spotlight</h2><a href="/anime_titles/5"><img alt="New Romance" /></a>
-        <h2>Ranking</h2><a href="/anime_titles/6"><img alt="New Number One" /></a>
-        <h2>New Week Picks</h2><a href="/anime_titles/7"><img alt="New Pick" /></a>'''
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
+    def test_first_run_offline_and_direct_stream_route(self):
+        class BlockedFeed:
+            events = []
+            def get(self, url): return None
+        with tempfile.TemporaryDirectory() as dirname:
+            root = Path(dirname)
             (root/'static').mkdir()
-            (root/'static'/'placeholder.png').write_bytes(b'x')
-            titles = {str(i): {'title': f'Show {i}', 'url': f'{mod.OFFICIAL}/anime_titles/{i}', 'first_seen': '2026-01-01'} for i in range(1, 8)}
-            stats = {'new': 0, 'home_ok': True, 'home_fresh': True, 'discovered_urls': 0, 'details_attempted': 0}
-            with patch.object(mod, 'OUT', root/'public'), patch.object(mod, 'ROOT', root):
-                _, seen = mod.parse_homepage(day1, mod.OFFICIAL)
-                home1 = mod.reconcile_homepage({}, seen)
-                mod.publish(titles, home1, stats)
-                manifest1 = json.loads((root/'public/manifest.json').read_text())
-                before = [(x['id'], x['name']) for x in manifest1['catalogs']]
-                ids_before = [x[0] for x in before]
-                self.assertIn(('home-promo-slot-01', 'Halloween Specials'), before)
-                self.assertIn(('home-promo-slot-02', 'Weekend Spotlight'), before)
-                self.assertEqual([x['id'] for x in json.loads((root/'public/catalog/series/home-promo-slot-01.json').read_text())['metas']], ['oceanveil:2'])
-                _, seen2 = mod.parse_homepage(day2, mod.OFFICIAL)
-                home2 = mod.reconcile_homepage(home1, seen2)
-                mod.publish(titles, home2, stats)
-                manifest2 = json.loads((root/'public/manifest.json').read_text())
-                after = [(x['id'], x['name']) for x in manifest2['catalogs']]
-                self.assertEqual([x[0] for x in after], ids_before)
-                self.assertIn(('home-promo-slot-01', 'Romance Spotlight'), after)
-                self.assertIn(('home-promo-slot-02', 'New Week Picks'), after)
-                self.assertNotIn('home-romance-spotlight', [x[0] for x in after])
-                self.assertEqual([x['id'] for x in json.loads((root/'public/catalog/series/home-promo-slot-01.json').read_text())['metas']], ['oceanveil:5'])
-                self.assertEqual([x['id'] for x in json.loads((root/'public/catalog/series/home-promo-slot-02.json').read_text())['metas']], ['oceanveil:7'])
-                self.assertEqual([x['id'] for x in json.loads((root/'public/catalog/series/home-ranking.json').read_text())['metas']], ['oceanveil:6'])
-                # Old featured show remains discoverable in All Titles, not promo.
-                self.assertIn('oceanveil:2', [x['id'] for x in json.loads((root/'public/catalog/series/oceanveil-anime.json').read_text())['metas']])
-                status = json.loads((root/'public/status.json').read_text())
-                self.assertEqual(status['sticky_home_rows'][1]['catalog_id'], 'home-promo-slot-01')
-                self.assertEqual(status['sticky_home_rows'][1]['display_name'], 'Romance Spotlight')
+            (root/'static/placeholder.png').write_bytes(b'p')
+            shutil.copy(Path(generator.__file__).with_name('seed.json'), root/'seed.json')
+            (root/'streams.json').write_text(json.dumps({'tmdb:1234:1:1': [{'url': 'https://media.example/ep.m3u8', 'title': 'Episode 1'}]}))
+            env = {'GITHUB_REPOSITORY':'oceanveil-auto-catalog/oceanveil-auto-catalog.github.io', 'ENABLE_BROWSER_DISCOVERY':'0'}
+            with patch.dict(os.environ, env), patch.object(generator, 'ROOT', root), patch.object(generator, 'STATE_FILE', root/'state.json'), patch.object(generator, 'OUT', root/'public'), patch.object(generator, 'GentleFetcher', BlockedFeed), patch.object(generator, 'Enricher', FakeEnricher):
+                generator.build()
+                pub = root/'public'
+                manifest = json.loads((pub/'manifest.json').read_text())
+                self.assertTrue(any(isinstance(r, dict) and r.get('name') == 'stream' for r in manifest['resources']))
+                stream = json.loads((pub/'stream/series/tmdb:1234:1:1.json').read_text())
+                self.assertEqual(stream['streams'][0]['url'], 'https://media.example/ep.m3u8')
+                status = json.loads((pub/'status.json').read_text())
+                self.assertEqual(status['known_title_count'], 1)  # one mock-matched title; no placeholders
+                self.assertEqual(status['live_titles_extracted_this_run'], 0)
+                self.assertEqual(status['raw_known_title_count'], 34)
+                self.assertEqual(status['excluded_title_count'], 33)
+                self.assertTrue((pub/'source-debug.json').exists())
+                self.assertTrue(all(x['id'].startswith(('tmdb:', 'tt')) for x in json.loads((pub/'catalog/series/oceanveil-anime.json').read_text())['metas']))
+                self.assertTrue((pub/'catalog/series/oceanveil-anime/skip=0.json').exists())
+                self.assertEqual(status['addon_manifest_url'], 'https://oceanveil-auto-catalog.github.io/manifest.json')
+                self.assertEqual(manifest['version'], '1.6.0')
 
-    def test_full_daily_build_persists_slots_to_state_file(self):
-        first_html = '<h2>Tonight\'s Spotlight</h2><a href="/anime_titles/891"><img alt="First Show" /></a>'
-        next_html = '<h2>Hot This Week</h2><a href="/anime_titles/892"><img alt="Second Show" /></a>'
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            (root/'static').mkdir()
-            (root/'static'/'placeholder.png').write_bytes(b'x')
-            with patch.object(mod, 'ROOT', root), patch.object(mod, 'STATE_FILE', root/'state.json'), patch.object(mod, 'OUT', root/'public'):
-                for html in (first_html, next_html):
-                    pages = {f'{mod.OFFICIAL}/': html, f'{mod.OFFICIAL}/anime_titles': '',
-                             f'{mod.OFFICIAL}/sitemap.xml': '', f'{mod.OFFICIAL}/sitemap_index.xml': '', mod.SECONDARY: ''}
-                    class Fake:
-                        def get(self, url):
-                            return pages.get(url)
-                    with patch.object(mod, 'GentleFetcher', Fake):
-                        mod.build()
-                    saved = json.loads((root/'state.json').read_text())
-                    self.assertEqual(saved['homepage']['promo_slots'], ['promo-slot-01'])
-                    self.assertEqual(saved['homepage']['row_order'], ['promo-slot-01'])
-                    manifest = json.loads((root/'public/manifest.json').read_text())
-                    self.assertEqual(manifest['catalogs'][0]['id'], 'home-promo-slot-01')
-                    self.assertEqual(manifest['catalogs'][0]['name'], 'Tonight\'s Spotlight' if html == first_html else 'Hot This Week')
-                items = json.loads((root/'public/catalog/series/home-promo-slot-01.json').read_text())['metas']
-                self.assertEqual([m['id'] for m in items], ['oceanveil:892'])
-                all_items = json.loads((root/'public/catalog/series/oceanveil-anime.json').read_text())['metas']
-                self.assertEqual({m['id'] for m in all_items}, {'oceanveil:891', 'oceanveil:892'})
+    def test_catalog_id_and_artwork_gate(self):
+        self.assertTrue(generator.playable_id('tmdb:123'))
+        self.assertTrue(generator.playable_id('tt1234567'))
+        self.assertFalse(generator.playable_id('oceanveil:seed-123'))
+        self.assertFalse(generator.playable_id('kitsu:123'))
+        self.assertTrue(generator.image_is_trusted('https://image.tmdb.org/t/p/w500/abc.jpg'))
+        self.assertFalse(generator.image_is_trusted('https://oceanveil.net/img/broken.jpg'))
+        self.assertFalse(generator.image_is_trusted('https://cdn.example.org/unknown.jpg'))
+        self.assertEqual(enrichment.lookup_title('[Dub] Angel Beats!'), 'Angel Beats!')
+        self.assertEqual(enrichment.lookup_title('(Sub) Angel Beats!'), 'Angel Beats!')
+        self.assertFalse(generator.title_ok('Newly Streaming'))
 
-    def test_missing_promotional_row_is_kept_but_emptied_and_reused(self):
-        _, day1 = mod.parse_homepage('''<h2>Ranking</h2><a href="/anime_titles/1"><img alt="Ranked" /></a>
-            <h2>Featured Collection</h2><a href="/anime_titles/2"><img alt="Featured" /></a>''', mod.OFFICIAL)
-        first = mod.reconcile_homepage({}, day1)
-        _, day2 = mod.parse_homepage('<h2>Ranking</h2><a href="/anime_titles/3"><img alt="Updated" /></a>', mod.OFFICIAL)
-        second = mod.reconcile_homepage(first, day2)
-        self.assertEqual(second['sections']['promo-slot-01']['ids'], [])
-        self.assertEqual(second['sections']['promo-slot-01']['name'], 'Featured Collection')
-        self.assertEqual(second['row_order'], first['row_order'])
-        _, day3 = mod.parse_homepage('<h2>Brand New Feature</h2><a href="/anime_titles/4"><img alt="Something New" /></a>', mod.OFFICIAL)
-        third = mod.reconcile_homepage(second, day3)
-        self.assertEqual(third['sections']['promo-slot-01'], {'name': 'Brand New Feature', 'ids': ['4']})
-        self.assertEqual(third['row_order'], first['row_order'])
+    def test_strict_title_matching(self):
+        self.assertEqual(enrichment.match_score('Angel Beats!', 'Angel Beats!'), 1)
+        self.assertLess(enrichment.match_score('Mononoke', 'Princess Mononoke'), .89)
 
-    def test_v2_heading_slug_catalog_id_is_preserved_when_upgrading(self):
-        legacy = {'sections': {'ranking': {'name': 'Ranking', 'ids': ['1']},
-                               'summer-specials': {'name': 'Summer Specials', 'ids': ['2']}}}
-        _, new = mod.parse_homepage('''<h2>Ranking</h2><a href="/anime_titles/3"><img alt="Ranked" /></a>
-            <h2>October Surprise</h2><a href="/anime_titles/4"><img alt="Halloween" /></a>''', mod.OFFICIAL)
-        updated = mod.reconcile_homepage(legacy, new)
-        self.assertEqual(updated['promo_slots'], ['summer-specials'])
-        self.assertEqual(updated['row_order'], ['ranking', 'summer-specials'])
-        self.assertEqual(updated['sections']['summer-specials'], {'name': 'October Surprise', 'ids': ['4']})
-        self.assertNotIn('october-surprise', updated['sections'])
-
-    def test_pagination_over_100_titles(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            (root/'static').mkdir()
-            (root/'static'/'placeholder.png').write_bytes(b'x')
-            titles = {str(n): {'title': f'Show {n}', 'url': f'{mod.OFFICIAL}/anime_titles/{n}',
-                               'first_seen': '2026-01-01', 'rating': 'PG'} for n in range(1, 251)}
-            with patch.object(mod, 'OUT', root/'public'), patch.object(mod, 'ROOT', root):
-                mod.publish(titles, {'sections': {}}, {'new': 250, 'home_ok': False,
-                    'home_fresh': False, 'discovered_urls': 250, 'details_attempted': 250})
-                for offset, expected in ((0, 100), (100, 100), (200, 50), (300, 0)):
-                    path = root/'public/catalog/series/oceanveil-anime'/f'skip={offset}.json'
-                    self.assertEqual(len(json.loads(path.read_text())['metas']), expected)
-                self.assertEqual(len(json.loads((root/'public/catalog/series/mix-all.json').read_text())['metas']), 100)
+    def test_tmdb_tvdb_mdblist_enrichment_with_mock_provider_data(self):
+        class APIResponse:
+            def __init__(self, data):
+                self.status_code = 200
+                self._data = data
+                self.content = b'{}'
+            def raise_for_status(self): pass
+            def json(self): return self._data
+        class FakeSession:
+            def __init__(self): self.calls=[]
+            def get(self, url, params=None, headers=None, timeout=None):
+                self.calls.append(url)
+                if url == enrichment.FRIBB:
+                    return APIResponse([{'kitsu_id': 1, 'themoviedb_id': {'tv': 1234}, 'thetvdb_id': 5678}])
+                if url == enrichment.KITSU:
+                    return APIResponse({'data': [{'id': '1', 'attributes': {'canonicalTitle': 'Angel Beats!', 'titles': {'en': 'Angel Beats!'}}}]})
+                if url.endswith('/tv/1234'):
+                    return APIResponse({'id':1234, 'overview':'Test synopsis', 'poster_path':'/poster.jpg', 'vote_average':8.4, 'genres':[{'name':'Animation'}], 'external_ids':{'imdb_id':'tt1111111', 'tvdb_id':5678}})
+                if '/series/5678/extended' in url:
+                    return APIResponse({'data': {'id': 5678, 'overview': 'TVDB overview'}})
+                if '/imdb/show/tt1111111/' in url:
+                    return APIResponse({'ratings': [{'source':'imdb','value':8.9}, {'source':'myanimelist','value':8.2}]})
+                return APIResponse({})
+            def post(self, url, json=None, timeout=None):
+                self.calls.append(url)
+                return APIResponse({'data': {'token': 'testtoken'}})
+        with patch.dict(os.environ, {'TMDB_API_KEY':'test', 'TVDB_API_KEY':'test', 'MDBLIST_API_KEY':'test'}, clear=True):
+            sess = FakeSession()
+            enricher = enrichment.Enricher(sess)
+            result = enricher.enrich('Angel Beats!')
+            self.assertEqual(result['id'], 'tmdb:1234')
+            self.assertEqual(result['tvdb_id'], '5678')
+            self.assertEqual(result['ratings']['imdb'], 8.9)
+            self.assertIn('Test synopsis', result['description'])
+            self.assertEqual(result['poster'], 'https://image.tmdb.org/t/p/w500/poster.jpg')
+            self.assertTrue(any('mdblist.com' in x for x in sess.calls))
+            calls = len(sess.calls)
+            self.assertEqual(enricher.enrich('Angel Beats!', result)['id'], 'tmdb:1234')
+            self.assertEqual(len(sess.calls), calls)
 
 
 if __name__ == '__main__':
