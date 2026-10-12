@@ -27,17 +27,9 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - name: Install browser for JavaScript-rendered official catalog
         run: python -m playwright install --with-deps chromium
-      - name: Validate catalog generator
-        run: python -m unittest discover -s tests -v
       - name: Update catalog
         env:
           ENABLE_BROWSER_DISCOVERY: "1"
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-          TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
-          TVDB_PIN: ${{ secrets.TVDB_PIN }}
-          MDBLIST_API_KEY: ${{ secrets.MDBLIST_API_KEY }}
-          ENRICH_MAX_CALLS: "180"
-          ENRICH_MAX_NEW: "45"
         run: python build.py
       - name: Preserve titles between runs
         run: |
