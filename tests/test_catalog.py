@@ -10,6 +10,7 @@ from urllib.parse import parse_qsl, urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import build
+import enrichment
 import oceanveil
 
 # Shaped like the real page: bare keys, !0 booleans, emoji, colons and URLs in strings.
@@ -44,6 +45,7 @@ HIDDEN = title(9, 'Promo Only Show')  # reachable only through a curated row
 class Resp:
     def __init__(self, url, status=200, text='', data=None):
         self.url, self.status_code, self.text, self._data = url, status, text, data
+        self.content = b'{}'
 
     def json(self):
         return self._data
@@ -68,20 +70,20 @@ class FakeSite:
         if path.endswith('/newest_addition_anime_titles'):
             return Resp(url, data={'data': CATALOG})
         if path.endswith('/trending_anime_titles'):
-            return Resp(url, data={'data': [CATALOG[1], CATALOG[0]]})
+            return Resp(url, data={'data': CATALOG[1:2] + CATALOG[0:1]})
         if path.endswith('/anime_titles'):
             keys = dict(q)
             if 'ids[]' in keys:
                 wanted = {str(v) for k, v in q if k == 'ids[]'}
                 return Resp(url, data={'data': [t for t in CATALOG + [HIDDEN] if t['id'] in wanted]})
             if keys.get('tag_ids[]') == str(oceanveil.TAG_NSFW) or keys.get('tag_ids[]') == oceanveil.TAG_NSFW:
-                return Resp(url, data={'data': [CATALOG[2]]})
+                return Resp(url, data={'data': CATALOG[2:3]})
             if str(keys.get('tag_ids[]')) == str(oceanveil.TAG_DUBBED):
-                return Resp(url, data={'data': [CATALOG[0]]})
+                return Resp(url, data={'data': CATALOG[0:1]})
             if 'genre_ids[]' in keys:
-                return Resp(url, data={'data': [CATALOG[1]]})
+                return Resp(url, data={'data': CATALOG[1:2]})
             if keys.get('is_simulcast') == 'true':
-                return Resp(url, data={'data': [CATALOG[0]]})
+                return Resp(url, data={'data': CATALOG[0:1]})
             return Resp(url, data={'data': CATALOG})
         return Resp(url, status=404)
 
@@ -90,7 +92,7 @@ class FakeEnricher:
     tmdb_key, tvdb_key, mdb_key = 'k', '', ''
     calls = []
 
-    def enrich(self, name, previous=None):
+    def enrich(self, name, previous=None, alt_names=()):
         self.calls.append(name)
         if name == '[Dub] Ocean Tale':
             return {'id': 'tmdb:100', 'tmdb_id': '100', 'tmdb_type': 'tv', 'imdb_id': 'tt0000100',
@@ -124,7 +126,7 @@ class ConfigParsing(unittest.TestCase):
 
 
 class BuildTests(unittest.TestCase):
-    def run_build(self, site, state=None):
+    def run_build(self, site, state=None, enricher=None):
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         root = Path(tmp.name)
@@ -134,7 +136,7 @@ class BuildTests(unittest.TestCase):
         env = {'GITHUB_REPOSITORY': 'oceanveil-auto-catalog/oceanveil-auto-catalog.github.io'}
         with patch.object(build, 'ROOT', root), patch.object(build, 'OUT', root / 'public'), \
                 patch.object(build, 'STATE_FILE', root / 'state.json'), patch.dict(os.environ, env, clear=True), \
-                patch.object(build, 'Enricher', FakeEnricher), \
+                patch.object(build, 'Enricher', enricher or FakeEnricher), \
                 patch.object(build, 'OceanVeil', lambda: oceanveil.OceanVeil(session=site, delay=0)):
             status = build.build()
         return root, status
@@ -174,11 +176,11 @@ class BuildTests(unittest.TestCase):
 
     def test_sfw_nsfw_classification_from_site_tags_and_ratings(self):
         root, status = self.run_build(FakeSite())
-        names = lambda c: [m['name'] for m in self.load(root, f'catalog/series/{c}.json')['metas']]
-        self.assertEqual(names('oceanveil-nsfw'), ['Night Bloom'])
-        self.assertEqual(names('oceanveil-sfw'), ['Quiet Garden'])
-        self.assertEqual(names('oceanveil-16plus'), ['Ocean Tale'])
-        self.assertEqual(names('oceanveil-mix'), ['Quiet Garden', 'Night Bloom'])
+        names = lambda g: [m['name'] for m in self.load(root, f'catalog/series/oceanveil-browse/genre={g}.json')['metas']]
+        self.assertEqual(names('NSFW'), ['Night Bloom'])
+        self.assertEqual(names('SFW'), ['Quiet Garden'])
+        self.assertEqual(names('16-Plus'), ['Ocean Tale'])
+        self.assertEqual(names('Mix-SFW-NSFW'), ['Quiet Garden', 'Night Bloom'])
 
     def test_falls_back_to_default_rows_when_config_missing(self):
         root, status = self.run_build(FakeSite(home='<html>no config</html>'))
@@ -194,12 +196,106 @@ class BuildTests(unittest.TestCase):
             'id': 'tmdb:300', 'tmdb_id': '300', 'imdb_id': 'tt0000300', 'refresh_after': '2099-01-01'}}}}
         FakeEnricher.calls = []
         root, _ = self.run_build(FakeSite(), state=legacy)
-        nsfw = self.load(root, 'catalog/series/oceanveil-nsfw.json')['metas']
+        nsfw = self.load(root, 'catalog/series/oceanveil-browse/genre=NSFW.json')['metas']
         self.assertEqual(nsfw[0]['id'], 'tt0000300')
         self.assertNotIn('Night Bloom', FakeEnricher.calls)
         saved = json.loads((root / 'state.json').read_text())
         self.assertEqual(saved['version'], 2)
         self.assertEqual(saved['titles']['1']['enrichment']['imdb_id'], 'tt0000300')
+
+
+class VersionSiblingsAndPlayback(unittest.TestCase):
+    """Dub/sub copies collapse to one entry; unmatched titles still get something to play."""
+
+    def run_with(self, catalog, enrich):
+        global CATALOG
+        old = CATALOG
+        CATALOG = catalog
+        self.addCleanup(lambda: globals().__setitem__('CATALOG', old))
+
+        class E(FakeEnricher):
+            def enrich(self, name, previous=None, alt_names=()):
+                return enrich(name)
+        return BuildTests.run_build(self, FakeSite(), enricher=E)
+
+    load = BuildTests.load
+
+    def test_lookup_title_strips_version_tags(self):
+        self.assertEqual(enrichment.lookup_title('[Dub]The Lonely Snow Widow'), 'The Lonely Snow Widow')
+        self.assertEqual(enrichment.lookup_title('Angel Beats!(Sub)'), 'Angel Beats!')
+        self.assertEqual(enrichment.lookup_title('[Dub] Black Jack (The Complete OVA Series Dubbed)'), 'Black Jack')
+        self.assertEqual(enrichment.series_key('[Dub] Overflow'), enrichment.series_key('Overflow'))
+        self.assertNotEqual(enrichment.series_key('Show Time! 2'), enrichment.series_key('Show Time!'))
+
+    def test_unmatched_dub_and_sub_become_one_entry_with_open_link_streams(self):
+        cat = [title(7, '[Dub] Overflow'), title(4, 'Overflow')]
+        root, status = self.run_with(cat, lambda n: {})
+        metas = self.load(root, 'catalog/series/oceanveil-home-newest.json')['metas']
+        self.assertEqual([m['id'] for m in metas], ['oceanveil_4'])
+        meta = self.load(root, 'meta/series/oceanveil_4.json')['meta']
+        self.assertEqual(len(meta['links']), 2)
+        self.assertEqual(meta['videos'][0]['id'], 'oceanveil_4:1:1')
+        streams = self.load(root, 'stream/series/oceanveil_4:1:1.json')['streams']
+        self.assertEqual({s['externalUrl'] for s in streams},
+                         {'https://oceanveil.net/anime_titles/4', 'https://oceanveil.net/anime_titles/7'})
+        self.assertIn('stream', [r['name'] for r in self.load(root, 'manifest.json')['resources'] if isinstance(r, dict)])
+
+    def test_match_on_one_version_is_shared_with_the_other(self):
+        cat = [title(7, '[Dub] Overflow'), title(4, 'Overflow')]
+        root, _ = self.run_with(cat, lambda n: {'id': 'tt1', 'imdb_id': 'tt0001234', 'refresh_after': '2099-01-01'}
+                                if n.startswith('[Dub]') else {})
+        metas = self.load(root, 'catalog/series/oceanveil-home-newest.json')['metas']
+        self.assertEqual([m['id'] for m in metas], ['tt0001234'])
+
+    def test_kitsu_only_titles_get_kitsu_episode_ids(self):
+        cat = [title(5, 'Hidden Gem')]
+        root, status = self.run_with(cat, lambda n: {'id': 'kitsu:42', 'kitsu_id': '42', 'episodes': 3,
+                                                      'refresh_after': '2099-01-01'})
+        meta = self.load(root, 'meta/series/oceanveil_5.json')['meta']
+        self.assertEqual([v['id'] for v in meta['videos']], ['kitsu:42:1', 'kitsu:42:2', 'kitsu:42:3'])
+        self.assertTrue((root / 'public' / 'stream' / 'series' / 'kitsu:42:2.json').exists())
+        self.assertEqual(status['id_types']['own_meta_with_kitsu_episodes'], 1)
+
+    def test_browse_catalog_and_extra_page_offsets(self):
+        root, status = BuildTests.run_build(self, FakeSite())
+        cats = {c['id']: c for c in self.load(root, 'manifest.json')['catalogs']}
+        self.assertNotIn('oceanveil-sfw', cats)
+        self.assertIn('SFW', cats['oceanveil-browse']['extra'][0]['options'])
+        self.assertEqual(len(self.load(root, 'catalog/series/oceanveil-browse.json')['metas']), 3)
+        self.assertEqual(self.load(root, 'catalog/series/oceanveil-browse/genre=SFW&skip=20.json')['metas'], [])
+        self.assertEqual(self.load(root, 'catalog/series/oceanveil-home-newest/skip=25.json')['metas'], [])
+
+
+class AniListMatching(unittest.TestCase):
+    """AniList finds titles Kitsu hides; Fribb turns the AniList ID into Kitsu/IMDb IDs."""
+
+    class Http:
+        def __init__(self):
+            self.posts = []
+
+        def get(self, url, params=None, headers=None, timeout=None):
+            if 'anime-lists' in url:
+                return Resp(url, data=[{'anilist_id': 900, 'mal_id': 901, 'kitsu_id': 902}])
+            return Resp(url, data={'data': []})  # Kitsu: nothing (adult titles are hidden)
+
+        def post(self, url, json=None, timeout=None):
+            self.posts.append(json['variables']['s'])
+            media = [{'id': 900, 'idMal': 901, 'episodes': 2, 'title': {'romaji': 'Obaafuro', 'english': 'Overflow'},
+                      'synonyms': [], 'coverImage': {'large': 'https://s4.anilist.co/x.jpg'}, 'description': '<i>Hi</i>'},
+                     {'id': 5, 'title': {'romaji': 'Something Else'}, 'synonyms': []}]
+            return Resp(url, data={'data': {'Page': {'media': media}}})
+
+    def test_anilist_match_gives_kitsu_id_and_episodes(self):
+        r = Resp('x', data=None)
+        r.content = b'x'
+        http = self.Http()
+        with patch.dict(os.environ, {}, clear=True), patch.object(enrichment.time, 'sleep', lambda s: None):
+            e = enrichment.Enricher(http).enrich('[Dub] Overflow', {}, ['Obafuro'])
+        self.assertEqual(e['kitsu_id'], '902')
+        self.assertEqual(e['episodes'], 2)
+        self.assertEqual(e['id'], 'kitsu:902')
+        self.assertEqual(e['anilist_description'], 'Hi')
+        self.assertEqual(http.posts, ['Overflow'])  # exact hit, romaji search skipped
 
 
 if __name__ == '__main__':

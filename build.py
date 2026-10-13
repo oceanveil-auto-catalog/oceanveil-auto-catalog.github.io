@@ -22,25 +22,33 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from enrichment import Enricher, lookup_title, norm, preview_metadata
+from enrichment import ENRICH_VERSION, Enricher, lookup_title, norm, preview_metadata, series_key
 import oceanveil
 from oceanveil import OceanVeil, TAG_DUBBED, TAG_NSFW
 
 ROOT = Path(__file__).resolve().parent
 STATE_FILE = ROOT / 'state.json'
 OUT = ROOT / 'public'
-VERSION = '2.0.0'
+VERSION = '2.1.0'
 OWN_PREFIX = 'oceanveil_'
 PREFIX = 'OceanVeil • '
 
-FILTER_CATALOGS = [
-    ('oceanveil-mix-all', 'All Titles'),
-    ('oceanveil-sfw', 'SFW (PG / 13+)'),
-    ('oceanveil-16plus', '16+'),
-    ('oceanveil-nsfw', 'NSFW / 18+'),
-    ('oceanveil-mix', 'Mix (SFW + NSFW)'),
-    ('oceanveil-nsfw-dubbed', 'NSFW Dubbed'),
+# The six filters used to be six board rows that mostly repeated each other. They are now one
+# "Browse" catalog: the board shows All, and Discover offers the rest as a filter dropdown.
+# Option values double as file names, so they stay URL-safe (no spaces, '+' or '/').
+BROWSE_ID = 'oceanveil-browse'
+BROWSE_FILTERS = [
+    ('All', 'oceanveil-mix-all'),
+    ('SFW', 'oceanveil-sfw'),
+    ('16-Plus', 'oceanveil-16plus'),
+    ('NSFW', 'oceanveil-nsfw'),
+    ('Mix-SFW-NSFW', 'oceanveil-mix'),
+    ('NSFW-Dubbed', 'oceanveil-nsfw-dubbed'),
 ]
+# Page offsets published for each catalog. Stremio asks for skip=100, 200, ...; some clients page
+# by 20 or 25, and a missing file would end their list early.
+PAGE = 100
+SKIP_STEPS = (20, 25, 100)
 
 
 def now_utc() -> str:
@@ -97,64 +105,150 @@ def interleave(a: list, b: list) -> list:
 
 def trusted_art(url) -> str:
     host = (urlparse(str(url or '')).hostname or '').lower()
-    return url if host in {'image.tmdb.org', 'media.kitsu.io'} else ''
+    return url if host in {'image.tmdb.org', 'media.kitsu.io', 's4.anilist.co'} else ''
+
+
+def strength(e: dict) -> int:
+    """How useful a match is for playback: IMDb > Kitsu > TMDB > nothing."""
+    e = e or {}
+    return (8 if re.fullmatch(r'tt\d+', str(e.get('imdb_id') or '')) else 0) + \
+           (4 if e.get('kitsu_id') else 0) + (2 if e.get('tmdb_id') else 0) + (1 if e.get('anilist_id') else 0)
+
+
+def share_between_versions(titles: dict) -> None:
+    """'[Dub] X' and 'X' are the same show: give every version the best match any of them has."""
+    best = {}
+    for t in titles.values():
+        e = t.get('enrichment') or {}
+        k = series_key(t['name'])
+        if strength(e) > strength(best.get(k)):
+            best[k] = e
+    for t in titles.values():
+        e = best.get(series_key(t['name']))
+        if e and strength(e) > strength(t.get('enrichment')):
+            t['enrichment'] = dict(e)
 
 
 def enrich_titles(titles: dict, enricher, legacy: dict, budget: int) -> int:
     attempts = 0
     today = datetime.now(timezone.utc).date().isoformat()
+    share_between_versions(titles)
+    done = set()  # one lookup per show, not per dub/sub copy
     for oid, t in titles.items():
         prior = t.get('enrichment') or legacy.get(norm(lookup_title(t['name']))) or {}
-        if prior.get('id') and prior.get('refresh_after', '') >= today:
+        # IMDb matches stay valid; weaker cached results get one retry when matching improves.
+        fresh = prior.get('refresh_after', '') >= today and (prior.get('v') == ENRICH_VERSION or strength(prior) >= 8)
+        if (prior.get('id') and fresh) or series_key(t['name']) in done or (prior and attempts >= budget):
             t['enrichment'] = prior
             continue
         if attempts >= budget:
-            if prior:
-                t['enrichment'] = prior
             continue
         attempts += 1
-        e = enricher.enrich(t['name'], prior) or prior
-        if not (e.get('tmdb_id') or e.get('imdb_id')) and t.get('romaji'):
-            alt = enricher.enrich(t['romaji'], {}) or {}
-            if alt.get('tmdb_id') or alt.get('imdb_id'):
+        done.add(series_key(t['name']))
+        alts = [t['romaji']] if t.get('romaji') else []
+        e = enricher.enrich(t['name'], prior, alts) or prior
+        if not (e.get('tmdb_id') or e.get('imdb_id') or e.get('kitsu_id')) and alts:
+            alt = enricher.enrich(t['romaji'], {}, [t['name']]) or {}
+            if strength(alt) > strength(e):
                 e = alt
         if e:
             t['enrichment'] = e
+    share_between_versions(titles)
     return attempts
 
 
-def preview_for(oid: str, t: dict) -> tuple[dict, bool]:
-    """Return (meta preview, served_by_us)."""
+def canonical_oids(titles: dict) -> dict:
+    """Map every OceanVeil ID to one ID per show (the original, i.e. non-dub, lowest ID)."""
+    groups = {}
+    for oid in titles:
+        groups.setdefault(series_key(titles[oid]['name']), []).append(oid)
+    out = {}
+    for oids in groups.values():
+        main = sorted(oids, key=lambda o: (bool(titles[o].get('dubbed')), int(o) if o.isdigit() else 0))[0]
+        for o in oids:
+            out[o] = main
+    return out
+
+
+def preview_for(oid: str, t: dict, main: str | None = None) -> tuple[dict, bool]:
+    """Return (meta preview, served_by_us).
+
+    IMDb-matched titles use their tt ID so Cinemeta/Torrentio etc. handle them. Otherwise we
+    serve our own meta page. If we know the Kitsu ID, its episodes use kitsu:<id>:<ep> video IDs,
+    which anime stream addons (Torrentio and others) can play. TMDB-only titles keep tmdb: IDs
+    for clients like Nuvio. Anything else gets an "Open on OceanVeil" link as its stream.
+    """
+    main = main or oid
     e = t.get('enrichment') or {}
     imdb = e.get('imdb_id') or ''
     ov_poster = oceanveil.poster_url(oid)
+    art = (trusted_art(e.get('poster')) or trusted_art(e.get('kitsu_poster'))
+           or trusted_art(e.get('anilist_poster')) or ov_poster)
     kind = 'movie' if e.get('tmdb_type') == 'movie' else 'series'
+    meta = dict(e)
+    meta['description'] = e.get('description') or t.get('summary') or e.get('anilist_description')
+    meta.setdefault('background', trusted_art(e.get('anilist_background')) or None)
+    meta.setdefault('releaseInfo', e.get('anilist_year'))
+    meta.setdefault('genres', e.get('anilist_genres'))
     if re.fullmatch(r'tt\d+', imdb):
-        item_id = imdb
+        item_id, own = imdb, False
+    elif e.get('kitsu_id'):
+        item_id, own, kind = f'{OWN_PREFIX}{main}', True, 'series'
     elif e.get('tmdb_id'):
-        item_id = f"tmdb:{e['tmdb_id']}"
+        item_id, own = f"tmdb:{e['tmdb_id']}", False
     else:
-        item_id = None
-    if item_id:
-        art = trusted_art(e.get('poster')) or trusted_art(e.get('kitsu_poster')) or ov_poster
-        meta = dict(e)
-        meta.setdefault('description', t.get('summary'))
-        p = {'id': item_id, 'type': kind, **preview_metadata(lookup_title(t['name']), meta, art)}
-        p['poster'] = art
-        return p, False
-    return {'id': f'{OWN_PREFIX}{oid}', 'type': 'series', 'name': t['name'], 'poster': ov_poster,
-            'posterShape': 'poster', 'description': t.get('summary') or ''}, True
+        item_id, own, kind = f'{OWN_PREFIX}{main}', True, 'series'
+    p = {'id': item_id, 'type': kind, **preview_metadata(lookup_title(t['name']), meta, art)}
+    p['poster'] = art
+    if own and not e.get('kitsu_id') and not e.get('description') and t.get('summary'):
+        p['description'] = t['summary']
+    return p, own
+
+
+def own_meta(main: str, versions: list[str], titles: dict, preview: dict) -> tuple[dict, dict]:
+    """Full meta for a title we serve ourselves, plus {video_id: [streams]} for its episodes."""
+    t = titles[main]
+    e = next((titles[o]['enrichment'] for o in versions if (titles[o].get('enrichment') or {}).get('kitsu_id')),
+             t.get('enrichment') or {})
+    links = []
+    for o in versions:
+        label = 'Dub' if titles[o].get('dubbed') else 'Sub'
+        links.append({'name': f'Watch on OceanVeil ({label})' if len(versions) > 1 else 'Watch on OceanVeil',
+                      'category': 'OceanVeil', 'url': f'{oceanveil.SITE}/anime_titles/{o}'})
+    ov_streams = [{'name': 'OceanVeil', 'title': link['name'], 'externalUrl': link['url']} for link in links]
+    released = (t.get('start_at') or '2000-01-01')[:10] + 'T00:00:00.000Z'
+    count = int(e.get('episodes') or 0) or max(int(titles[o].get('episodes') or 0) for o in versions) or 1
+    count = min(count, 500)
+    videos, streams = [], {}
+    for ep in range(1, count + 1):
+        if e.get('kitsu_id'):
+            vid = f"kitsu:{e['kitsu_id']}:{ep}"
+        else:
+            vid = f'{OWN_PREFIX}{main}:1:{ep}'
+        videos.append({'id': vid, 'title': f'Episode {ep}' if count > 1 else 'Full title',
+                       'season': 1, 'episode': ep, 'released': released})
+        streams[vid] = ov_streams
+    meta = {**preview, 'releaseInfo': preview.get('releaseInfo') or (t.get('start_at') or '')[:4] or None,
+            'website': links[0]['url'], 'links': links, 'videos': videos,
+            'behaviorHints': {'defaultVideoId': videos[0]['id']} if count == 1 else None}
+    return {k: v for k, v in meta.items() if v}, streams
 
 
 # ---------------------------------------------------------------- publish
 
-def emit_catalog(catid: str, metas: list) -> None:
+def emit_catalog(catid: str, metas: list, genre: str | None = None) -> None:
+    """Write the catalog and every page a client might ask for (empty past the end, so lists stop)."""
     base = OUT / 'catalog' / 'series'
-    for skip in range(0, len(metas) + 100, 100):
-        page = {'metas': metas[skip:skip + 100]}
-        if skip == 0:
-            dump_json(base / f'{catid}.json', page)
-        dump_json(base / catid / f'skip={skip}.json', page)
+    offsets = sorted({s for step in SKIP_STEPS for s in range(0, len(metas) + step, step)})
+    for skip in offsets:
+        page = {'metas': metas[skip:skip + PAGE]}
+        if genre is None:
+            if skip == 0:
+                dump_json(base / f'{catid}.json', page)
+            dump_json(base / catid / f'skip={skip}.json', page)
+        else:
+            name = f'genre={genre}' + (f'&skip={skip}' if skip else '')
+            dump_json(base / catid / f'{name}.json', page)
 
 
 def publish(titles: dict, rows: list[dict], stats: dict) -> dict:
@@ -164,18 +258,26 @@ def publish(titles: dict, rows: list[dict], stats: dict) -> dict:
     (OUT / '.nojekyll').touch()
     base = pages_base_url()
 
-    previews, own = {}, 0
-    for oid, t in titles.items():
-        p, served = preview_for(oid, t)
-        previews[oid] = p
+    mains = canonical_oids(titles)
+    versions = {}
+    for oid, main in mains.items():
+        versions.setdefault(main, []).append(oid)
+    previews, own, playable_own, stream_files = {}, 0, 0, 0
+    for main, group in versions.items():
+        group.sort(key=lambda o: (bool(titles[o].get('dubbed')), int(o) if o.isdigit() else 0))
+        # The best-matched version speaks for the whole show (after share_between_versions they agree).
+        best = max(group, key=lambda o: strength(titles[o].get('enrichment')))
+        p, served = preview_for(best, titles[best], main)
+        for o in group:
+            previews[o] = p
         if served:
             own += 1
-            meta = {**p, 'releaseInfo': (t.get('start_at') or '')[:4] or None,
-                    'website': f'{oceanveil.SITE}/anime_titles/{oid}',
-                    'links': [{'name': 'Watch on OceanVeil', 'category': 'OceanVeil',
-                               'url': f'{oceanveil.SITE}/anime_titles/{oid}'}],
-                    'videos': []}
-            dump_json(OUT / 'meta' / 'series' / f"{p['id']}.json", {'meta': {k: v for k, v in meta.items() if v}})
+            meta, streams = own_meta(main, group, titles, p)
+            playable_own += meta['videos'][0]['id'].startswith('kitsu:')
+            dump_json(OUT / 'meta' / 'series' / f"{p['id']}.json", {'meta': meta})
+            for vid, s in streams.items():
+                dump_json(OUT / 'stream' / 'series' / f'{vid}.json', {'streams': s})
+                stream_files += 1
 
     def metas(oids):
         seen, out = set(), []
@@ -206,12 +308,19 @@ def publish(titles: dict, rows: list[dict], stats: dict) -> dict:
         'oceanveil-mix': interleave(groups['sfw'], groups['nsfw']),
         'oceanveil-nsfw-dubbed': [o for o in groups['nsfw'] if titles[o].get('dubbed')],
     }
-    for catid, name in FILTER_CATALOGS:
-        items = metas(filters[catid])
-        catalogs.append({'type': 'series', 'id': catid, 'name': PREFIX + name,
-                         'extra': [{'name': 'skip', 'isRequired': False}]})
-        emit_catalog(catid, items)
-        counts[catid] = len(items)
+    options = []
+    for label, key in BROWSE_FILTERS:
+        items = metas(filters[key])
+        counts[f'{BROWSE_ID}:{label}'] = len(items)
+        if label == 'All':
+            emit_catalog(BROWSE_ID, items)  # what the board row and "no filter" show
+        if items:
+            options.append(label)
+            emit_catalog(BROWSE_ID, items, genre=label)
+    catalogs.append({'type': 'series', 'id': BROWSE_ID, 'name': PREFIX + 'Browse',
+                     'genres': options,
+                     'extra': [{'name': 'genre', 'isRequired': False, 'options': options},
+                               {'name': 'skip', 'isRequired': False}]})
 
     manifest = {
         'id': 'community.oceanveil.auto.catalog',
@@ -220,9 +329,12 @@ def publish(titles: dict, rows: list[dict], stats: dict) -> dict:
         'description': "Mirrors OceanVeil's homepage rows daily, plus SFW / NSFW filters. "
                        'Matched titles use IMDb/TMDB IDs so your stream addons can play them.',
         'logo': f'{base}/logo.png' if (ROOT / 'static' / 'logo.png').exists() else None,
-        'resources': ['catalog', {'name': 'meta', 'types': ['series'], 'idPrefixes': [OWN_PREFIX]}],
+        'resources': ['catalog', {'name': 'meta', 'types': ['series'], 'idPrefixes': [OWN_PREFIX]},
+                      # "Open on OceanVeil" for titles no stream addon can play; kitsu: video IDs
+                      # also get that link next to whatever your anime stream addons return.
+                      {'name': 'stream', 'types': ['series'], 'idPrefixes': [OWN_PREFIX, 'kitsu:']}],
         'types': ['series', 'movie'],
-        'idPrefixes': ['tt', 'tmdb:', OWN_PREFIX],
+        'idPrefixes': ['tt', 'tmdb:', OWN_PREFIX, 'kitsu:'],
         'catalogs': catalogs,
         'behaviorHints': {'configurable': False},
     }
@@ -231,20 +343,32 @@ def publish(titles: dict, rows: list[dict], stats: dict) -> dict:
     if (ROOT / 'static' / 'logo.png').exists():
         shutil.copy(ROOT / 'static' / 'logo.png', OUT / 'logo.png')
 
-    ids = [p['id'] for p in previews.values()]
+    ids = list({p['id']: 1 for p in previews.values()})
+    rated_sfw = len(groups['sfw'])
     status = {
         'build_version': VERSION,
         'updated_utc': now_utc(),
         'titles': len(titles),
+        'shows_after_merging_dub_sub': len(ids),
         'id_types': {'imdb': sum(i.startswith('tt') for i in ids), 'tmdb': sum(i.startswith('tmdb:') for i in ids),
-                     'oceanveil_own_meta': own},
+                     'oceanveil_own_meta': own, 'own_meta_with_kitsu_episodes': playable_own,
+                     'own_meta_link_only': own - playable_own},
+        'stream_files': stream_files,
+        'source_region_check': {
+            'proxy_used': stats.get('proxied', False),
+            'titles_listed': len(titles), 'sfw_titles_listed': rated_sfw,
+            'looks_region_limited': rated_sfw < max(20, len(titles) // 5),
+            'hint': 'OceanVeil lists licensed (mostly PG/13+) titles only to some regions. If this list is '
+                    'much shorter than oceanveil.net shows you, set the OCEANVEIL_PROXY secret.',
+        },
         'homepage_config_live': stats.get('home_live'),
         'home_rows': [{'catalog_id': r['catalog_id'], 'name': r['name'], 'items': counts.get(r['catalog_id'], 0)} for r in rows],
         'catalog_counts': counts,
         'classification': {k: len(v) for k, v in groups.items()},
         'enrichment_attempts_this_run': stats.get('attempts'),
         'metadata_apis_configured': stats.get('apis'),
-        'unmatched_titles': [t['name'] for o, t in titles.items() if previews[o]['id'].startswith(OWN_PREFIX)][:80],
+        'link_only_titles': sorted({titles[o]['name'] for o in titles if previews[o]['id'].startswith(OWN_PREFIX)
+                                    and not (titles[o].get('enrichment') or {}).get('kitsu_id')})[:80],
         'source_checks': stats.get('events', [])[:40],
         'addon_manifest_url': f'{base}/manifest.json',
     }
@@ -302,7 +426,7 @@ def record(a: dict, previous: dict) -> dict:
             'name': a['name'], 'romaji': a.get('romajiName') or '', 'summary': a.get('summary') or '',
             'rating': a.get('rating') or '', 'simulcast': bool(a.get('isSimulcast')),
             'completed': bool(a.get('isCompleted')), 'start_at': a.get('startAt') or '',
-            'season': a.get('seasonName') or '',
+            'season': a.get('seasonName') or '', 'episodes': int(a.get('episodeCount') or 0),
             'first_seen': previous.get('first_seen', today), 'last_seen': today}
 
 
@@ -336,11 +460,15 @@ def build() -> dict:
     dump_json(STATE_FILE, {'version': 2, 'updated_utc': now_utc(), 'titles': titles,
                            'home_rows': [{k: r[k] for k in ('catalog_id', 'name', 'ids')} for r in rows]})
     status = publish(titles, rows, {
-        'home_live': home_live, 'attempts': attempts, 'events': ov.events,
+        'home_live': home_live, 'attempts': attempts, 'events': ov.events, 'proxied': ov.proxied,
         'apis': {'tmdb': bool(enricher.tmdb_key), 'tvdb': bool(enricher.tvdb_key), 'mdblist': bool(enricher.mdb_key)},
     })
     print(f"Built {VERSION}: {len(titles)} titles, {len(rows)} homepage rows (live config: {home_live}), "
           f"IDs {status['id_types']}, enrichment attempts {attempts}, TMDB key set: {status['metadata_apis_configured']['tmdb']}")
+    region = status['source_region_check']
+    if region['looks_region_limited']:
+        print(f"::warning::OceanVeil returned {region['titles_listed']} titles, only {region['sfw_titles_listed']} rated PG/13+. "
+              'The site likely hides licensed titles from this machine\'s region; set OCEANVEIL_PROXY to fix.')
     if not status['metadata_apis_configured']['tmdb']:
         print('::warning::TMDB_API_KEY is not set for this run, so matching relies on Kitsu only.')
     return status

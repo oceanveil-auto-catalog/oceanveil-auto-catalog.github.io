@@ -10,6 +10,7 @@ No sign-in, cookies, or video URLs are used.
 from __future__ import annotations
 
 import json
+import os
 import re
 import time
 from datetime import datetime
@@ -176,7 +177,14 @@ def row_key(section: dict) -> str | None:
 class OceanVeil:
     def __init__(self, session=None, delay=0.6):
         self.session = session or requests.Session()
-        self.session.headers.update({'User-Agent': UA, 'Accept': 'application/json, text/html;q=0.8'})
+        self.session.headers.update({'User-Agent': os.environ.get('OCEANVEIL_USER_AGENT') or UA,
+                                     'Accept': 'application/json, text/html;q=0.8'})
+        # OceanVeil only lists licensed titles to some regions. If the build machine's
+        # region sees a cut-down list, route OceanVeil requests (only) through a proxy.
+        proxy = os.environ.get('OCEANVEIL_PROXY', '').strip()
+        if proxy:
+            self.session.proxies = {'http': proxy, 'https': proxy}
+        self.proxied = bool(proxy)
         self.delay = delay
         self._last = 0.0
         self.events: list[dict] = []
@@ -207,14 +215,20 @@ class OceanVeil:
             return None
         out = []
         for item in data:
-            attrs = (item or {}).get('attributes') or {}
+            attrs = dict((item or {}).get('attributes') or {})
             if attrs.get('id') is not None and attrs.get('name'):
+                rel = ((item or {}).get('relationships') or {}).get('animeEpisodes') or {}
+                if isinstance(rel.get('data'), list):
+                    attrs['episodeCount'] = len(rel['data'])
                 out.append(attrs)
         return out
 
     def home_sections(self) -> tuple[list[dict], bool]:
         r = self._get(SITE + '/')
         if r is not None:
+            # The page is UTF-8 but its Content-Type has no charset, so requests would
+            # decode it as Latin-1 and garble row names ("This Fallâs", "Week ð").
+            r.encoding = 'utf-8'
             try:
                 return parse_home_sections(r.text), True
             except (ValueError, json.JSONDecodeError) as e:

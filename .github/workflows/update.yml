@@ -33,6 +33,9 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
           MDBLIST_API_KEY: ${{ secrets.MDBLIST_API_KEY }}
+          # Optional: http(s)://user:pass@host:port in a region where oceanveil.net lists its full
+          # catalog. Used only for OceanVeil requests. See source_region_check in status.json.
+          OCEANVEIL_PROXY: ${{ secrets.OCEANVEIL_PROXY }}
           ENRICH_MAX_NEW: '120'
           ENRICH_MAX_CALLS: '700'
         run: python build.py

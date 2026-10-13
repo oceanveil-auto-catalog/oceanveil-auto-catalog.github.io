@@ -21,10 +21,28 @@ TMDB = "https://api.themoviedb.org/3"
 TVDB = "https://api4.thetvdb.com/v4"
 MDB = "https://api.mdblist.com"
 KITSU = "https://kitsu.io/api/edge/anime"
+ANILIST = "https://graphql.anilist.co"
+# Bump when matching logic improves so cached results get one fresh attempt.
+ENRICH_VERSION = 3
+
+_VERSION_TAG = re.compile(
+    r"^\s*(?:[\[(](?:dub|dubbed|sub|subbed|unedited|uncensored)[\])]\s*)+"  # [Dub] / (Sub) / [Unedited] prefixes
+    r"|\s*[\[(](?:dub|dubbed|sub|subbed|english dub)[\])]\s*$"           # ...(Sub) suffix
+    r"|\s*\((?:the )?complete [^)]*\)\s*$",                               # (The Complete OVA Series Dubbed)
+    re.I)
 
 
 def lookup_title(value):
-    return re.sub(r"^\s*(?:\[(?:dub|sub)\]|\((?:dub|sub)\))\s*", "", str(value or ""), flags=re.I).strip()
+    """Title without OceanVeil's version tags, used for searching and grouping dub/sub copies."""
+    text, prev = str(value or ""), None
+    while prev != text:
+        prev, text = text, _VERSION_TAG.sub("", text).strip()
+    return text
+
+
+def series_key(value):
+    """Same key for '[Dub] X', 'X(Sub)' and 'X', so the versions can share one match and one entry."""
+    return norm(lookup_title(value))
 
 
 def norm(value):
@@ -69,6 +87,11 @@ class Enricher:
         self._mdb_disabled = False
         self._mapping_loaded = False
         self.fribb = {}
+        self.fribb_anilist = {}
+        self.fribb_mal = {}
+        self._anilist_cache = {}
+        self._anilist_last = 0.0
+        self._anilist_disabled = False
         self.events = []
         self._kitsu_cache = {}
         self._tmdb_cache = {}
@@ -113,7 +136,12 @@ class Enricher:
         self._mapping_loaded = True
         items = self.get(FRIBB)
         if isinstance(items, list):
-            self.fribb = {str(e['kitsu_id']): e for e in items if isinstance(e, dict) and e.get('kitsu_id')}
+            for e in items:
+                if not isinstance(e, dict):
+                    continue
+                for key, index in (('kitsu_id', self.fribb), ('anilist_id', self.fribb_anilist), ('mal_id', self.fribb_mal)):
+                    if e.get(key):
+                        index.setdefault(str(e[key]), e)
         self.events.append({'source': 'fribb', 'records': len(self.fribb), 'ok': bool(self.fribb)})
 
     def find_kitsu(self, name):
@@ -135,6 +163,47 @@ class Enricher:
             selected = candidates[0][1]
         self._kitsu_cache[name] = selected
         return selected
+
+    def anilist_search(self, *names):
+        """AniList lists adult/OVA titles that Kitsu hides from anonymous searches.
+
+        Returns the best confident match for any of the given names, or None.
+        """
+        names = [n for n in dict.fromkeys(lookup_title(n) for n in names) if n]
+        if not names or self._anilist_disabled:
+            return None
+        cache_key = tuple(names)
+        if cache_key in self._anilist_cache:
+            return self._anilist_cache[cache_key]
+        query = ('query($s:String){Page(perPage:10){media(search:$s,type:ANIME){id idMal episodes format '
+                 'isAdult synonyms title{romaji english native} coverImage{extraLarge large} bannerImage '
+                 'description(asHtml:false) startDate{year} genres averageScore}}}')
+        scored = {}
+        for name in names:
+            wait = 2.2 - (time.monotonic() - self._anilist_last)  # stay under AniList's 30 req/min
+            if wait > 0:
+                time.sleep(wait)
+            self._anilist_last = time.monotonic()
+            data = self._post(ANILIST, {'query': query, 'variables': {'s': name}})
+            if data is None:
+                self._anilist_disabled = self._anilist_disabled or self._calls >= self.max_calls
+                continue
+            media = (((data or {}).get('data') or {}).get('Page') or {}).get('media') or []
+            for m in media:
+                t = m.get('title') or {}
+                labels = [t.get('english'), t.get('romaji'), *(m.get('synonyms') or [])]
+                score = max((match_score(q, x) for q in names for x in labels if isinstance(x, str)), default=0)
+                if score >= .87 and score > scored.get(m['id'], (0,))[0]:
+                    scored[m['id']] = (score, m)
+            best = sorted(scored.values(), key=lambda it: it[0], reverse=True)
+            if best and best[0][0] >= .97:
+                break  # exact hit, skip the romaji search
+        best = sorted(scored.values(), key=lambda it: it[0], reverse=True)
+        chosen = None
+        if best and (len(best) == 1 or best[0][0] - best[1][0] >= .06):
+            chosen = best[0][1]
+        self._anilist_cache[cache_key] = chosen
+        return chosen
 
     def _tmdb_params(self, extras=None):
         extras = dict(extras or {})
@@ -248,8 +317,10 @@ class Enricher:
         tid = tm.get('tv') or tm.get('movie')
         tvdb = record.get('thetvdb_id')
         imdb = record.get('imdb_id')
+        kitsu = record.get('kitsu_id')
         return {'tmdb_type': kind, 'tmdb_id': str(tid) if tid else None,
                 'tvdb_id': str(tvdb) if tvdb else None,
+                'kitsu_id': str(kitsu) if kitsu else None,
                 'imdb_id': str(imdb) if isinstance(imdb, str) and re.fullmatch(r'tt\d+', imdb) else None}
 
     @staticmethod
@@ -265,14 +336,16 @@ class Enricher:
                 ids['imdb_id'] = rid
         return ids
 
-    def enrich(self, title, previous=None):
+    def enrich(self, title, previous=None, alt_names=()):
         """Return cached or new metadata; external APIs aren't contacted without reason.
 
-        Persistent caching prevents using daily quotas for the same 34 titles.
+        Persistent caching prevents using daily quotas for the same titles.
+        alt_names (e.g. OceanVeil's romaji title) are used for the AniList search.
         """
         prior = dict(previous or {})
         until = prior.get('refresh_after', '')
-        if prior.get('id') and until >= date.today().isoformat():
+        current = prior.get('v') == ENRICH_VERSION or re.fullmatch(r'tt\d+', str(prior.get('imdb_id') or ''))
+        if prior.get('id') and until >= date.today().isoformat() and current:
             return prior
         title = lookup_title(title)
         self.load_fribb()
@@ -285,12 +358,44 @@ class Enricher:
             poster = attrs.get('posterImage') or {}
             info['kitsu_id'] = kitid
             info['kitsu_poster'] = next((poster[k] for k in ('large','medium','original') if poster.get(k)), '')
+            if attrs.get('episodeCount'):
+                info['episodes'] = int(attrs['episodeCount'])
             if self.fribb.get(kitid):
                 resolved = self.fribb_ids(self.fribb[kitid])
                 resolved['method'] = 'kitsu-fribb'
                 resolved['confidence'] = 1.0
             else:
                 resolved = {'id': f'kitsu:{kitid}', 'method': 'kitsu-only', 'confidence': 0.9}
+        # AniList (+ Fribb crosswalk) finds the adult/OVA titles Kitsu hides, and gives
+        # a Kitsu ID that anime stream addons understand even when IMDb/TMDB don't list it.
+        if not resolved.get('imdb_id') and not (info.get('kitsu_id') and info.get('episodes')):
+            al = self.anilist_search(title, *alt_names)
+            if al:
+                cover = al.get('coverImage') or {}
+                info['anilist_id'] = str(al['id'])
+                if al.get('idMal'):
+                    info['mal_id'] = str(al['idMal'])
+                if al.get('episodes'):
+                    info['episodes'] = int(al['episodes'])
+                info['anilist_poster'] = cover.get('extraLarge') or cover.get('large') or ''
+                info['anilist_background'] = al.get('bannerImage') or ''
+                if al.get('description'):
+                    info['anilist_description'] = re.sub(r'<[^>]+>', '', al['description']).strip()
+                if al.get('genres'):
+                    info['anilist_genres'] = al['genres']
+                year = (al.get('startDate') or {}).get('year')
+                if year:
+                    info['anilist_year'] = str(year)
+                rec = self.fribb_anilist.get(str(al['id'])) or self.fribb_mal.get(str(al.get('idMal') or ''))
+                if rec:
+                    mapped = {k: v for k, v in self.fribb_ids(rec).items() if v}
+                    for k, v in mapped.items():
+                        if k == 'kitsu_id':
+                            info.setdefault('kitsu_id', v)
+                        elif not resolved.get(k):
+                            resolved[k] = v
+                    resolved.setdefault('method', 'anilist-fribb')
+                    resolved.setdefault('confidence', 0.95)
         # Retry independent ID matching when Fribb has no TMDB/IMDb identifiers.
         if not resolved.get('tmdb_id') and not resolved.get('imdb_id') and self.tmdb_key:
             found = self.tmdb_search(title)
@@ -311,6 +416,10 @@ class Enricher:
             info['id'] = info['imdb_id']
         elif resolved.get('id'):
             info['id'] = resolved['id']
+        elif info.get('kitsu_id'):
+            info['id'] = 'kitsu:' + str(info['kitsu_id'])
+        elif info.get('anilist_id'):
+            info['id'] = 'anilist:' + str(info['anilist_id'])
         tmdb_kind = info.get('tmdb_type') or 'tv'
         tmdb_data = self.tmdb_details(info['tmdb_id'], tmdb_kind) if info.get('tmdb_id') else None
         if tmdb_data:
@@ -344,6 +453,7 @@ class Enricher:
         # Avoid requerying confident IDs daily; unmatched entries get retried sooner.
         days = 7 if info.get('id') else 1
         info['refresh_after'] = (date.today() + timedelta(days=days)).isoformat()
+        info['v'] = ENRICH_VERSION
         return {k: v for k, v in info.items() if v is not None}
 
 
