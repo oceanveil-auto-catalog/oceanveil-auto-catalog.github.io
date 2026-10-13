@@ -22,8 +22,15 @@ TVDB = "https://api4.thetvdb.com/v4"
 MDB = "https://api.mdblist.com"
 KITSU = "https://kitsu.io/api/edge/anime"
 ANILIST = "https://graphql.anilist.co"
+# manami-project's offline database: every MAL/AniList/Kitsu/AniDB entry with all its English,
+# romaji and Japanese synonyms. Matching against it locally finds Kitsu IDs for titles whose
+# OceanVeil name differs from the usual one ("Yuru Yuri Season 2", "Ranpo Kitan", "(OVA)").
+OFFLINE_DB = ("https://github.com/manami-project/anime-offline-database/releases/latest/download/"
+              "anime-offline-database-minified.json")
 # Bump when matching logic improves so cached results get one fresh attempt.
-ENRICH_VERSION = 3
+ENRICH_VERSION = 4
+_TYPE_RANK = {'TV': 0, 'ONA': 1, 'OVA': 2, 'MOVIE': 3, 'SPECIAL': 4}
+_ORDINAL = {1: '1st', 2: '2nd', 3: '3rd'}
 
 _VERSION_TAG = re.compile(
     r"^\s*(?:[\[(](?:dub|dubbed|sub|subbed|unedited|uncensored)[\])]\s*)+"  # [Dub] / (Sub) / [Unedited] prefixes
@@ -43,6 +50,29 @@ def lookup_title(value):
 def series_key(value):
     """Same key for '[Dub] X', 'X(Sub)' and 'X', so the versions can share one match and one entry."""
     return norm(lookup_title(value))
+
+
+def loose_key(value):
+    """Spacing/punctuation-free key that keeps Japanese text: 'Yuru Yuri 2' == 'YuruYuri 2'."""
+    text = unicodedata.normalize('NFKC', str(value or '')).casefold()
+    text = re.sub(r'[（(](?:dub|sub|oa|ova|oad)[）)]', ' ', text, flags=re.I)
+    return re.sub(r'[\W_]+', '', text)
+
+
+def search_variants(value):
+    """OceanVeil spellings plus the forms databases use for seasons and OVAs."""
+    base = lookup_title(value)
+    out = [base]
+    m = re.match(r'^(.*?)[\s:-]*(?:season|s)\s*(\d+)\s*$', base, re.I) or \
+        re.match(r'^(.*?)\s*(\d+)\s*期\s*$', base)
+    if m:
+        root, n = m.group(1).strip(), int(m.group(2))
+        out += [root] if n == 1 else []
+        out += [f'{root} {n}', f'{root} Season {n}', f'{root} {_ORDINAL.get(n, f"{n}th")} Season']
+    stripped = re.sub(r'\s*[（(](?:ova|oad|oa)[）)]\s*$', '', base, flags=re.I)
+    if stripped != base:
+        out += [stripped, f'{stripped} OVA']
+    return list(dict.fromkeys(x for x in out if x))
 
 
 def norm(value):
@@ -92,6 +122,7 @@ class Enricher:
         self._anilist_cache = {}
         self._anilist_last = 0.0
         self._anilist_disabled = False
+        self.offline = None  # loose_key -> [entries], loaded on first need
         self.events = []
         self._kitsu_cache = {}
         self._tmdb_cache = {}
@@ -163,6 +194,60 @@ class Enricher:
             selected = candidates[0][1]
         self._kitsu_cache[name] = selected
         return selected
+
+    def load_offline(self):
+        if self.offline is not None:
+            return
+        self.offline = {}
+        try:  # ~60 MB, so fetched directly rather than through get()'s size cap
+            r = self.session.get(OFFLINE_DB, timeout=90)
+            r.raise_for_status()
+            entries = r.json().get('data') or []
+        except (requests.RequestException, ValueError, AttributeError):
+            entries = []
+        for a in entries:
+            ids = {}
+            for src in a.get('sources') or []:
+                for site, key in (('kitsu.', 'kitsu_id'), ('anilist.co', 'anilist_id'),
+                                  ('myanimelist.net', 'mal_id'), ('anidb.net', 'anidb_id')):
+                    if site in src:
+                        ids[key] = src.rstrip('/').rsplit('/', 1)[-1]
+            if not ids:
+                continue
+            item = {**ids, 'type': a.get('type'), 'episodes': a.get('episodes') or 0,
+                    'sources': len(a.get('sources') or []), 'title': a.get('title'),
+                    'year': ((a.get('animeSeason') or {}).get('year') or 9999)}
+            for name in [a.get('title'), *(a.get('synonyms') or [])]:
+                k = loose_key(name)
+                if len(k) >= 3:
+                    self.offline.setdefault(k, []).append(item)
+        self.events.append({'source': 'anime-offline-database', 'keys': len(self.offline), 'ok': bool(self.offline)})
+
+    def offline_match(self, *names):
+        """Exact (spacing/punctuation-insensitive) title match in the offline DB.
+
+        Several hits (TV + OVA, censored + uncensored) are ranked: has Kitsu ID, wanted type
+        (OVA if the name says so, else TV first), then best-documented entry.
+        """
+        self.load_offline()
+        if not self.offline:
+            return None
+        wants_ova = any(re.search(r'\b(?:ova|oad)\b|[（(]oa[）)]', n or '', re.I) for n in names)
+        hits = {}
+        for name in names:
+            for variant in search_variants(name):
+                for item in self.offline.get(loose_key(variant), []):
+                    hits[id(item)] = item
+            if hits:
+                break  # the most specific name that hits wins (English before romaji/Japanese)
+        if not hits:
+            return None
+        def rank(it):
+            t = _TYPE_RANK.get(it.get('type'), 5)
+            return (not it.get('kitsu_id'), not it.get('anilist_id'),
+                    (0 if it.get('type') == 'OVA' else 1) if wants_ova else t,
+                    it['year'], -it['sources'])  # earliest first: 'Yuru Yuri' is S1, not 'Yuru Yuri♪♪'
+        return sorted(hits.values(), key=rank)[0]
 
     def anilist_search(self, *names):
         """AniList lists adult/OVA titles that Kitsu hides from anonymous searches.
@@ -366,6 +451,26 @@ class Enricher:
                 resolved['confidence'] = 1.0
             else:
                 resolved = {'id': f'kitsu:{kitid}', 'method': 'kitsu-only', 'confidence': 0.9}
+        # Offline database: catches renamed seasons, OVAs and Japanese-only spellings.
+        if not resolved.get('imdb_id') and not info.get('kitsu_id'):
+            off = self.offline_match(title, *alt_names)
+            if off:
+                for k in ('kitsu_id', 'anilist_id', 'mal_id', 'anidb_id'):
+                    if off.get(k):
+                        info.setdefault(k, off[k])
+                if off.get('episodes'):
+                    info.setdefault('episodes', int(off['episodes']))
+                rec = (self.fribb.get(str(off.get('kitsu_id') or '')) or self.fribb_anilist.get(str(off.get('anilist_id') or ''))
+                       or self.fribb_mal.get(str(off.get('mal_id') or '')))
+                if rec:
+                    for k, v in self.fribb_ids(rec).items():
+                        if v and k != 'kitsu_id' and not resolved.get(k):
+                            resolved[k] = v
+                    info.setdefault('kitsu_id', self.fribb_ids(rec).get('kitsu_id'))
+                    if not info.get('kitsu_id'):
+                        info.pop('kitsu_id', None)
+                resolved.setdefault('method', 'offline-db')
+                resolved.setdefault('confidence', 0.95)
         # AniList (+ Fribb crosswalk) finds the adult/OVA titles Kitsu hides, and gives
         # a Kitsu ID that anime stream addons understand even when IMDb/TMDB don't list it.
         if not resolved.get('imdb_id') and not (info.get('kitsu_id') and info.get('episodes')):

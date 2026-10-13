@@ -15,14 +15,16 @@ Twice a day, GitHub Actions rebuilds a static addon that mirrors OceanVeil's hom
 - **Dub and sub copies are one entry.** `[Dub] X` and `X` share one match and one poster; the
   detail page links both versions.
 
-Titles are matched through Kitsu, AniList (which also lists the adult/OVA titles Kitsu hides),
-the Fribb crosswalk and TMDB. How each title is served, best first:
+Titles are matched through Kitsu, the anime-offline-database (all English, romaji and Japanese
+synonyms, so "Yuru Yuri Season 2" or "Ranpo Kitan" still match), AniList, the Fribb crosswalk and TMDB. How each title is served, best first:
 
 1. **IMDb `tt` ID**: your Cinemeta/TMDB and stream addons handle it as usual.
 2. **Kitsu ID only**: our own detail page whose episodes are `kitsu:<id>:<ep>`, so anime stream
    addons that understand Kitsu IDs (Torrentio and others) can return streams.
 3. **TMDB ID only**: `tmdb:<id>` (works in Nuvio and with TMDB-aware addons).
-4. **No match**: our own page with an **Open on OceanVeil** stream that opens the title on the site.
+4. **No IMDb or Kitsu ID exists** (many short adult ONAs are only on MyAnimeList): our own page
+   with an **Open on OceanVeil** stream. Torrentio only accepts IMDb and Kitsu IDs, so it can't
+   be asked for these.
 
 ## Fewer titles than the site shows?
 
@@ -51,7 +53,7 @@ Matches are cached in `state.json`, so each title costs API calls once a week at
 
 - `oceanveil.py`: public API client and homepage config parser
 - `build.py`: matching and publishing (`public/` is generated, not committed)
-- `enrichment.py`: Kitsu / AniList / Fribb / TMDB / TVDB / MDBList ID matching
+- `enrichment.py`: Kitsu / offline DB / AniList / Fribb / TMDB / TVDB / MDBList ID matching
 - `public/status.json` (live site): what the last run found, region check, link-only titles, row counts
 
 Run locally: `pip install -r requirements.txt && python -m unittest discover -s tests && python build.py`

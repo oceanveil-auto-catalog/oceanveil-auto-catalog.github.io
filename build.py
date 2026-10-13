@@ -29,7 +29,7 @@ from oceanveil import OceanVeil, TAG_DUBBED, TAG_NSFW
 ROOT = Path(__file__).resolve().parent
 STATE_FILE = ROOT / 'state.json'
 OUT = ROOT / 'public'
-VERSION = '2.1.0'
+VERSION = '2.2.0'
 OWN_PREFIX = 'oceanveil_'
 PREFIX = 'OceanVeil • '
 
@@ -145,9 +145,9 @@ def enrich_titles(titles: dict, enricher, legacy: dict, budget: int) -> int:
             continue
         attempts += 1
         done.add(series_key(t['name']))
-        alts = [t['romaji']] if t.get('romaji') else []
+        alts = [x for x in (t.get('romaji'), t.get('japanese')) if x]
         e = enricher.enrich(t['name'], prior, alts) or prior
-        if not (e.get('tmdb_id') or e.get('imdb_id') or e.get('kitsu_id')) and alts:
+        if not (e.get('tmdb_id') or e.get('imdb_id') or e.get('kitsu_id')) and t.get('romaji'):
             alt = enricher.enrich(t['romaji'], {}, [t['name']]) or {}
             if strength(alt) > strength(e):
                 e = alt
@@ -423,7 +423,8 @@ def resolve_rows(ov: OceanVeil, sections: list[dict], titles: dict, saved: dict 
 def record(a: dict, previous: dict) -> dict:
     today = now_utc()[:10]
     return {**previous,
-            'name': a['name'], 'romaji': a.get('romajiName') or '', 'summary': a.get('summary') or '',
+            'name': a['name'], 'romaji': a.get('romajiName') or '', 'japanese': a.get('japaneseName') or '',
+            'summary': a.get('summary') or '',
             'rating': a.get('rating') or '', 'simulcast': bool(a.get('isSimulcast')),
             'completed': bool(a.get('isCompleted')), 'start_at': a.get('startAt') or '',
             'season': a.get('seasonName') or '', 'episodes': int(a.get('episodeCount') or 0),

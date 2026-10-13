@@ -298,5 +298,39 @@ class AniListMatching(unittest.TestCase):
         self.assertEqual(http.posts, ['Overflow'])  # exact hit, romaji search skipped
 
 
+class OfflineDatabaseMatching(unittest.TestCase):
+    DB = {'data': [
+        {'title': 'Yuru Yuri', 'type': 'TV', 'episodes': 12, 'animeSeason': {'year': 2011}, 'synonyms': [],
+         'sources': ['https://kitsu.app/anime/6205', 'https://anilist.co/anime/10495']},
+        {'title': 'Yuru Yuri♪♪', 'type': 'TV', 'episodes': 12, 'animeSeason': {'year': 2012},
+         'synonyms': ['YuruYuri 2'], 'sources': ['https://kitsu.app/anime/6724']},
+        {'title': 'Ranpo Kitan: Game of Laplace', 'type': 'TV', 'episodes': 11, 'synonyms': ['ranpokitan', '乱歩奇譚 Game of Laplace'],
+         'sources': ['https://kitsu.app/anime/10039']},
+        {'title': 'Overflow', 'type': 'ONA', 'episodes': 8, 'synonyms': [], 'sources': ['https://myanimelist.net/anime/40746']},
+    ]}
+
+    def enricher(self):
+        db = self.DB
+
+        class S:
+            def get(self, *a, **k):
+                return Resp('x', data=db)
+        return enrichment.Enricher(S())
+
+    def test_seasons_romaji_and_mal_only(self):
+        e = self.enricher()
+        self.assertEqual(e.offline_match('Yuru Yuri Season 1', 'Yuru yuri ikki')['kitsu_id'], '6205')
+        self.assertEqual(e.offline_match('Yuru Yuri Season 2', 'Yuru yuri niki')['kitsu_id'], '6724')
+        self.assertEqual(e.offline_match('Rampo Kitan Club', 'Ranpo Kitan')['kitsu_id'], '10039')
+        over = e.offline_match('[Dub] Overflow')
+        self.assertEqual(over['mal_id'], '40746')
+        self.assertNotIn('kitsu_id', over)  # no ID Torrentio understands exists for this one
+        self.assertIsNone(e.offline_match('Totally Unknown Show'))
+
+    def test_search_variants(self):
+        self.assertIn('Yuru Yuri 2', enrichment.search_variants('Yuru Yuri Season 2'))
+        self.assertIn('Negima!? OVA', enrichment.search_variants('Negima!?(OVA)'))
+
+
 if __name__ == '__main__':
     unittest.main()
