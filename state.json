@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-10-14T03:44:34+00:00",
+  "updated_utc": "2026-10-14T18:56:28+00:00",
   "titles": {
     "530": {
       "name": "[Dub] Terror in Resonance",
@@ -8020,54 +8020,68 @@
         "524",
         "538",
         "544",
-        "534",
         "247",
-        "522",
         "485",
         "113",
-        "505",
+        "483",
+        "534",
+        "522",
         "414",
         "506",
-        "431",
-        "445",
-        "275",
-        "273",
-        "399",
-        "484",
-        "464",
-        "432",
-        "268",
-        "470",
-        "532",
-        "435",
-        "529",
-        "46",
-        "530",
-        "496",
-        "462",
-        "389",
-        "519",
-        "517",
-        "397",
-        "269",
         "502",
-        "346",
+        "431",
+        "484",
+        "505",
+        "268",
+        "462",
         "231",
-        "302",
-        "45",
+        "529",
+        "269",
+        "530",
+        "445",
+        "470",
+        "464",
+        "389",
+        "273",
+        "432",
+        "399",
+        "275",
+        "501",
         "526",
+        "517",
+        "519",
+        "447",
         "324",
         "469",
-        "528",
-        "471",
-        "258",
-        "146",
-        "106",
-        "472"
+        "532",
+        "507",
+        "391",
+        "531",
+        "397",
+        "302",
+        "45",
+        "496",
+        "310",
+        "46",
+        "354"
       ]
     },
     {
       "catalog_id": "oceanveil-home-promo-3",
+      "name": "Classic Anime Spotlight",
+      "ids": [
+        "393",
+        "385",
+        "387",
+        "388",
+        "386",
+        "415",
+        "410",
+        "299"
+      ]
+    },
+    {
+      "catalog_id": "oceanveil-home-promo-4",
       "name": "Whale-Loved In Japan",
       "ids": [
         "471",
@@ -8140,7 +8154,7 @@
       ]
     },
     {
-      "catalog_id": "oceanveil-home-promo-4",
+      "catalog_id": "oceanveil-home-promo-5",
       "name": "Our Recommendations",
       "ids": [
         "389",
@@ -8152,7 +8166,7 @@
       ]
     },
     {
-      "catalog_id": "oceanveil-home-promo-5",
+      "catalog_id": "oceanveil-home-promo-6",
       "name": "Going Viral!",
       "ids": [
         "462",
@@ -8164,7 +8178,7 @@
       ]
     },
     {
-      "catalog_id": "oceanveil-home-promo-6",
+      "catalog_id": "oceanveil-home-promo-7",
       "name": "Sweet Female Bonds",
       "ids": [
         "467",
@@ -8367,7 +8381,7 @@
       ]
     },
     {
-      "catalog_id": "oceanveil-home-promo-7",
+      "catalog_id": "oceanveil-home-promo-8",
       "name": "Suiseisha's Latest Titles",
       "ids": [
         "340",
