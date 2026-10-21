@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-10-21T03:46:49+00:00",
+  "updated_utc": "2026-10-21T18:59:01+00:00",
   "titles": {
     "539": {
       "name": "Magical Witch Punie Chan",
@@ -858,8 +858,8 @@
           "Supernatural"
         ],
         "anilist_year": "2026",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす（OA)",
       "episodes": 0
@@ -1104,8 +1104,8 @@
           "Crime"
         ],
         "tmdb_rating": 6.3,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "500": {
@@ -1790,9 +1790,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.9,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "tmdb_rating": 7.889,
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "462": {
@@ -1954,8 +1954,8 @@
           "Hentai"
         ],
         "anilist_year": "2026",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "同じゼミの染谷さんがセクシー女優だった話。（OA)",
       "episodes": 0
@@ -2039,9 +2039,9 @@
           "Sci-Fi & Fantasy",
           "Action & Adventure"
         ],
-        "tmdb_rating": 7.878,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "tmdb_rating": 7.9,
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "419": {
@@ -2559,8 +2559,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 8.0,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "416": {
@@ -2791,9 +2791,9 @@
           "Mystery",
           "Crime"
         ],
-        "tmdb_rating": 7.7,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "tmdb_rating": 7.731,
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "394": {
@@ -2904,8 +2904,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:204319",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "大きい女の子は好きですか？（OA）",
       "episodes": 0
@@ -2941,8 +2941,10 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 5.2,
-        "refresh_after": "2026-10-20"
+        "tmdb_rating": 5.222,
+        "episodes": 8,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "まりかちゃんのこうかんどはぶっこわれている（OA）",
       "episodes": 0
@@ -3216,8 +3218,8 @@
           "Drama"
         ],
         "tmdb_rating": 6.7,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "391": {
@@ -3380,8 +3382,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.9,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "384": {
@@ -3460,8 +3462,8 @@
           "Action & Adventure"
         ],
         "tmdb_rating": 5.0,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "370": {
@@ -3582,7 +3584,7 @@
         "tvdb_id": "283924",
         "description": "Souji Mitsuka is a first-year high school student who is obsessed with twin-tails. One day, a beautiful girl from a parallel world named Twoearle,  suddenly appeared in front of him and gave him the power to transform into the twin-tailed warrior Tail Red. With the Ultimegil organization attacking the planet, Souji now must fight in order to protect the peace on Earth.",
         "poster": "https://image.tmdb.org/t/p/w500/6ahyvuyYG3t92rAmol9RaBrAnlf.jpg",
-        "background": "https://image.tmdb.org/t/p/original/bemtxp3x5P02sw5wmQiYUG6judV.jpg",
+        "background": "https://image.tmdb.org/t/p/original/2YroVEAwrdqpCpXfdlk6HLCvbhQ.jpg",
         "releaseInfo": "2014",
         "genres": [
           "Animation",
@@ -3590,9 +3592,9 @@
           "Comedy",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 7.912,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "tmdb_rating": 7.9,
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "369": {
@@ -3706,8 +3708,8 @@
           "Animation"
         ],
         "tmdb_rating": 4.8,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "350": {
@@ -4115,8 +4117,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.9,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "326": {
@@ -4185,8 +4187,8 @@
         "episodes": 26,
         "tmdb_type": "tv",
         "tmdb_id": "8859",
-        "method": "offline-db",
-        "confidence": 0.95,
+        "method": "tmdb-title-search",
+        "confidence": 1.0,
         "id": "tmdb:8859",
         "imdb_id": "tt0480493",
         "tvdb_id": "75869",
@@ -4201,8 +4203,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 6.1,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "324": {
@@ -4279,8 +4281,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.3,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "311": {
@@ -4403,9 +4405,9 @@
           "Action & Adventure",
           "Drama"
         ],
-        "tmdb_rating": 7.3,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "tmdb_rating": 7.292,
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "344": {
@@ -4489,8 +4491,8 @@
           "Hentai"
         ],
         "anilist_year": "2026",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "有栖川煉ってホントは女なんだよね。(OA)",
       "episodes": 0
@@ -4536,8 +4538,8 @@
           "Romance"
         ],
         "anilist_year": "2026",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "イチゴ哀歌～雑で生イキな妹と割り切れない兄～（OA)",
       "episodes": 0
@@ -4656,9 +4658,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.1,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "tmdb_rating": 7.119,
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "310": {
@@ -4775,8 +4777,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.5,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "322": {
@@ -5045,8 +5047,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 6.1,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "295": {
@@ -5123,8 +5125,8 @@
           "Comedy"
         ],
         "tmdb_rating": 3.4,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "297": {
@@ -5203,8 +5205,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 4.9,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "292": {
@@ -5325,8 +5327,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.9,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "278": {
@@ -5549,8 +5551,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:182531",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "ギルティホール(OA)",
       "episodes": 0
@@ -5630,8 +5632,8 @@
           "Comedy"
         ],
         "tmdb_rating": 6.5,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "258": {
@@ -6124,8 +6126,10 @@
           "Drama",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 7.4,
-        "refresh_after": "2026-10-20"
+        "tmdb_rating": 7.41,
+        "episodes": 11,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "ぬきたし",
       "episodes": 0
@@ -6291,7 +6295,10 @@
           "Comedy"
         ],
         "tmdb_rating": 5.6,
-        "refresh_after": "2026-10-20"
+        "mal_id": "61023",
+        "episodes": 8,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "人妻の唇は缶チューハイの味がして(OA)",
       "episodes": 0
@@ -6412,7 +6419,9 @@
           "Mystery"
         ],
         "tmdb_rating": 6.7,
-        "refresh_after": "2026-10-20"
+        "episodes": 3,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "[Dub] AD Police Files",
       "episodes": 0
@@ -6490,7 +6499,9 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 7.0,
-        "refresh_after": "2026-10-20"
+        "episodes": 3,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "Bubblegum Crash",
       "episodes": 0
@@ -6588,8 +6599,8 @@
         "episodes": 6,
         "tmdb_type": "tv",
         "tmdb_id": "60937",
-        "method": "offline-db",
-        "confidence": 0.95,
+        "method": "tmdb-title-search",
+        "confidence": 1.0,
         "id": "tmdb:60937",
         "imdb_id": "tt1506339",
         "tvdb_id": "84709",
@@ -6602,9 +6613,9 @@
           "Sci-Fi & Fantasy",
           "Drama"
         ],
-        "tmdb_rating": 7.441,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "tmdb_rating": 7.4,
+        "v": 4,
+        "refresh_after": "2026-10-28"
       }
     },
     "189": {
@@ -6629,8 +6640,8 @@
         "confidence": 1.0,
         "id": "tmdb:[55374]",
         "episodes": 1,
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "[Dub] Riding Bean",
       "episodes": 0
@@ -6683,8 +6694,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:43848",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "じみへんっ!!～地味子を変えちゃう純異性交遊～",
       "episodes": 0
@@ -6719,7 +6730,10 @@
           "Comedy"
         ],
         "tmdb_rating": 5.8,
-        "refresh_after": "2026-10-20"
+        "mal_id": "50208",
+        "episodes": 8,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "３秒後、野獣。～合コンで隅にいた彼は肉食でした（OA）",
       "episodes": 0
@@ -6751,8 +6765,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:168253",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "夫婦交歓～戻れない夜～",
       "episodes": 0
@@ -6777,8 +6791,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:44016",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "指先から本気の熱情2-恋人は消防士-",
       "episodes": 0
@@ -6812,7 +6826,11 @@
           "Animation"
         ],
         "tmdb_rating": 7.7,
-        "refresh_after": "2026-10-20"
+        "kitsu_id": "41014",
+        "mal_id": "37320",
+        "episodes": 13,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "甘い懲罰～私は看守専用ペット(OA)",
       "episodes": 0
@@ -6837,8 +6855,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:42401",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "指先から本気の熱情-幼なじみは消防士-(OA)",
       "episodes": 0
@@ -6872,7 +6890,10 @@
           "Animation"
         ],
         "tmdb_rating": 4.8,
-        "refresh_after": "2026-10-20"
+        "mal_id": "38212",
+        "episodes": 12,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "終電後､カプセルホテルで､上司に微熱伝わる夜｡(OA)",
       "episodes": 0
@@ -6897,8 +6918,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:43106",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
       "episodes": 0
@@ -6935,7 +6956,9 @@
           "Comedy"
         ],
         "tmdb_rating": 4.9,
-        "refresh_after": "2026-10-20"
+        "episodes": 12,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "かくして！マキナさん！(Dub)(OA)",
       "episodes": 0
@@ -7005,8 +7028,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:177678",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "やたらやらしい深見くん(OA)(Dub)",
       "episodes": 0
@@ -7073,8 +7096,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:142136",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "しょうたいむ！２～歌のお姉さんだってしたい(OA)(Dub)",
       "episodes": 0
@@ -7108,7 +7131,11 @@
           "Animation"
         ],
         "tmdb_rating": 4.9,
-        "refresh_after": "2026-10-20"
+        "kitsu_id": "43430",
+        "mal_id": "42517",
+        "episodes": 3,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "オオカミさんは食べられたい(OA)(Dub)",
       "episodes": 0
@@ -7133,8 +7160,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:45606",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "王子の本命は悪役令嬢(OA)(Dub)",
       "episodes": 0
@@ -7168,8 +7195,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:136796",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "森のくまさん、冬眠中。(OA)(Dub)",
       "episodes": 0
@@ -7221,8 +7248,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:45481",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "しょうたいむ！～歌のお姉さんだってしたい(OA)(Dub)",
       "episodes": 0
@@ -7243,8 +7270,8 @@
       "enrichment": {
         "tmdb_type": "tv",
         "tmdb_id": "118824",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
+        "confidence": 0.95,
+        "method": "offline-db",
         "id": "tmdb:118824",
         "imdb_id": "tt15432528",
         "tvdb_id": "410768",
@@ -7258,7 +7285,11 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 7.2,
-        "refresh_after": "2026-10-20"
+        "mal_id": "47792",
+        "anidb_id": "16057",
+        "episodes": 9,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "魔王イブロギアに身を捧げよ(OA)(Dub)",
       "episodes": 0
@@ -7322,7 +7353,9 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 6.6,
-        "refresh_after": "2026-10-20"
+        "episodes": 9,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "巨人族の花嫁(OA)(Dub)",
       "episodes": 0
@@ -7389,8 +7422,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:101981",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "じょしおちっ！～2階から女の子が…降ってきた！？～(OA)",
       "episodes": 0
@@ -7415,8 +7448,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:13782",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "お見合い相手は教え子、強気な、問題児。(OA)",
       "episodes": 0
@@ -7450,7 +7483,11 @@
           "Animation"
         ],
         "tmdb_rating": 6.1,
-        "refresh_after": "2026-10-20"
+        "kitsu_id": "13589",
+        "mal_id": "35629",
+        "episodes": 12,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "スカートの中はケダモノでした。(OA)",
       "episodes": 0
@@ -7484,7 +7521,11 @@
           "Animation"
         ],
         "tmdb_rating": 5.8,
-        "refresh_after": "2026-10-20"
+        "kitsu_id": "14094",
+        "mal_id": "36840",
+        "episodes": 12,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "25歳の女子高生(OA)",
       "episodes": 0
@@ -7521,7 +7562,8 @@
           "Drama"
         ],
         "tmdb_rating": 5.5,
-        "refresh_after": "2026-10-20"
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "僧侶と交わる色欲の夜に…(OA)",
       "episodes": 0
@@ -7542,8 +7584,8 @@
       "enrichment": {
         "tmdb_type": "tv",
         "tmdb_id": "220118",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
+        "confidence": 0.95,
+        "method": "offline-db",
         "id": "tmdb:220118",
         "imdb_id": "tt36591593",
         "tvdb_id": "424563",
@@ -7555,7 +7597,10 @@
           "Animation"
         ],
         "tmdb_rating": 6.6,
-        "refresh_after": "2026-10-20"
+        "mal_id": "51065",
+        "episodes": 8,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "漣蒼士に純潔を捧ぐ(OA)",
       "episodes": 0
@@ -7590,7 +7635,10 @@
           "Comedy"
         ],
         "tmdb_rating": 6.0,
-        "refresh_after": "2026-10-20"
+        "mal_id": "60629",
+        "episodes": 8,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "「１分間だけ触れてもいいよ…」シェアハウスの秘密ルール。(OA)",
       "episodes": 0
@@ -7615,8 +7663,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:42170",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "洗い屋さん！～俺とアイツが女湯で！？～(OA)",
       "episodes": 0
@@ -7641,8 +7689,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:42017",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "パパだって、したい(OA)",
       "episodes": 0
@@ -7755,8 +7803,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:113417",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "おーばーふろぉ(OA)",
       "episodes": 0
@@ -7781,8 +7829,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "kitsu:44102",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "黒ギャルになったから親友としてみた。(OA)",
       "episodes": 0
@@ -7814,7 +7862,7 @@
         "genres": [
           "Animation"
         ],
-        "tmdb_rating": 6.2,
+        "tmdb_rating": 6.296,
         "mal_id": "56497",
         "episodes": 8,
         "anilist_id": "169728",
@@ -7825,8 +7873,8 @@
           "Hentai"
         ],
         "anilist_year": "2023",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "しーくれっとみっしょん～潜入捜査官は絶対に負けない！～(OA)",
       "episodes": 0
@@ -7886,7 +7934,11 @@
           "Animation"
         ],
         "tmdb_rating": 4.9,
-        "refresh_after": "2026-10-20"
+        "kitsu_id": "43430",
+        "mal_id": "42517",
+        "episodes": 3,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "オオカミさんは食べられたい(OA)",
       "episodes": 0
@@ -7920,7 +7972,11 @@
           "Animation"
         ],
         "tmdb_rating": 5.9,
-        "refresh_after": "2026-10-20"
+        "kitsu_id": "42509",
+        "mal_id": "40254",
+        "episodes": 8,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "XL上司。(OA)",
       "episodes": 0
@@ -7965,8 +8021,8 @@
           "Slice of Life"
         ],
         "anilist_year": "2022",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "ハーレムきゃんぷっ！(OA)",
       "episodes": 0
@@ -8107,7 +8163,10 @@
           "Animation"
         ],
         "tmdb_rating": 6.2,
-        "refresh_after": "2026-10-20"
+        "mal_id": "58905",
+        "episodes": 8,
+        "refresh_after": "2026-10-28",
+        "v": 4
       },
       "japanese": "よあそびぐらしっ！(OA)",
       "episodes": 0
@@ -8176,8 +8235,8 @@
         "method": "offline-db",
         "confidence": 0.95,
         "id": "anilist:123081",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "大人にゃ恋の仕方がわからねぇ！(OA)",
       "episodes": 0
@@ -8222,8 +8281,8 @@
           "Romance"
         ],
         "anilist_year": "2024",
-        "refresh_after": "2026-10-20",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-10-28"
       },
       "japanese": "大正偽りブラヰダル～身代わり花嫁と軍服の猛愛(OA)",
       "episodes": 0
@@ -8365,55 +8424,55 @@
       "name": "Ranking",
       "ids": [
         "542",
-        "544",
-        "536",
         "500",
+        "536",
         "524",
+        "544",
         "538",
         "485",
-        "534",
-        "540",
-        "522",
-        "247",
-        "529",
-        "268",
         "414",
-        "505",
-        "539",
-        "231",
-        "506",
-        "464",
+        "247",
+        "534",
         "502",
+        "540",
+        "399",
+        "464",
         "431",
-        "113",
-        "46",
-        "528",
-        "526",
-        "462",
-        "445",
-        "273",
-        "470",
-        "432",
-        "353",
-        "225",
-        "519",
-        "275",
-        "530",
-        "501",
-        "81",
-        "498",
-        "106",
+        "522",
+        "505",
+        "507",
         "496",
-        "472",
-        "389",
-        "269",
-        "532",
-        "245",
-        "111",
-        "349",
+        "526",
+        "435",
+        "231",
+        "529",
+        "501",
+        "483",
+        "275",
+        "539",
         "484",
-        "397",
-        "324"
+        "324",
+        "506",
+        "432",
+        "302",
+        "273",
+        "113",
+        "519",
+        "299",
+        "531",
+        "445",
+        "47",
+        "462",
+        "268",
+        "41",
+        "530",
+        "528",
+        "469",
+        "470",
+        "451",
+        "430",
+        "368",
+        "323"
       ]
     },
     {
