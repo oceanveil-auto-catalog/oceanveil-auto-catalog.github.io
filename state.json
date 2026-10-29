@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-10-29T03:58:32+00:00",
+  "updated_utc": "2026-10-29T19:06:02+00:00",
   "titles": {
     "546": {
       "name": "[Dub] Eiken",
@@ -961,7 +961,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/y3gE67auOFwfS4zLTFKu4VZvb1a.jpg",
         "releaseInfo": "2026",
         "tmdb_id": "334779",
-        "tmdb_rating": 9.0,
+        "tmdb_rating": 6.5,
         "tmdb_type": "tv",
         "tvdb_id": "473125",
         "anilist_id": "206774",
@@ -977,7 +977,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす（OA)",
       "episodes": 0
@@ -2062,7 +2062,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "同じゼミの染谷さんがセクシー女優だった話。（OA)",
       "episodes": 0
@@ -3013,10 +3013,10 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 5.222,
+        "tmdb_rating": 5.2,
         "episodes": 8,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "まりかちゃんのこうかんどはぶっこわれている（OA）",
       "episodes": 0
@@ -3051,7 +3051,7 @@
         "confidence": 0.95,
         "id": "anilist:204319",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "大きい女の子は好きですか？（OA）",
       "episodes": 0
@@ -4001,8 +4001,8 @@
         "kitsu_id": "49915",
         "mal_id": "61694",
         "episodes": 8,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "アンドロイドは経験人数に入りますか？？（OA)",
       "episodes": 0
@@ -4598,7 +4598,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "イチゴ哀歌～雑で生イキな妹と割り切れない兄～（OA)",
       "episodes": 0
@@ -4646,7 +4646,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "有栖川煉ってホントは女なんだよね。(OA)",
       "episodes": 0
@@ -5698,7 +5698,7 @@
         "confidence": 0.95,
         "id": "anilist:182531",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "ギルティホール(OA)",
       "episodes": 0
@@ -6135,8 +6135,8 @@
       "enrichment": {
         "tmdb_type": "tv",
         "tmdb_id": "106691",
-        "confidence": 0.95,
-        "method": "offline-db",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
         "id": "tmdb:106691",
         "imdb_id": "tt12803708",
         "tvdb_id": "388536",
@@ -6148,14 +6148,14 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 5.054,
+        "tmdb_rating": 4.984,
         "kitsu_id": "43589",
         "anilist_id": "122137",
         "mal_id": "42571",
         "anidb_id": "15659",
         "episodes": 12,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "土下座で頼んでみた",
       "episodes": 0
@@ -6233,10 +6233,10 @@
           "Drama",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 7.41,
+        "tmdb_rating": 7.4,
         "episodes": 11,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "ぬきたし",
       "episodes": 0
@@ -6366,8 +6366,8 @@
           "Romance"
         ],
         "anilist_year": "2025",
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "デキちゃうまで婚(OA)",
       "episodes": 0
@@ -6404,8 +6404,8 @@
         "tmdb_rating": 5.6,
         "mal_id": "61023",
         "episodes": 8,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "人妻の唇は缶チューハイの味がして(OA)",
       "episodes": 0
@@ -6525,10 +6525,10 @@
           "Action & Adventure",
           "Mystery"
         ],
-        "tmdb_rating": 6.7,
+        "tmdb_rating": 6.8,
         "episodes": 3,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "[Dub] AD Police Files",
       "episodes": 0
@@ -6607,8 +6607,8 @@
         ],
         "tmdb_rating": 7.0,
         "episodes": 3,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "[Dub] Bubblegum Crash",
       "episodes": 0
@@ -7919,8 +7919,8 @@
       "enrichment": {
         "tmdb_type": "tv",
         "tmdb_id": "241021",
-        "confidence": 0.95,
-        "method": "offline-db",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
         "id": "tmdb:241021",
         "imdb_id": "tt30644058",
         "tvdb_id": "442690",
@@ -7932,14 +7932,14 @@
           "Animation",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 5.3,
+        "tmdb_rating": 5.308,
         "kitsu_id": "48257",
         "anilist_id": "171019",
         "mal_id": "57315",
         "anidb_id": "18288",
         "episodes": 12,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "異世界の湯",
       "episodes": 0
@@ -7974,7 +7974,7 @@
         "confidence": 0.95,
         "id": "anilist:113417",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "おーばーふろぉ(OA)",
       "episodes": 0
@@ -8071,7 +8071,7 @@
         "genres": [
           "Animation"
         ],
-        "tmdb_rating": 6.9,
+        "tmdb_rating": 6.813,
         "mal_id": "57470",
         "episodes": 8,
         "anilist_id": "170913",
@@ -8082,8 +8082,8 @@
           "Ecchi"
         ],
         "anilist_year": "2024",
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "悶えてよアダムくん(OA)",
       "episodes": 0
@@ -8159,7 +8159,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/dsaYRfBviInhrulwtHOyg1KB4ct.jpg",
         "releaseInfo": "2022",
         "tmdb_id": "207840",
-        "tmdb_rating": 7.037,
+        "tmdb_rating": 7.0,
         "tmdb_type": "tv",
         "tvdb_id": "423395",
         "mal_id": "52717",
@@ -8175,7 +8175,7 @@
         ],
         "anilist_year": "2022",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "ハーレムきゃんぷっ！(OA)",
       "episodes": 0
@@ -8212,8 +8212,8 @@
         "kitsu_id": "43430",
         "mal_id": "42517",
         "episodes": 3,
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "オオカミさんは食べられたい(OA)",
       "episodes": 0
@@ -8259,8 +8259,8 @@
           "Romance"
         ],
         "anilist_year": "2024",
-        "refresh_after": "2026-10-28",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-05"
       },
       "japanese": "当て馬キャラのくせして、スパダリ王子に寵愛されています。(OA)",
       "episodes": 0
@@ -8451,7 +8451,7 @@
         "genres": [
           "Animation"
         ],
-        "tmdb_rating": 6.296,
+        "tmdb_rating": 6.4,
         "mal_id": "56497",
         "episodes": 8,
         "anilist_id": "169728",
@@ -8463,7 +8463,7 @@
         ],
         "anilist_year": "2023",
         "v": 4,
-        "refresh_after": "2026-10-28"
+        "refresh_after": "2026-11-05"
       },
       "japanese": "しーくれっとみっしょん～潜入捜査官は絶対に負けない！～(OA)",
       "episodes": 0
@@ -8619,54 +8619,54 @@
       "ids": [
         "542",
         "536",
-        "538",
-        "500",
-        "544",
         "524",
-        "485",
-        "545",
+        "500",
+        "538",
         "546",
-        "231",
-        "540",
-        "462",
-        "502",
-        "302",
-        "534",
-        "529",
-        "268",
-        "431",
-        "435",
-        "399",
-        "522",
-        "414",
-        "445",
-        "324",
-        "46",
-        "505",
-        "501",
-        "113",
-        "498",
-        "484",
-        "530",
-        "507",
-        "532",
-        "526",
-        "349",
-        "299",
-        "416",
-        "273",
-        "225",
-        "47",
-        "448",
+        "545",
+        "485",
+        "544",
         "247",
-        "245",
-        "269",
-        "108",
-        "528",
-        "496",
+        "231",
+        "543",
+        "462",
+        "414",
+        "526",
+        "273",
+        "534",
+        "522",
+        "470",
+        "431",
+        "353",
+        "113",
+        "520",
+        "531",
+        "302",
+        "268",
+        "519",
         "464",
-        "384",
-        "115"
+        "435",
+        "107",
+        "46",
+        "484",
+        "307",
+        "529",
+        "400",
+        "275",
+        "505",
+        "502",
+        "416",
+        "397",
+        "324",
+        "540",
+        "507",
+        "445",
+        "269",
+        "106",
+        "41",
+        "389",
+        "471",
+        "432"
       ]
     },
     {
