@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-04T04:03:06+00:00",
+  "updated_utc": "2026-11-04T19:13:52+00:00",
   "titles": {
     "556": {
       "name": "Rio Rainbow Gate - Re-Shuffle",
@@ -315,8 +315,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 6.9,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "527": {
@@ -726,7 +726,7 @@
       "dubbed": false,
       "enrichment": {
         "kitsu_id": "49877",
-        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/49877/poster_image/4850b0a42082f0554af1dd38bf4e7bfe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261027%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261027T185740Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=2d7819cf6bfd976eca404635be6cc723d0a8a81a1331256eb76e9fad2c86cf09",
+        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/49877/poster_image/4850b0a42082f0554af1dd38bf4e7bfe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261104%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261104T191343Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=167a8f9f5a8badc0a68c26e1756d12a3aad829a6c9d0ab5e15d4859893ad48c9",
         "episodes": 12,
         "tmdb_type": "tv",
         "tmdb_id": "283938",
@@ -743,9 +743,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.7,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "tmdb_rating": 8.5,
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "520": {
@@ -1341,8 +1341,8 @@
           "Crime"
         ],
         "tmdb_rating": 6.3,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "500": {
@@ -2027,9 +2027,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.5,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "tmdb_rating": 7.6,
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "462": {
@@ -2276,9 +2276,9 @@
           "Sci-Fi & Fantasy",
           "Action & Adventure"
         ],
-        "tmdb_rating": 7.9,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "tmdb_rating": 7.887,
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "419": {
@@ -2796,8 +2796,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 8.0,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "416": {
@@ -3029,8 +3029,8 @@
           "Crime"
         ],
         "tmdb_rating": 7.7,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "394": {
@@ -3455,8 +3455,8 @@
           "Drama"
         ],
         "tmdb_rating": 6.7,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "391": {
@@ -3619,8 +3619,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.9,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "383": {
@@ -3699,8 +3699,8 @@
           "Action & Adventure"
         ],
         "tmdb_rating": 5.0,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "370": {
@@ -3830,8 +3830,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 7.9,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "369": {
@@ -3945,8 +3945,8 @@
           "Animation"
         ],
         "tmdb_rating": 4.8,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "350": {
@@ -4354,8 +4354,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.9,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "326": {
@@ -4424,8 +4424,8 @@
         "episodes": 26,
         "tmdb_type": "tv",
         "tmdb_id": "8859",
-        "method": "offline-db",
-        "confidence": 0.95,
+        "method": "tmdb-title-search",
+        "confidence": 1.0,
         "id": "tmdb:8859",
         "imdb_id": "tt0480493",
         "tvdb_id": "75869",
@@ -4440,8 +4440,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 6.1,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "323": {
@@ -4518,8 +4518,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.4,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "311": {
@@ -4643,8 +4643,8 @@
           "Drama"
         ],
         "tmdb_rating": 7.2,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "344": {
@@ -4896,8 +4896,8 @@
           "Comedy"
         ],
         "tmdb_rating": 7.1,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "310": {
@@ -5014,8 +5014,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.5,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "322": {
@@ -5284,8 +5284,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 6.1,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "295": {
@@ -5362,8 +5362,8 @@
           "Comedy"
         ],
         "tmdb_rating": 3.4,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "297": {
@@ -5442,8 +5442,8 @@
           "Sci-Fi & Fantasy"
         ],
         "tmdb_rating": 4.9,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "292": {
@@ -5564,8 +5564,8 @@
           "Comedy"
         ],
         "tmdb_rating": 5.9,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "278": {
@@ -5869,8 +5869,8 @@
           "Comedy"
         ],
         "tmdb_rating": 6.5,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "258": {
@@ -6892,8 +6892,8 @@
         "episodes": 6,
         "tmdb_type": "tv",
         "tmdb_id": "60937",
-        "method": "offline-db",
-        "confidence": 0.95,
+        "method": "tmdb-title-search",
+        "confidence": 1.0,
         "id": "tmdb:60937",
         "imdb_id": "tt1506339",
         "tvdb_id": "84709",
@@ -6907,8 +6907,8 @@
           "Drama"
         ],
         "tmdb_rating": 7.4,
-        "refresh_after": "2026-11-03",
-        "v": 4
+        "v": 4,
+        "refresh_after": "2026-11-11"
       }
     },
     "170": {
@@ -8749,55 +8749,55 @@
       "name": "Ranking",
       "ids": [
         "542",
-        "538",
-        "544",
         "500",
-        "556",
         "566",
+        "538",
         "536",
         "485",
+        "544",
+        "546",
+        "556",
         "524",
-        "540",
-        "302",
-        "470",
-        "231",
-        "539",
         "534",
+        "231",
         "414",
-        "431",
-        "522",
-        "432",
-        "526",
-        "532",
-        "528",
-        "247",
-        "519",
-        "36",
-        "551",
-        "464",
-        "307",
-        "268",
-        "529",
         "505",
-        "399",
+        "431",
+        "247",
+        "540",
         "484",
-        "275",
-        "498",
-        "462",
-        "115",
-        "530",
-        "502",
-        "416",
         "46",
-        "291",
-        "277",
         "545",
-        "472",
-        "465",
-        "245",
-        "114",
+        "522",
+        "502",
+        "464",
+        "470",
+        "389",
+        "307",
+        "302",
+        "496",
+        "498",
+        "530",
+        "529",
+        "146",
         "113",
-        "352"
+        "526",
+        "519",
+        "310",
+        "268",
+        "551",
+        "106",
+        "539",
+        "432",
+        "275",
+        "81",
+        "507",
+        "399",
+        "338",
+        "133",
+        "531",
+        "469",
+        "445"
       ]
     },
     {
