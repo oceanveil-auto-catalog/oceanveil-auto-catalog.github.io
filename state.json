@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-05T19:10:52+00:00",
+  "updated_utc": "2026-11-06T04:03:53+00:00",
   "titles": {
     "559": {
       "name": "Gakuen Heaven",
@@ -14,7 +14,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -54,7 +54,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -93,7 +93,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -132,7 +132,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -173,7 +173,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-28",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -212,7 +212,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-28",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -251,7 +251,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -291,7 +291,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -331,7 +331,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -371,7 +371,7 @@
       "season": "OVA",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -413,7 +413,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -454,7 +454,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -495,7 +495,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -535,7 +535,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -583,7 +583,7 @@
       "start_at": "2026-10-04T09:05:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -622,7 +622,7 @@
       "start_at": "2026-10-04T09:05:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -669,7 +669,7 @@
       "start_at": "2026-10-04T09:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -702,7 +702,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす(Dub)（OA)",
       "episodes": 0
@@ -719,7 +719,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -761,7 +761,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -800,7 +800,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -841,7 +841,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -885,7 +885,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -922,7 +922,7 @@
       "start_at": "2026-09-18T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -953,7 +953,7 @@
         ],
         "anilist_year": "2022",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "ハーレムきゃんぷっ！(OA)(Dub)",
       "episodes": 0
@@ -970,7 +970,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1019,7 +1019,7 @@
       "season": "Season3",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1056,7 +1056,7 @@
       "start_at": "2026-09-11T01:05:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1103,7 +1103,7 @@
       "start_at": "2026-09-11T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1153,7 +1153,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1191,7 +1191,7 @@
       "start_at": "2026-09-03T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1215,7 +1215,7 @@
         "tmdb_rating": 5.2,
         "episodes": 8,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "まりかちゃんのこうかんどはぶっこわれている（Dub）（OA）",
       "episodes": 0
@@ -1232,7 +1232,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1273,7 +1273,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1313,7 +1313,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1355,7 +1355,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1395,7 +1395,7 @@
       "start_at": "2026-08-22T16:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1415,7 +1415,7 @@
         "confidence": 0.95,
         "id": "anilist:113417",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "おーばーふろぉ(OA)(Dub)",
       "episodes": 0
@@ -1432,7 +1432,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1469,7 +1469,7 @@
       "start_at": "2026-08-16T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1498,7 +1498,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "同じゼミの染谷さんがセクシー女優だった話。(Dub)(OA)",
       "episodes": 0
@@ -1509,11 +1509,11 @@
       "summary": "It's an April shower morning. Cherry blossoms that have begun to fall are pelted by the rain and float in puddles. Students carrying colorful umbrellas pass through the high school gates. In front of the shoe lockers, Yua greets Ren, who is standing there in her wet tights. Just as Ren dejectedly turns around, Homi, who is even more soaked, bounces over and joins in the conversation. The lighthearted conversation among these three high school girls heralds the arrival of the new semester in the classroom. The seasons change as the girls' irreplaceable moments fly by…",
       "rating": "age_13_plus",
       "simulcast": false,
-      "completed": false,
+      "completed": true,
       "start_at": "2026-08-13T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1536,7 +1536,7 @@
         "tmdb_rating": 6.2,
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "みるタイツ",
       "episodes": 0
@@ -1553,7 +1553,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1592,7 +1592,7 @@
       "start_at": "2026-08-08T12:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1623,7 +1623,7 @@
         ],
         "anilist_year": "2018",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "じょしおちっ！～2階から女の子が…降ってきた！？～(OA)(Dub)",
       "episodes": 0
@@ -1640,7 +1640,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1679,7 +1679,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1716,7 +1716,7 @@
       "start_at": "2026-07-25T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1745,7 +1745,7 @@
         ],
         "anilist_year": "2023",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "しーくれっとみっしょん～潜入捜査官は絶対に負けない！～(Dub)(OA)",
       "episodes": 0
@@ -1762,7 +1762,7 @@
       "season": "Main",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1802,7 +1802,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1844,7 +1844,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1886,7 +1886,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1912,7 +1912,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1953,7 +1953,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1995,7 +1995,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2035,7 +2035,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2084,7 +2084,7 @@
       "season": "Edited",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2124,7 +2124,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2164,7 +2164,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2203,7 +2203,7 @@
       "start_at": "2026-06-12T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2249,7 +2249,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2291,7 +2291,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -2333,7 +2333,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2372,7 +2372,7 @@
       "start_at": "2026-06-02T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -2397,7 +2397,7 @@
         "mal_id": "61694",
         "episodes": 8,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "アンドロイドは経験人数に入りますか？？(Dub)(OA)",
       "episodes": 0
@@ -2414,7 +2414,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2451,7 +2451,7 @@
       "start_at": "2026-05-20T10:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2475,7 +2475,7 @@
         "tmdb_rating": 8.0,
         "episodes": 4,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "ONE～輝く季節へ～",
       "episodes": 0
@@ -2492,7 +2492,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2532,7 +2532,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2573,7 +2573,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2612,7 +2612,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2652,7 +2652,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2693,7 +2693,7 @@
       "season": "Season3",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2731,7 +2731,7 @@
       "start_at": "2026-04-23T10:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2755,7 +2755,7 @@
         "tmdb_rating": 3.3,
         "episodes": 4,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "がぁ〜でぃあんHearts♡ぱわーあっぷ！",
       "episodes": 0
@@ -2772,7 +2772,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2812,7 +2812,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2852,7 +2852,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2891,7 +2891,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2931,7 +2931,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2968,7 +2968,7 @@
       "start_at": "2026-04-05T09:10:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": true,
       "dubbed": false,
       "enrichment": {
@@ -2989,10 +2989,10 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 5.6,
+        "tmdb_rating": 5.889,
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "インゴクダンチ（OA)",
       "episodes": 0
@@ -3007,7 +3007,7 @@
       "start_at": "2026-04-05T09:05:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3027,7 +3027,7 @@
         "confidence": 0.95,
         "id": "anilist:204319",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "大きい女の子は好きですか？(Dub)（OA）",
       "episodes": 0
@@ -3044,7 +3044,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3085,7 +3085,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3125,7 +3125,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3162,7 +3162,7 @@
       "start_at": "2026-03-13T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3197,7 +3197,7 @@
       "start_at": "2026-03-13T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3238,7 +3238,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3276,7 +3276,7 @@
       "start_at": "2026-03-11T10:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3299,7 +3299,7 @@
         "tmdb_rating": 5.5,
         "episodes": 3,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "ヴァリアブル・ジオ",
       "episodes": 0
@@ -3314,7 +3314,7 @@
       "start_at": "2026-03-11T10:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3340,7 +3340,7 @@
         ],
         "tmdb_rating": 3.5,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "超神姫ダンガイザー３",
       "episodes": 0
@@ -3355,7 +3355,7 @@
       "start_at": "2026-03-11T10:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3377,7 +3377,7 @@
         "tmdb_rating": 4.5,
         "episodes": 3,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "竜機伝承",
       "episodes": 0
@@ -3392,7 +3392,7 @@
       "start_at": "2026-03-11T10:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3416,7 +3416,7 @@
         "tmdb_rating": 5.0,
         "episodes": 3,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "電脳戦隊ヴギィ'ズ★エンジェル",
       "episodes": 0
@@ -3433,7 +3433,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3472,7 +3472,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3509,7 +3509,7 @@
       "start_at": "2026-03-09T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3535,7 +3535,7 @@
         "tmdb_rating": 7.4,
         "episodes": 11,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "ぬきたし(Dub)",
       "episodes": 0
@@ -3552,7 +3552,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3591,7 +3591,7 @@
       "season": "OVA",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3633,7 +3633,7 @@
       "season": "OVA",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3675,7 +3675,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3715,7 +3715,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3753,7 +3753,7 @@
       "start_at": "2026-02-22T18:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3778,7 +3778,7 @@
         "anidb_id": "2147",
         "episodes": 13,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "Ｗind -a breath of heart-",
       "episodes": 0
@@ -3795,7 +3795,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3845,7 +3845,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3884,7 +3884,7 @@
       "start_at": "2026-02-12T18:00:00.000-08:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3908,7 +3908,7 @@
         "tmdb_rating": 3.3,
         "episodes": 6,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "がぁ〜でぃあんHearts♡",
       "episodes": 0
@@ -3925,7 +3925,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3963,7 +3963,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4001,7 +4001,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4042,7 +4042,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4079,7 +4079,7 @@
       "start_at": "2026-01-27T10:00:00.000-08:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4090,7 +4090,7 @@
         "episodes": 12,
         "id": "kitsu:49405",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "0歳児スタートダッシュ物語 シーズン2",
       "episodes": 0
@@ -4105,7 +4105,7 @@
       "start_at": "2026-01-21T10:00:00.000-08:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4132,7 +4132,7 @@
         "anidb_id": "18736",
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "0歳児スタートダッシュ物語",
       "episodes": 0
@@ -4147,7 +4147,7 @@
       "start_at": "2026-01-09T08:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4189,7 +4189,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4237,7 +4237,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4274,7 +4274,7 @@
       "start_at": "2026-01-04T08:05:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4306,7 +4306,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "イチゴ哀歌～雑で生イキな妹と割り切れない兄～（OA)(Dub)",
       "episodes": 0
@@ -4321,7 +4321,7 @@
       "start_at": "2026-01-04T08:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4354,7 +4354,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "有栖川煉ってホントは女なんだよね。(OA)(Dub)",
       "episodes": 0
@@ -4371,7 +4371,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4410,7 +4410,7 @@
       "season": "Main",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4453,7 +4453,7 @@
       "season": "Main",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4496,7 +4496,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4535,7 +4535,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4574,7 +4574,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4617,7 +4617,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4658,7 +4658,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4699,7 +4699,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4736,7 +4736,7 @@
       "start_at": "2025-12-12T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4784,7 +4784,7 @@
       "start_at": "2025-12-12T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4833,7 +4833,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4874,7 +4874,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4913,7 +4913,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4950,7 +4950,7 @@
       "start_at": "2025-12-04T15:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4992,7 +4992,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5031,7 +5031,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5070,7 +5070,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5109,7 +5109,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5149,7 +5149,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5187,7 +5187,7 @@
       "start_at": "2025-11-18T18:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5200,7 +5200,7 @@
         "confidence": 0.95,
         "id": "kitsu:5757",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "STARLIGHT SCRAMBLE 恋愛候補生",
       "episodes": 0
@@ -5217,7 +5217,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5258,7 +5258,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5299,7 +5299,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5340,7 +5340,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5379,7 +5379,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5418,7 +5418,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5458,7 +5458,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5498,7 +5498,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5540,7 +5540,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5580,7 +5580,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5620,7 +5620,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5657,7 +5657,7 @@
       "start_at": "2025-10-28T18:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5682,7 +5682,7 @@
         ],
         "tmdb_rating": 6.7,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "嫌な顔されながらおパンツ見せてもらいたい2",
       "episodes": 0
@@ -5699,7 +5699,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5738,7 +5738,7 @@
       "start_at": "2025-10-07T18:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5763,7 +5763,7 @@
         ],
         "tmdb_rating": 6.7,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "嫌な顔されながらおパンツ見せてもらいたい",
       "episodes": 0
@@ -5778,7 +5778,7 @@
       "start_at": "2025-10-05T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5802,7 +5802,7 @@
         "tmdb_rating": 7.7,
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "さわらないで小手指くん(OA)",
       "episodes": 0
@@ -5817,7 +5817,7 @@
       "start_at": "2025-10-05T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5835,7 +5835,7 @@
         "confidence": 0.95,
         "id": "anilist:182531",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "ギルティホール(OA)",
       "episodes": 0
@@ -5850,7 +5850,7 @@
       "start_at": "2025-10-05T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5885,7 +5885,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5923,7 +5923,7 @@
       "start_at": "2025-10-03T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5956,7 +5956,7 @@
         ],
         "anilist_year": "2007",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "お金がないっ",
       "episodes": 0
@@ -5973,7 +5973,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6011,7 +6011,7 @@
       "start_at": "2025-09-20T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -6029,7 +6029,7 @@
         "genres": [
           "Animation"
         ],
-        "tmdb_rating": 6.9,
+        "tmdb_rating": 6.813,
         "mal_id": "57470",
         "episodes": 8,
         "anilist_id": "170913",
@@ -6041,7 +6041,7 @@
         ],
         "anilist_year": "2024",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "悶えてよアダムくん(Dub)(OA)",
       "episodes": 0
@@ -6056,7 +6056,7 @@
       "start_at": "2025-09-13T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6088,7 +6088,7 @@
         ],
         "anilist_year": "2024",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "当て馬キャラのくせして、スパダリ王子に寵愛されています。(Dub)(OA)",
       "episodes": 0
@@ -6103,7 +6103,7 @@
       "start_at": "2025-08-16T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6136,7 +6136,7 @@
         ],
         "anilist_year": "2007",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "冬の蝉",
       "episodes": 0
@@ -6151,7 +6151,7 @@
       "start_at": "2025-08-09T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6177,7 +6177,7 @@
         "tmdb_rating": 5.2,
         "episodes": 1,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "この男子、宇宙人と戦えます。",
       "episodes": 0
@@ -6192,7 +6192,7 @@
       "start_at": "2025-08-02T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6205,7 +6205,7 @@
         "confidence": 0.95,
         "id": "kitsu:7257",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "この男子、人魚ひろいました。",
       "episodes": 0
@@ -6220,7 +6220,7 @@
       "start_at": "2025-07-23T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -6243,7 +6243,7 @@
         "mal_id": "61023",
         "episodes": 8,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "人妻の唇は缶チューハイの味がして(Dub)(OA)",
       "episodes": 0
@@ -6258,7 +6258,7 @@
       "start_at": "2025-07-23T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6277,14 +6277,14 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 5.117,
+        "tmdb_rating": 4.984,
         "kitsu_id": "43589",
         "anilist_id": "122137",
         "mal_id": "42571",
         "anidb_id": "15659",
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "本気で土下座で頼んでみた",
       "episodes": 0
@@ -6299,7 +6299,7 @@
       "start_at": "2025-07-23T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6340,7 +6340,7 @@
       "start_at": "2025-07-19T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6365,7 +6365,7 @@
         "tmdb_rating": 5.0,
         "episodes": 4,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "この男子、魔法がお仕事です。",
       "episodes": 0
@@ -6380,7 +6380,7 @@
       "start_at": "2025-07-18T11:05:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6421,7 +6421,7 @@
       "start_at": "2025-07-12T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6445,7 +6445,7 @@
         "tmdb_rating": 5.1,
         "episodes": 1,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "この男子、石化に悩んでます。",
       "episodes": 0
@@ -6460,7 +6460,7 @@
       "start_at": "2025-07-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": true,
       "dubbed": false,
       "enrichment": {
@@ -6491,7 +6491,7 @@
         ],
         "anilist_year": "2025",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "デキちゃうまで婚(OA)",
       "episodes": 0
@@ -6506,7 +6506,7 @@
       "start_at": "2025-07-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -6552,7 +6552,7 @@
       "start_at": "2025-07-01T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": true,
       "dubbed": false,
       "enrichment": {
@@ -6590,7 +6590,7 @@
       "start_at": "2025-06-21T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6616,7 +6616,7 @@
         "anidb_id": "18288",
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "異世界の湯(OA)(Dub)",
       "episodes": 0
@@ -6631,7 +6631,7 @@
       "start_at": "2025-06-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6657,7 +6657,7 @@
         "tmdb_rating": 6.8,
         "episodes": 3,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "[Dub] AD Police Files",
       "episodes": 0
@@ -6672,7 +6672,7 @@
       "start_at": "2025-06-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6713,7 +6713,7 @@
       "start_at": "2025-06-02T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6728,7 +6728,7 @@
         "tvdb_id": "73247",
         "description": "MegaTokyo 2033: Tokyo was left flattened as a result from a great earthquake.\n\nA new city, MegaTokyo, was then recreated due in no small part from the aid of a multi-million dollar company, Genom Corp. Genom created and mass-produced biomechanical creatures called Boomers to aid in the restoration of MegaTokyo.\n\nWhen the Boomers began to run out of control, the ADPolice at first tried to stop them, but they proved to be far more difficult to deal with than was first imagined.\n\nUnder the ever looming Boomer threat, a group of four girls from varying degrees of society banded together. Calling themselves The Knight Sabers, they were the only ones with enough firepower and resourcefullness to defend the fledgling MegaTokyo from Genom and it's berserk Boomers.",
         "poster": "https://image.tmdb.org/t/p/w500/rnF1zD3GP3L4DDoLIshUEH0JYHJ.jpg",
-        "background": "https://image.tmdb.org/t/p/original/6LrQ2hzUzbKT14G1rJB63fJdCAT.jpg",
+        "background": "https://image.tmdb.org/t/p/original/cDExj4W2Vpi2sJ8UEksyqARXdRq.jpg",
         "releaseInfo": "1987",
         "genres": [
           "Action & Adventure",
@@ -6738,7 +6738,7 @@
         "tmdb_rating": 7.0,
         "episodes": 3,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "[Dub] Bubblegum Crash",
       "episodes": 0
@@ -6753,7 +6753,7 @@
       "start_at": "2025-06-02T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6793,7 +6793,7 @@
       "start_at": "2025-05-27T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6821,7 +6821,7 @@
       "start_at": "2025-05-27T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6834,7 +6834,7 @@
         "id": "tmdb:[55374]",
         "episodes": 1,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "[Dub] Riding Bean",
       "episodes": 0
@@ -6851,7 +6851,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6893,7 +6893,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6921,7 +6921,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6961,7 +6961,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6972,7 +6972,7 @@
         "confidence": 0.95,
         "id": "kitsu:44016",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "指先から本気の熱情2-恋人は消防士-",
       "episodes": 0
@@ -6987,7 +6987,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7020,7 +7020,7 @@
           "Slice of Life"
         ],
         "anilist_year": "2022",
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "３秒後、野獣。～合コンで隅にいた彼は肉食でした（OA）",
       "episodes": 0
@@ -7035,7 +7035,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7046,7 +7046,7 @@
         "confidence": 0.95,
         "id": "kitsu:43848",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "じみへんっ!!～地味子を変えちゃう純異性交遊～",
       "episodes": 0
@@ -7061,7 +7061,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7079,7 +7079,7 @@
         "confidence": 0.95,
         "id": "anilist:168253",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "夫婦交歓～戻れない夜～",
       "episodes": 0
@@ -7094,7 +7094,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7105,7 +7105,7 @@
         "confidence": 0.95,
         "id": "kitsu:42401",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "指先から本気の熱情-幼なじみは消防士-(OA)",
       "episodes": 0
@@ -7120,7 +7120,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7143,7 +7143,7 @@
         "mal_id": "37320",
         "episodes": 13,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "甘い懲罰～私は看守専用ペット(OA)",
       "episodes": 0
@@ -7158,7 +7158,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7189,7 +7189,7 @@
           "Romance"
         ],
         "anilist_year": "2018",
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "終電後､カプセルホテルで､上司に微熱伝わる夜｡(OA)",
       "episodes": 0
@@ -7204,7 +7204,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7215,7 +7215,7 @@
         "confidence": 0.95,
         "id": "kitsu:43106",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
       "episodes": 0
@@ -7230,7 +7230,7 @@
       "start_at": "2025-04-30T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7251,10 +7251,10 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 4.9,
+        "tmdb_rating": 5.118,
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "かくして！マキナさん！(Dub)(OA)",
       "episodes": 0
@@ -7269,7 +7269,7 @@
       "start_at": "2025-04-06T09:20:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7308,7 +7308,7 @@
       "start_at": "2025-04-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7327,7 +7327,7 @@
         "confidence": 0.95,
         "id": "anilist:177678",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "やたらやらしい深見くん(OA)(Dub)",
       "episodes": 0
@@ -7342,7 +7342,7 @@
       "start_at": "2025-04-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7376,7 +7376,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7387,7 +7387,7 @@
         "confidence": 0.95,
         "id": "kitsu:45606",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "王子の本命は悪役令嬢(OA)(Dub)",
       "episodes": 0
@@ -7402,7 +7402,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7425,7 +7425,7 @@
         "mal_id": "42517",
         "episodes": 3,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "オオカミさんは食べられたい(OA)(Dub)",
       "episodes": 0
@@ -7440,7 +7440,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7459,7 +7459,7 @@
         "confidence": 0.95,
         "id": "anilist:142136",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "しょうたいむ！２～歌のお姉さんだってしたい(OA)(Dub)",
       "episodes": 0
@@ -7474,7 +7474,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7486,7 +7486,7 @@
         "confidence": 0.95,
         "id": "kitsu:45481",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "しょうたいむ！～歌のお姉さんだってしたい(OA)(Dub)",
       "episodes": 0
@@ -7501,7 +7501,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7521,7 +7521,7 @@
         "confidence": 0.95,
         "id": "anilist:136796",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "森のくまさん、冬眠中。(OA)(Dub)",
       "episodes": 0
@@ -7536,7 +7536,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7562,7 +7562,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7588,7 +7588,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7638,7 +7638,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7663,7 +7663,7 @@
         "tmdb_rating": 6.6,
         "episodes": 9,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "巨人族の花嫁(OA)(Dub)",
       "episodes": 0
@@ -7678,7 +7678,7 @@
       "start_at": "2025-02-14T00:00:00.000-08:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7712,7 +7712,7 @@
       "start_at": "2025-02-14T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7731,7 +7731,7 @@
         "confidence": 0.95,
         "id": "anilist:101981",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "じょしおちっ！～2階から女の子が…降ってきた！？～(OA)",
       "episodes": 0
@@ -7746,7 +7746,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7757,7 +7757,7 @@
         "confidence": 0.95,
         "id": "kitsu:44102",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "黒ギャルになったから親友としてみた。(OA)",
       "episodes": 0
@@ -7772,7 +7772,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7783,7 +7783,7 @@
         "confidence": 0.95,
         "id": "kitsu:42170",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "洗い屋さん！～俺とアイツが女湯で！？～(OA)",
       "episodes": 0
@@ -7798,7 +7798,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7809,7 +7809,7 @@
         "confidence": 0.95,
         "id": "kitsu:42017",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "パパだって、したい(OA)",
       "episodes": 0
@@ -7824,7 +7824,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7864,7 +7864,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7887,7 +7887,7 @@
         "mal_id": "35629",
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "スカートの中はケダモノでした。(OA)",
       "episodes": 0
@@ -7902,7 +7902,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7925,7 +7925,7 @@
         "mal_id": "36840",
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "25歳の女子高生(OA)",
       "episodes": 0
@@ -7940,7 +7940,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7975,7 +7975,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7996,7 +7996,7 @@
           "Animation",
           "Drama"
         ],
-        "tmdb_rating": 5.5,
+        "tmdb_rating": 5.2,
         "v": 4,
         "anilist_id": "98203",
         "mal_id": "34823",
@@ -8010,7 +8010,7 @@
           "Romance"
         ],
         "anilist_year": "2017",
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "僧侶と交わる色欲の夜に…(OA)",
       "episodes": 0
@@ -8025,7 +8025,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8066,7 +8066,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8097,7 +8097,7 @@
           "Romance"
         ],
         "anilist_year": "2023",
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "漣蒼士に純潔を捧ぐ(OA)",
       "episodes": 0
@@ -8112,7 +8112,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8144,7 +8144,7 @@
           "Hentai"
         ],
         "anilist_year": "2025",
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "「１分間だけ触れてもいいよ…」シェアハウスの秘密ルール。(OA)",
       "episodes": 0
@@ -8159,7 +8159,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8170,7 +8170,7 @@
         "confidence": 0.95,
         "id": "kitsu:13782",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "お見合い相手は教え子、強気な、問題児。(OA)",
       "episodes": 0
@@ -8185,7 +8185,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8208,7 +8208,7 @@
         "mal_id": "40254",
         "episodes": 8,
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "XL上司。(OA)",
       "episodes": 0
@@ -8223,7 +8223,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8269,7 +8269,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8313,7 +8313,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8340,7 +8340,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8375,7 +8375,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8406,7 +8406,7 @@
         ],
         "anilist_year": "2024",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "大正偽りブラヰダル～身代わり花嫁と軍服の猛愛(OA)",
       "episodes": 0
@@ -8421,7 +8421,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8453,7 +8453,7 @@
           "Romance"
         ],
         "anilist_year": "2024",
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "よあそびぐらしっ！(OA)",
       "episodes": 0
@@ -8468,7 +8468,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8513,7 +8513,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8560,7 +8560,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8610,7 +8610,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8648,7 +8648,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8667,7 +8667,7 @@
         "confidence": 0.95,
         "id": "anilist:123081",
         "v": 4,
-        "refresh_after": "2026-11-05"
+        "refresh_after": "2026-11-13"
       },
       "japanese": "大人にゃ恋の仕方がわからねぇ！(OA)",
       "episodes": 0
@@ -8682,7 +8682,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-06",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8789,55 +8789,55 @@
       "name": "Ranking",
       "ids": [
         "542",
-        "500",
         "485",
-        "566",
-        "536",
         "546",
-        "538",
+        "566",
         "544",
-        "231",
-        "524",
-        "247",
+        "106",
+        "432",
         "268",
         "545",
-        "106",
-        "534",
-        "556",
-        "432",
         "522",
-        "531",
-        "414",
-        "540",
-        "505",
+        "556",
         "431",
+        "540",
+        "247",
+        "536",
+        "531",
         "324",
-        "484",
-        "397",
-        "498",
         "445",
-        "543",
-        "526",
         "113",
-        "275",
+        "505",
         "551",
-        "462",
-        "412",
-        "520",
+        "538",
         "507",
-        "416",
-        "302",
-        "146",
-        "519",
+        "498",
         "472",
+        "416",
         "36",
-        "496",
+        "543",
+        "520",
         "470",
-        "529",
-        "464",
+        "302",
         "353",
         "307",
-        "389"
+        "529",
+        "500",
+        "46",
+        "532",
+        "399",
+        "273",
+        "269",
+        "169",
+        "534",
+        "462",
+        "35",
+        "524",
+        "484",
+        "225",
+        "38",
+        "539",
+        "414"
       ]
     },
     {
@@ -8980,6 +8980,7 @@
         "500",
         "497",
         "496",
+        "485",
         "486",
         "484",
         "483",
