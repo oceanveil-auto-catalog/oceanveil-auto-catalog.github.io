@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-12T04:05:46+00:00",
+  "updated_utc": "2026-11-12T23:40:41+00:00",
   "titles": {
     "570": {
       "name": "[Dub] Ingoku Danchi:Deviant's Apartment Complex",
@@ -436,7 +436,7 @@
         ],
         "tmdb_rating": 6.9,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "527": {
@@ -846,7 +846,7 @@
       "dubbed": false,
       "enrichment": {
         "kitsu_id": "49877",
-        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/49877/poster_image/4850b0a42082f0554af1dd38bf4e7bfe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261104%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261104T191343Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=167a8f9f5a8badc0a68c26e1756d12a3aad829a6c9d0ab5e15d4859893ad48c9",
+        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/49877/poster_image/4850b0a42082f0554af1dd38bf4e7bfe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261112%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261112T234030Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=dd6205cb69a4bdb9baba778b2ff6f444d49f5b45d02ee4a706fbbc49417082c3",
         "episodes": 12,
         "tmdb_type": "tv",
         "tmdb_id": "283938",
@@ -863,9 +863,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 8.5,
+        "tmdb_rating": 8.7,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "520": {
@@ -1462,7 +1462,7 @@
         ],
         "tmdb_rating": 6.3,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "500": {
@@ -2147,9 +2147,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.6,
+        "tmdb_rating": 7.231,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "462": {
@@ -2396,9 +2396,9 @@
           "Sci-Fi & Fantasy",
           "Action & Adventure"
         ],
-        "tmdb_rating": 7.887,
+        "tmdb_rating": 7.885,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "419": {
@@ -2917,7 +2917,7 @@
         ],
         "tmdb_rating": 8.0,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "416": {
@@ -3148,9 +3148,9 @@
           "Mystery",
           "Crime"
         ],
-        "tmdb_rating": 7.7,
+        "tmdb_rating": 7.728,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "394": {
@@ -3576,7 +3576,7 @@
         ],
         "tmdb_rating": 6.7,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "391": {
@@ -3740,7 +3740,7 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "383": {
@@ -3820,7 +3820,7 @@
         ],
         "tmdb_rating": 5.0,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "370": {
@@ -3949,9 +3949,9 @@
           "Comedy",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 7.9,
+        "tmdb_rating": 7.894,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "369": {
@@ -4066,7 +4066,7 @@
         ],
         "tmdb_rating": 4.8,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "350": {
@@ -4475,7 +4475,7 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "326": {
@@ -4561,7 +4561,7 @@
         ],
         "tmdb_rating": 6.1,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "324": {
@@ -4639,7 +4639,7 @@
         ],
         "tmdb_rating": 5.4,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "311": {
@@ -4762,9 +4762,9 @@
           "Action & Adventure",
           "Drama"
         ],
-        "tmdb_rating": 7.2,
+        "tmdb_rating": 7.28,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "344": {
@@ -5017,7 +5017,7 @@
         ],
         "tmdb_rating": 7.1,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "310": {
@@ -5135,7 +5135,7 @@
         ],
         "tmdb_rating": 5.5,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "322": {
@@ -5405,7 +5405,7 @@
         ],
         "tmdb_rating": 6.1,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "297": {
@@ -5485,7 +5485,7 @@
         ],
         "tmdb_rating": 4.9,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "292": {
@@ -5607,7 +5607,7 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "278": {
@@ -5912,7 +5912,7 @@
         ],
         "tmdb_rating": 6.5,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "258": {
@@ -6950,7 +6950,7 @@
         ],
         "tmdb_rating": 7.4,
         "v": 4,
-        "refresh_after": "2026-11-11"
+        "refresh_after": "2026-11-19"
       }
     },
     "170": {
@@ -8792,54 +8792,54 @@
       "ids": [
         "542",
         "566",
-        "540",
         "485",
-        "560",
-        "539",
         "544",
-        "113",
-        "414",
+        "540",
+        "560",
         "431",
-        "556",
-        "432",
-        "530",
-        "522",
-        "536",
-        "268",
-        "81",
-        "534",
-        "507",
-        "498",
-        "247",
-        "114",
-        "538",
-        "531",
-        "464",
-        "551",
-        "524",
         "435",
-        "500",
-        "462",
+        "539",
+        "531",
+        "522",
+        "399",
+        "161",
+        "556",
+        "299",
         "273",
-        "47",
-        "472",
+        "268",
+        "536",
+        "532",
+        "530",
+        "529",
         "445",
         "324",
-        "323",
+        "543",
+        "462",
+        "353",
         "302",
-        "532",
-        "505",
+        "113",
+        "520",
+        "534",
+        "414",
+        "538",
+        "500",
+        "110",
+        "81",
+        "551",
+        "507",
         "470",
-        "433",
-        "412",
-        "269",
-        "231",
+        "570",
+        "471",
         "46",
-        "519",
+        "464",
+        "269",
+        "247",
+        "41",
         "434",
-        "290",
-        "167",
-        "528"
+        "432",
+        "355",
+        "310",
+        "163"
       ]
     },
     {
