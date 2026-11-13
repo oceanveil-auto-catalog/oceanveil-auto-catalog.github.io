@@ -1,7 +1,45 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-13T10:59:20+00:00",
+  "updated_utc": "2026-11-13T23:36:55+00:00",
   "titles": {
+    "547": {
+      "name": "[KR] One-Room TA",
+      "romaji": "One-Room TA",
+      "japanese": "One-Room TA",
+      "summary": "Coming back to college as a sophomore, U-yun meets Jin-hyeong, a TA with a mysterious charm. After U-yun blurts out a sudden confession, the two unexpectedly end up living together in a studio apartment. A week into living together, U-yun goes in for a deep, passionate kiss, but Jin-hyeong asks him to wait, revealing he has a very specific \"fantasy\" about physical intimacy. Just what kind of fantasy is he talking about!? Will they be able to push past all their wild fantasies and delusions to successfully survive their first night together? \"I just want to know you better.\"",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": false,
+      "start_at": "2026-11-13T10:00:00.000-08:00",
+      "season": "",
+      "episodes": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "50932",
+        "kitsu_poster": "https://media.kitsu.app/anime/50932/poster_image/large-933c0162a7b69011be5fab9452c73ccc.jpeg",
+        "episodes": 7,
+        "tmdb_type": "tv",
+        "tmdb_id": "324546",
+        "method": "tmdb-title-search",
+        "confidence": 1.0,
+        "id": "tmdb:324546",
+        "tvdb_id": "481880",
+        "description": "Coming back to college as a sophomore, U-yun meets Jin-hyeong, a TA with a mysterious charm. After U-yun blurts out a sudden confession, the two unexpectedly end up living together in a studio apartment.\n\nA week into living together, U-yun goes in for a deep, passionate kiss, but Jin-hyeong asks him to wait, revealing he has a very specific \"fantasy\" about physical intimacy.\n\nJust what kind of fantasy is he talking about!? Will they be able to push past all their wild fantasies and delusions to successfully survive their first night together?\n\n\"I just want to know you better.\"",
+        "poster": "https://image.tmdb.org/t/p/w500/sPRIJNm34OSEDqDfF1UbMeY27GN.jpg",
+        "background": "https://image.tmdb.org/t/p/original/bf4llEOFSrzlfy8Leq8xOavpuLi.jpg",
+        "releaseInfo": "2026",
+        "genres": [
+          "Animation",
+          "Comedy"
+        ],
+        "tmdb_rating": 7.0,
+        "refresh_after": "2026-11-20",
+        "v": 4
+      }
+    },
     "570": {
       "name": "[Dub] Ingoku Danchi:Deviant's Apartment Complex",
       "romaji": "Ingokudanchi",
@@ -241,6 +279,45 @@
         "refresh_after": "2026-11-15"
       }
     },
+    "546": {
+      "name": "[Dub] Eiken",
+      "romaji": "Eiken",
+      "japanese": "エイケン(Dub)",
+      "summary": "The story depicts the life of schoolboy Densuke Mifune after he is forced into the mysterious Eiken Club.  Will he overcome the wall of women that stands between him and true love?",
+      "rating": "age_13_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2026-10-27T15:00:00.000-07:00",
+      "season": "Dubbed",
+      "episodes": 0,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": true,
+      "enrichment": {
+        "kitsu_id": "703",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/703/large.jpg",
+        "episodes": 2,
+        "tmdb_type": "tv",
+        "tmdb_id": "34840",
+        "method": "kitsu-fribb",
+        "confidence": 1.0,
+        "id": "tmdb:34840",
+        "imdb_id": "tt0944093",
+        "tvdb_id": "79711",
+        "description": "Densuke just enrolled at the exclusive Zashono Academy. He's eager to participate in extracurricular activities, but never expected to join the mysterious Eiken Club. Strangely enough, every other member is a busty co-ed, and many of the club activities involve bikinis. But Densuke isn't interested in anyone but the the shy and beautiful Chiharu. Will he overcome the wall of women that stand between him and true love?",
+        "poster": "https://image.tmdb.org/t/p/w500/giohCfXtmSOL4z6H05tf8nMro0H.jpg",
+        "background": "https://image.tmdb.org/t/p/original/lrtP7hbRQ9ECKc9UzEaWfb2R9q9.jpg",
+        "releaseInfo": "2003",
+        "genres": [
+          "Animation",
+          "Comedy"
+        ],
+        "tmdb_rating": 4.2,
+        "v": 4,
+        "refresh_after": "2026-11-20"
+      }
+    },
     "545": {
       "name": "Eiken",
       "romaji": "Eiken",
@@ -278,45 +355,6 @@
         "tmdb_rating": 4.2,
         "v": 4,
         "refresh_after": "2026-11-20"
-      }
-    },
-    "546": {
-      "name": "[Dub] Eiken",
-      "romaji": "Eiken",
-      "japanese": "エイケン(Dub)",
-      "summary": "The story depicts the life of schoolboy Densuke Mifune after he is forced into the mysterious Eiken Club.  Will he overcome the wall of women that stands between him and true love?",
-      "rating": "age_13_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2026-10-27T15:00:00.000-07:00",
-      "season": "Dubbed",
-      "episodes": 0,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": true,
-      "enrichment": {
-        "kitsu_id": "703",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/703/large.jpg",
-        "episodes": 2,
-        "tmdb_type": "tv",
-        "tmdb_id": "34840",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:34840",
-        "imdb_id": "tt0944093",
-        "tvdb_id": "79711",
-        "description": "Densuke just enrolled at the exclusive Zashono Academy. He's eager to participate in extracurricular activities, but never expected to join the mysterious Eiken Club. Strangely enough, every other member is a busty co-ed, and many of the club activities involve bikinis. But Densuke isn't interested in anyone but the the shy and beautiful Chiharu. Will he overcome the wall of women that stand between him and true love?",
-        "poster": "https://image.tmdb.org/t/p/w500/giohCfXtmSOL4z6H05tf8nMro0H.jpg",
-        "background": "https://image.tmdb.org/t/p/original/lrtP7hbRQ9ECKc9UzEaWfb2R9q9.jpg",
-        "releaseInfo": "2003",
-        "genres": [
-          "Animation",
-          "Comedy"
-        ],
-        "tmdb_rating": 4.1,
-        "v": 4,
-        "refresh_after": "2026-11-12"
       }
     },
     "543": {
@@ -359,21 +397,21 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "539": {
-      "name": "Magical Witch Punie Chan",
+    "540": {
+      "name": "[Dub] Magical Witch Punie Chan",
       "romaji": "Daimahoutouge",
-      "japanese": "大魔法峠",
+      "japanese": "大魔法峠(Dub)",
       "summary": "On the outside, Punie-chan looks like your average magical girl. She's a cheery princess from another land, she's attending school on Earth for the year, and she has an adorable animal sidekick. But cross her and prepare to pay the price. The sweet young lady becomes a merciless force of destruction, leaving bodies, utterly broken by her signature submission holds, in her righteous wake.",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2026-10-19T10:00:00.000-07:00",
-      "season": "Subtitle",
+      "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "830",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/830/large.jpg",
@@ -399,21 +437,21 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "540": {
-      "name": "[Dub] Magical Witch Punie Chan",
+    "539": {
+      "name": "Magical Witch Punie Chan",
       "romaji": "Daimahoutouge",
-      "japanese": "大魔法峠(Dub)",
+      "japanese": "大魔法峠",
       "summary": "On the outside, Punie-chan looks like your average magical girl. She's a cheery princess from another land, she's attending school on Earth for the year, and she has an adorable animal sidekick. But cross her and prepare to pay the price. The sweet young lady becomes a merciless force of destruction, leaving bodies, utterly broken by her signature submission holds, in her righteous wake.",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2026-10-19T10:00:00.000-07:00",
-      "season": "Dubbed",
+      "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "830",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/830/large.jpg",
@@ -653,6 +691,45 @@
         "refresh_after": "2026-11-19"
       }
     },
+    "538": {
+      "name": "My Girlfriend's Friend",
+      "romaji": "Kanojo no tomodachi",
+      "summary": "My first cute girlfriend ever. But her friend who's curvier than my girlfriend started seducing me… What would you do if your girlfriend's friend made a move on you like this? A captivating tale of forbidden love by Jura, the overwhelmingly popular manga artist on Young Magazine Web, now adapted into a TV anime.",
+      "rating": "age_16_plus",
+      "simulcast": true,
+      "completed": false,
+      "start_at": "2026-10-04T09:05:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "background": "https://image.tmdb.org/t/p/original/7CSqPaizCugNAznzmUUVQKbj6KO.jpg",
+        "confidence": 1.0,
+        "description": "For the first time in my life, I have a girlfriend. But her friend tempts me with a body that's so seductive... What would you do if your girlfriend's friend came on to you like this?",
+        "genres": [
+          "Animation",
+          "Drama"
+        ],
+        "id": "tmdb:336654",
+        "imdb_id": "tt43650454",
+        "kitsu_id": "50752",
+        "kitsu_poster": "https://media.kitsu.app/anime/50752/poster_image/large-fc121e575ea0dbfd069f0100e4e180f9.jpeg",
+        "method": "kitsu-fribb",
+        "poster": "https://image.tmdb.org/t/p/w500/3DN0UnAUrLaY382mFdbv1wrVQNC.jpg",
+        "releaseInfo": "2026",
+        "tmdb_id": "336654",
+        "tmdb_rating": 6.7,
+        "tmdb_type": "tv",
+        "tvdb_id": "477658",
+        "episodes": 12,
+        "v": 4,
+        "refresh_after": "2026-11-20"
+      },
+      "japanese": "彼女の友達（OA)",
+      "episodes": 0
+    },
     "536": {
       "name": "[Dub]The Lonely Snow Widow and the Cursed Ring",
       "romaji": "Hitozukiai ga nigate na miboujin no yukionna-san to noroi no yubiwa",
@@ -698,45 +775,6 @@
         "refresh_after": "2026-11-20"
       },
       "japanese": "人付き合いが苦手な未亡人の雪女さんと呪いの指輪(Dub)（OA)",
-      "episodes": 0
-    },
-    "538": {
-      "name": "My Girlfriend's Friend",
-      "romaji": "Kanojo no tomodachi",
-      "summary": "My first cute girlfriend ever. But her friend who's curvier than my girlfriend started seducing me… What would you do if your girlfriend's friend made a move on you like this? A captivating tale of forbidden love by Jura, the overwhelmingly popular manga artist on Young Magazine Web, now adapted into a TV anime.",
-      "rating": "age_16_plus",
-      "simulcast": true,
-      "completed": false,
-      "start_at": "2026-10-04T09:05:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "background": "https://image.tmdb.org/t/p/original/7CSqPaizCugNAznzmUUVQKbj6KO.jpg",
-        "confidence": 1.0,
-        "description": "For the first time in my life, I have a girlfriend. But her friend tempts me with a body that's so seductive... What would you do if your girlfriend's friend came on to you like this?",
-        "genres": [
-          "Animation",
-          "Drama"
-        ],
-        "id": "tmdb:336654",
-        "imdb_id": "tt43650454",
-        "kitsu_id": "50752",
-        "kitsu_poster": "https://media.kitsu.app/anime/50752/poster_image/large-fc121e575ea0dbfd069f0100e4e180f9.jpeg",
-        "method": "kitsu-fribb",
-        "poster": "https://image.tmdb.org/t/p/w500/3DN0UnAUrLaY382mFdbv1wrVQNC.jpg",
-        "releaseInfo": "2026",
-        "tmdb_id": "336654",
-        "tmdb_rating": 6.7,
-        "tmdb_type": "tv",
-        "tvdb_id": "477658",
-        "episodes": 12,
-        "v": 4,
-        "refresh_after": "2026-11-20"
-      },
-      "japanese": "彼女の友達（OA)",
       "episodes": 0
     },
     "534": {
@@ -1150,7 +1188,7 @@
         "id": "tmdb:334504",
         "imdb_id": "tt45831796",
         "method": "tmdb-title-search",
-        "poster": "https://image.tmdb.org/t/p/w500/dYJOSnFf9O9hDcTbSyZPQb5Xnb8.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/qR5xF8fibmKIHYuDwtvOvDv01h2.jpg",
         "releaseInfo": "2026",
         "tmdb_id": "334504",
         "tmdb_rating": 8.0,
@@ -1168,7 +1206,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-11-12"
+        "refresh_after": "2026-11-20"
       },
       "japanese": "人付き合いが苦手な未亡人の雪女さんと呪いの指輪（OA)",
       "episodes": 0
@@ -1381,21 +1419,21 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "501": {
-      "name": "Rampo Kitan Club",
+    "502": {
+      "name": "[Dub] Rampo Kitan Club",
       "romaji": "Ranpo Kitan",
-      "japanese": "乱歩奇譚",
+      "japanese": "乱歩奇譚（Dub）",
       "summary": "One day, young boy Kobayashi wakes up to find himself in front of a corpse that has been made into an objet d'art.The body belongs to his murdered homeroom teacher. Immediately suspected by the police, Kobayashi is arrested as a suspect. Then, Detective Akechi appears before him. Although the case is solved, Kobayashi soon finds himself drawn into the strange whirlpool of fate surrounding Detective Akechi.",
       "rating": "age_13_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2026-08-24T18:00:00.000-07:00",
-      "season": "Subtitle",
+      "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "10039",
         "anilist_id": "21189",
@@ -1423,21 +1461,21 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "502": {
-      "name": "[Dub] Rampo Kitan Club",
+    "501": {
+      "name": "Rampo Kitan Club",
       "romaji": "Ranpo Kitan",
-      "japanese": "乱歩奇譚（Dub）",
+      "japanese": "乱歩奇譚",
       "summary": "One day, young boy Kobayashi wakes up to find himself in front of a corpse that has been made into an objet d'art.The body belongs to his murdered homeroom teacher. Immediately suspected by the police, Kobayashi is arrested as a suspect. Then, Detective Akechi appears before him. Although the case is solved, Kobayashi soon finds himself drawn into the strange whirlpool of fate surrounding Detective Akechi.",
       "rating": "age_13_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2026-08-24T18:00:00.000-07:00",
-      "season": "Dubbed",
+      "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "10039",
         "anilist_id": "21189",
@@ -1715,7 +1753,7 @@
       "summary": "Kyousuke brings Kirino home from America where she attended a special track & field camp. Surrounded by her friends, Kirino gradually gets her life back to normal. In stark contrast to her friends is Kyousuke, who is unhappy with Kirino's attitude towards him. She has been ignoring him since she came home, as if their relationship had gone back to how it had been a year earlier. But then Kirino does something for Kyousuke...",
       "rating": "pg",
       "simulcast": false,
-      "completed": false,
+      "completed": true,
       "start_at": "2026-08-07T15:00:00.000-07:00",
       "season": "Season2",
       "episodes": 0,
@@ -3346,6 +3384,81 @@
         "refresh_after": "2026-11-19"
       }
     },
+    "387": {
+      "name": "Dragoon",
+      "romaji": "Ryuki denshou",
+      "summary": "A fateful encounter foreshadowing a grand battle with the Dragoon!! A boy, not yet a hero, vows to fight for a girl's fragile smile...",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2026-03-11T10:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "3384",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3384/large.jpg",
+        "tmdb_type": "tv",
+        "tmdb_id": "45153",
+        "method": "kitsu-fribb",
+        "confidence": 1.0,
+        "id": "tmdb:45153",
+        "imdb_id": "tt4829622",
+        "tvdb_id": "401051",
+        "description": "When the young swordsman, Sedon, finds the beautiful Miu unconscious and naked in the snow, he has no idea that she is the product of an evil experiment. Nor is he aware that ruthless soldiers have been ordered to track her down and bring her back. But soon he discovers just how important Miu is to an evil plan that involves treacherous royalty, bloodthirsty killers and a devastating power within May herself.",
+        "poster": "https://image.tmdb.org/t/p/w500/iRzgxOlVoDKu39p48RO8PO21oqq.jpg",
+        "releaseInfo": "1997",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 4.5,
+        "episodes": 3,
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "竜機伝承",
+      "episodes": 0
+    },
+    "385": {
+      "name": "Variable Geo",
+      "romaji": "Variaburu-jio",
+      "summary": "Yuka Takeuchi is the utmost powerful waitress! What does she keep fighting for?! Beautiful girls enter the martial arts tournament ‘V.G.’. Glory, honor, prize money… The winner takes it all, while the loser is destined to lose everything, even their dignity. However, something within them draws them to fight. What awaits the girls inside the ring... Despair or hope…? The fists respond to the soul's gong!!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2026-03-11T10:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "1063",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1063/large.jpg",
+        "tmdb_type": "tv",
+        "tmdb_id": "43935",
+        "method": "kitsu-fribb",
+        "confidence": 1.0,
+        "id": "tmdb:43935",
+        "imdb_id": "tt0368402",
+        "tvdb_id": "154471",
+        "description": "The special of the day is Variable Geo-a brutal battle between waitresses who serve up generous portions of energy blasts and vicious side orders of murderous martial artistry.\n\nFor buffed beauties who make below-minimum wages, VG is the perfect way to make some fast cash. The victorious walk away with millions, and the defeated lose everything.\n\nBut this high-stakes sport has dark forces and dubious practices behind the fun and games. Lethal injections make steroids seem like vitamins. Instead of team prayer, there's demonic possession. Athletic sponsors are malevolent corporations with a more frightening agenda than increased market share. It's all just part of the game.",
+        "poster": "https://image.tmdb.org/t/p/w500/lKJaUSowWpzt7PEj3uMdltkzgZY.jpg",
+        "background": "https://image.tmdb.org/t/p/original/2rb4VFP952UdUQYfgBxoIA4bwHW.jpg",
+        "releaseInfo": "1997",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 5.5,
+        "episodes": 3,
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "ヴァリアブル・ジオ",
+      "episodes": 0
+    },
     "386": {
       "name": "Super Goddess Dangaiser 3",
       "romaji": "Choushinki Dangaiza 3",
@@ -3387,44 +3500,6 @@
       "japanese": "超神姫ダンガイザー３",
       "episodes": 0
     },
-    "385": {
-      "name": "Variable Geo",
-      "romaji": "Variaburu-jio",
-      "summary": "Yuka Takeuchi is the utmost powerful waitress! What does she keep fighting for?! Beautiful girls enter the martial arts tournament ‘V.G.’. Glory, honor, prize money… The winner takes it all, while the loser is destined to lose everything, even their dignity. However, something within them draws them to fight. What awaits the girls inside the ring... Despair or hope…? The fists respond to the soul's gong!!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2026-03-11T10:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "1063",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1063/large.jpg",
-        "tmdb_type": "tv",
-        "tmdb_id": "43935",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:43935",
-        "imdb_id": "tt0368402",
-        "tvdb_id": "154471",
-        "description": "The special of the day is Variable Geo-a brutal battle between waitresses who serve up generous portions of energy blasts and vicious side orders of murderous martial artistry.\n\nFor buffed beauties who make below-minimum wages, VG is the perfect way to make some fast cash. The victorious walk away with millions, and the defeated lose everything.\n\nBut this high-stakes sport has dark forces and dubious practices behind the fun and games. Lethal injections make steroids seem like vitamins. Instead of team prayer, there's demonic possession. Athletic sponsors are malevolent corporations with a more frightening agenda than increased market share. It's all just part of the game.",
-        "poster": "https://image.tmdb.org/t/p/w500/lKJaUSowWpzt7PEj3uMdltkzgZY.jpg",
-        "background": "https://image.tmdb.org/t/p/original/2rb4VFP952UdUQYfgBxoIA4bwHW.jpg",
-        "releaseInfo": "1997",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 5.5,
-        "episodes": 3,
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "ヴァリアブル・ジオ",
-      "episodes": 0
-    },
     "388": {
       "name": "Voogie's Angels",
       "romaji": "Dennou sentai vugizu★Enjeru",
@@ -3464,58 +3539,21 @@
       "japanese": "電脳戦隊ヴギィ'ズ★エンジェル",
       "episodes": 0
     },
-    "387": {
-      "name": "Dragoon",
-      "romaji": "Ryuki denshou",
-      "summary": "A fateful encounter foreshadowing a grand battle with the Dragoon!! A boy, not yet a hero, vows to fight for a girl's fragile smile...",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2026-03-11T10:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "3384",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3384/large.jpg",
-        "tmdb_type": "tv",
-        "tmdb_id": "45153",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:45153",
-        "imdb_id": "tt4829622",
-        "tvdb_id": "401051",
-        "description": "When the young swordsman, Sedon, finds the beautiful Miu unconscious and naked in the snow, he has no idea that she is the product of an evil experiment. Nor is he aware that ruthless soldiers have been ordered to track her down and bring her back. But soon he discovers just how important Miu is to an evil plan that involves treacherous royalty, bloodthirsty killers and a devastating power within May herself.",
-        "poster": "https://image.tmdb.org/t/p/w500/iRzgxOlVoDKu39p48RO8PO21oqq.jpg",
-        "releaseInfo": "1997",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 4.5,
-        "episodes": 3,
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "竜機伝承",
-      "episodes": 0
-    },
-    "392": {
-      "name": "Black Jack (the Complete OVA Series)",
+    "393": {
+      "name": "[Dub] Black Jack (The Complete OVA Series Dubbed)",
       "romaji": "Burakku jakku",
-      "japanese": "ブラックジャック",
+      "japanese": "ブラックジャック(Dub)",
       "summary": "When mysterious medical ailments strike, the mysterious Black Jack is who to call - an unlicensed doctor who can solve any malady... for a price.",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2026-03-10T10:00:00.000-07:00",
-      "season": "Subtitle",
+      "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "1364",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1364/large.jpg",
@@ -3540,21 +3578,21 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "393": {
-      "name": "[Dub] Black Jack (The Complete OVA Series Dubbed)",
+    "392": {
+      "name": "Black Jack (the Complete OVA Series)",
       "romaji": "Burakku jakku",
-      "japanese": "ブラックジャック(Dub)",
+      "japanese": "ブラックジャック",
       "summary": "When mysterious medical ailments strike, the mysterious Black Jack is who to call - an unlicensed doctor who can solve any malady... for a price.",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2026-03-10T10:00:00.000-07:00",
-      "season": "Dubbed",
+      "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "1364",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1364/large.jpg",
@@ -3659,48 +3697,6 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "367": {
-      "name": "[Dub] Negima!?(OVA)",
-      "romaji": "Negima!?(OVA)",
-      "japanese": "ネギま！？(OVA)(Dub)",
-      "summary": "It's another world of Negima!? packed with Asuna and the others in sexy swimsuits! Those who like each other are bound by a red thread...  A heart-pounding story of red thread-related incidents!",
-      "rating": "pg",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2026-02-27T15:00:00.000-08:00",
-      "season": "OVA",
-      "episodes": 0,
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": true,
-      "enrichment": {
-        "kitsu_id": "1454",
-        "anilist_id": "1619",
-        "mal_id": "1619",
-        "anidb_id": "4510",
-        "episodes": 1,
-        "tmdb_type": "tv",
-        "tmdb_id": "16950",
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "tmdb:16950",
-        "imdb_id": "tt1187349",
-        "tvdb_id": "305488",
-        "description": "Wizard Negi Springfield may be a boy, but he has a man-sized job to do! Fresh from the Academy of Magic, Negi continues his training as an instructor at Mahora Academy in Japan. But before he can get his Master’s in magic, the 31 schoolgirls of Class 3-A are gonna keep him up all night cramming for a final exam in will power. Temptation aside, Negi has more on his syllabus than flirting and spells. Darkness is closing in, and Negi is gonna need help from his student bodies to drive the ghouls from their school. These girls want to prove that they’re best in class, and extra credit is available to the cuties that aren’t afraid of after hours phantom fighting – especially if it means more time with their favorite professor.",
-        "poster": "https://image.tmdb.org/t/p/w500/9S2i3Ocbb7WGt94N2m64re5Sh8Q.jpg",
-        "background": "https://image.tmdb.org/t/p/original/vdoJh2xCQVEjbmb8Q3NwYFKFDr1.jpg",
-        "releaseInfo": "2006",
-        "genres": [
-          "Animation",
-          "Action & Adventure",
-          "Comedy"
-        ],
-        "tmdb_rating": 5.9,
-        "v": 4,
-        "refresh_after": "2026-11-19"
-      }
-    },
     "366": {
       "name": "Negima!?(OVA)",
       "romaji": "Negima!?(OVA)",
@@ -3743,10 +3739,52 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "383": {
-      "name": "Master of Martial Hearts",
+    "367": {
+      "name": "[Dub] Negima!?(OVA)",
+      "romaji": "Negima!?(OVA)",
+      "japanese": "ネギま！？(OVA)(Dub)",
+      "summary": "It's another world of Negima!? packed with Asuna and the others in sexy swimsuits! Those who like each other are bound by a red thread...  A heart-pounding story of red thread-related incidents!",
+      "rating": "pg",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2026-02-27T15:00:00.000-08:00",
+      "season": "OVA",
+      "episodes": 0,
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": true,
+      "enrichment": {
+        "kitsu_id": "1454",
+        "anilist_id": "1619",
+        "mal_id": "1619",
+        "anidb_id": "4510",
+        "episodes": 1,
+        "tmdb_type": "tv",
+        "tmdb_id": "16950",
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "tmdb:16950",
+        "imdb_id": "tt1187349",
+        "tvdb_id": "305488",
+        "description": "Wizard Negi Springfield may be a boy, but he has a man-sized job to do! Fresh from the Academy of Magic, Negi continues his training as an instructor at Mahora Academy in Japan. But before he can get his Master’s in magic, the 31 schoolgirls of Class 3-A are gonna keep him up all night cramming for a final exam in will power. Temptation aside, Negi has more on his syllabus than flirting and spells. Darkness is closing in, and Negi is gonna need help from his student bodies to drive the ghouls from their school. These girls want to prove that they’re best in class, and extra credit is available to the cuties that aren’t afraid of after hours phantom fighting – especially if it means more time with their favorite professor.",
+        "poster": "https://image.tmdb.org/t/p/w500/9S2i3Ocbb7WGt94N2m64re5Sh8Q.jpg",
+        "background": "https://image.tmdb.org/t/p/original/vdoJh2xCQVEjbmb8Q3NwYFKFDr1.jpg",
+        "releaseInfo": "2006",
+        "genres": [
+          "Animation",
+          "Action & Adventure",
+          "Comedy"
+        ],
+        "tmdb_rating": 5.9,
+        "v": 4,
+        "refresh_after": "2026-11-19"
+      }
+    },
+    "384": {
+      "name": "[Dub] Master of Martial Hearts",
       "romaji": "Zettai shougeki",
-      "japanese": "絶対衝激",
+      "japanese": "絶対衝激(Dub)",
       "summary": "Platonic Heart, a legendary jewel that grants any single wish of the woman who possesses it... High school girl, Aya Iseshima, steps onto the battlefield as if guided by a mysterious fate. What awaits her there—hope or despair? The curtain rises now on a battle where the girls stake their dreams!",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -3757,7 +3795,7 @@
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "3886",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3886/large.jpg",
@@ -3783,10 +3821,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "384": {
-      "name": "[Dub] Master of Martial Hearts",
+    "383": {
+      "name": "Master of Martial Hearts",
       "romaji": "Zettai shougeki",
-      "japanese": "絶対衝激(Dub)",
+      "japanese": "絶対衝激",
       "summary": "Platonic Heart, a legendary jewel that grants any single wish of the woman who possesses it... High school girl, Aya Iseshima, steps onto the battlefield as if guided by a mysterious fate. What awaits her there—hope or despair? The curtain rises now on a battle where the girls stake their dreams!",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -3797,7 +3835,7 @@
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "3886",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3886/large.jpg",
@@ -4478,10 +4516,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "326": {
-      "name": "[Dub] Negima!?",
+    "325": {
+      "name": "Negima!?",
       "romaji": "Negima!?",
-      "japanese": "ネギま！？(Dub)",
+      "japanese": "ネギま！？",
       "summary": "Negi Springfield is a ten-year-old boy who graduated from a magic school in Wales, UK, and became an apprentice wizard. Aspiring to become a Magister Magi—a top-tier wizard like his father—he is sent to Mahora Academy in Japan for training. Mahora Academy is a massive campus city with over 30,000 students. Its vast grounds house every educational facility imaginable, from university to kindergarten, along with student dorms, a hospital, restaurants, and even a huge arcade. Negi becomes the homeroom teacher for Class 2-A in the girls' middle school division. Immediately, the girls in his class start treating him like a child, calling him “Kid Teacher.” To make matters worse, despite there being a severe punishment if he reveals himself as a magician, Asuna Kagurazaka, one of his students, nearly suspects his true identity on his very first day. Then, as there are no vacant rooms, he ends up sharing a dorm room with Asuna and Konoka Konoe in the girls' dormitory! And to top it all off, a mysterious Dracula incident occurs. Can Negi Sensei earn the trust of his students who he's now forced to fight for? And can he overcome this trial to become a “Magister Magi” like his father?",
       "rating": "pg",
       "simulcast": false,
@@ -4492,7 +4530,7 @@
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "135",
         "anilist_id": "157",
@@ -4521,10 +4559,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "325": {
-      "name": "Negima!?",
+    "326": {
+      "name": "[Dub] Negima!?",
       "romaji": "Negima!?",
-      "japanese": "ネギま！？",
+      "japanese": "ネギま！？(Dub)",
       "summary": "Negi Springfield is a ten-year-old boy who graduated from a magic school in Wales, UK, and became an apprentice wizard. Aspiring to become a Magister Magi—a top-tier wizard like his father—he is sent to Mahora Academy in Japan for training. Mahora Academy is a massive campus city with over 30,000 students. Its vast grounds house every educational facility imaginable, from university to kindergarten, along with student dorms, a hospital, restaurants, and even a huge arcade. Negi becomes the homeroom teacher for Class 2-A in the girls' middle school division. Immediately, the girls in his class start treating him like a child, calling him “Kid Teacher.” To make matters worse, despite there being a severe punishment if he reveals himself as a magician, Asuna Kagurazaka, one of his students, nearly suspects his true identity on his very first day. Then, as there are no vacant rooms, he ends up sharing a dorm room with Asuna and Konoka Konoe in the girls' dormitory! And to top it all off, a mysterious Dracula incident occurs. Can Negi Sensei earn the trust of his students who he's now forced to fight for? And can he overcome this trial to become a “Magister Magi” like his father?",
       "rating": "pg",
       "simulcast": false,
@@ -4535,7 +4573,7 @@
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "135",
         "anilist_id": "157",
@@ -5530,8 +5568,8 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "290": {
-      "name": "Negima! Magister Negi Magi",
+    "291": {
+      "name": "[Dub] Negima! Magister Negi Magi",
       "romaji": "Mahou sensei negima!",
       "japanese": "魔法先生ネギま!",
       "summary": "Negi Springfield is a child prodigy who safely graduates the Magic Academy. In order to become a grand wizard, \"Magister Magi\", Negi becomes a teacher at the Mahora Academy in Japan. However, trouble and turmoil abound one after the other! Will Negi ever be able to fulfill his purpose to become a Magister Magi...?!",
@@ -5544,7 +5582,7 @@
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "1387",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1387/large.jpg",
@@ -5570,8 +5608,8 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "291": {
-      "name": "[Dub] Negima! Magister Negi Magi",
+    "290": {
+      "name": "Negima! Magister Negi Magi",
       "romaji": "Mahou sensei negima!",
       "japanese": "魔法先生ネギま!",
       "summary": "Negi Springfield is a child prodigy who safely graduates the Magic Academy. In order to become a grand wizard, \"Magister Magi\", Negi becomes a teacher at the Mahora Academy in Japan. However, trouble and turmoil abound one after the other! Will Negi ever be able to fulfill his purpose to become a Magister Magi...?!",
@@ -5584,7 +5622,7 @@
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "1387",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1387/large.jpg",
@@ -5803,39 +5841,6 @@
       "japanese": "ギルティホール(OA)",
       "episodes": 0
     },
-    "275": {
-      "name": "[Dub] Guilty Hole ～ Room of Guilty Pleasure",
-      "romaji": "Giruti horu",
-      "summary": "\"Please pick your favorite student...\" This overworked and underpaid teacher, Mr. Sasaki, has his whole life turned upside down when he stumbles upon the \"Guilty Hole.\" He thinks it's a dream when he sees the student's shoe lockers have been transformed into selection panels... seeing one that catches his eye, he joking picks her... When she appears in his classroom in the middle of the night, throwing insults at him, but her eyes seem to linger on him, tinged with embarassment. \"I'll finish this quickly so... Don't hold back, ok...?\" Thus begins a forbidden relationship... Welcome to the Guilty Hole, where anything is allowed--",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-10-05T09:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": true,
-      "enrichment": {
-        "mal_id": "62379",
-        "episodes": 8,
-        "anilist_id": "182531",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182531-u1aOKnUuC9dH.png",
-        "anilist_background": "",
-        "anilist_description": "\"Please pick your favorite student...\" The thing that appeared before the overworked teacher, Mr. Sasaki, was “Guilty Pleasure.” He thinks he's having a dream when he sees the student's shoe lockers have been transformed into selection panels... seeing one that catches his eye, he joking picks her... When she appears in his classroom in the middle of the night, throwing insults at him, but her eyes seem to linger on him, tinged with embarassment. \"I'll finish this quickly so... Don't hold back, ok...?\" Thus begins a forbidden relationship... Welcome to Guilty Pleasure, where anything is allowed-- \n\n(OceanVeil)\n\nNote: Episode 1 received an advances distribution on AnimeFesta on September 12th, 2025. The start date reflects the start of the regular series broadcasting.",
-        "anilist_genres": [
-          "Hentai"
-        ],
-        "anilist_year": "2025",
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "anilist:182531",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "ギルティホール(OA)(Dub)",
-      "episodes": 0
-    },
     "280": {
       "name": "Hands off: Sawaranaide Kotesashi-kun",
       "romaji": "Sawaranaide Kotesashi kun",
@@ -5873,6 +5878,39 @@
         "refresh_after": "2026-11-13"
       },
       "japanese": "さわらないで小手指くん(OA)",
+      "episodes": 0
+    },
+    "275": {
+      "name": "[Dub] Guilty Hole ～ Room of Guilty Pleasure",
+      "romaji": "Giruti horu",
+      "summary": "\"Please pick your favorite student...\" This overworked and underpaid teacher, Mr. Sasaki, has his whole life turned upside down when he stumbles upon the \"Guilty Hole.\" He thinks it's a dream when he sees the student's shoe lockers have been transformed into selection panels... seeing one that catches his eye, he joking picks her... When she appears in his classroom in the middle of the night, throwing insults at him, but her eyes seem to linger on him, tinged with embarassment. \"I'll finish this quickly so... Don't hold back, ok...?\" Thus begins a forbidden relationship... Welcome to the Guilty Hole, where anything is allowed--",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-10-05T09:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": true,
+      "enrichment": {
+        "mal_id": "62379",
+        "episodes": 8,
+        "anilist_id": "182531",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182531-u1aOKnUuC9dH.png",
+        "anilist_background": "",
+        "anilist_description": "\"Please pick your favorite student...\" The thing that appeared before the overworked teacher, Mr. Sasaki, was “Guilty Pleasure.” He thinks he's having a dream when he sees the student's shoe lockers have been transformed into selection panels... seeing one that catches his eye, he joking picks her... When she appears in his classroom in the middle of the night, throwing insults at him, but her eyes seem to linger on him, tinged with embarassment. \"I'll finish this quickly so... Don't hold back, ok...?\" Thus begins a forbidden relationship... Welcome to Guilty Pleasure, where anything is allowed-- \n\n(OceanVeil)\n\nNote: Episode 1 received an advances distribution on AnimeFesta on September 12th, 2025. The start date reflects the start of the regular series broadcasting.",
+        "anilist_genres": [
+          "Hentai"
+        ],
+        "anilist_year": "2025",
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "anilist:182531",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "ギルティホール(OA)(Dub)",
       "episodes": 0
     },
     "276": {
@@ -6452,52 +6490,6 @@
       "japanese": "この男子、石化に悩んでます。",
       "episodes": 0
     },
-    "220": {
-      "name": "[Dub] Marry Me, Let's Have a Baby!",
-      "romaji": "Dekichaumadekon",
-      "summary": "Please marry me with having a baby in mind! Here's the birth of an extraordinary contract marriage story about having a baby within a year! At the marriage hunting party, Taika hits it off with Ayano, who wants a child. However, Taika is actually impotent, and runs out midway through the party. One day, on his visit to the hospital for his ED treatment, he finds out that the doctor who is in charge is Ayano! From the original manga that gained popularity for its groundbreaking scenario!! Don't miss it!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-07-06T09:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": true,
-      "dubbed": true,
-      "enrichment": {
-        "tmdb_type": "tv",
-        "tmdb_id": "292554",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
-        "id": "tmdb:292554",
-        "imdb_id": "tt37205939",
-        "tvdb_id": "464142",
-        "description": "At a speed-dating event, Taika hits it off with a woman named Ayano, a doctor who’s eager to have children. However, just as the matching couples are about to be announced, he panics and makes a break for it when his fears about his erectile dysfunction begin to surface... Later, at an appointment for his condition, Taika is shocked to discover that his doctor is none other than Ayano herself! On top of that, he realizes that when he's with Ayano, his erectile dysfunction disappears! This is a story about two people who decide to enter into a secret contractual marriage with one goal, to have a child in less than a year!",
-        "poster": "https://image.tmdb.org/t/p/w500/4KouLBIT2W1aacqMx9sxuHCwYEY.jpg",
-        "background": "https://image.tmdb.org/t/p/original/nwzPP53GpK3ZvKh191GJyLXbLvA.jpg",
-        "releaseInfo": "2025",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 6.2,
-        "mal_id": "61742",
-        "episodes": 8,
-        "anilist_id": "193607",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx193607-gz99SDr9wgmq.png",
-        "anilist_background": "",
-        "anilist_description": "At a speed-dating event, Taika hits it off with a woman named Ayano, a doctor who's eager to have children. However, just as the matching couples are about to be announced, he panics and makes a break for it when his fears about his erectile dysfunction begin to surface...\n\nLater, at an appointment for his condition, Taika is shocked to discover that his doctor is none other than Ayano herself! On top of that, he realizes that when he's with Ayano, his erectile dysfunction disappears!\n\n(Source: OceanVeil)\n\nNote: Episode 1 received an advanced distribution on AnimeFesta on June 13th, 2025. The start date reflects the start of the regular series broadcasting.",
-        "anilist_genres": [
-          "Hentai",
-          "Romance"
-        ],
-        "anilist_year": "2025",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "デキちゃうまで婚(Dub)(OA)",
-      "episodes": 0
-    },
     "216": {
       "name": "Marry Me, Let's Have a Baby!",
       "romaji": "Dekichaumadekon",
@@ -6542,6 +6534,52 @@
         "refresh_after": "2026-11-13"
       },
       "japanese": "デキちゃうまで婚(OA)",
+      "episodes": 0
+    },
+    "220": {
+      "name": "[Dub] Marry Me, Let's Have a Baby!",
+      "romaji": "Dekichaumadekon",
+      "summary": "Please marry me with having a baby in mind! Here's the birth of an extraordinary contract marriage story about having a baby within a year! At the marriage hunting party, Taika hits it off with Ayano, who wants a child. However, Taika is actually impotent, and runs out midway through the party. One day, on his visit to the hospital for his ED treatment, he finds out that the doctor who is in charge is Ayano! From the original manga that gained popularity for its groundbreaking scenario!! Don't miss it!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-07-06T09:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": true,
+      "dubbed": true,
+      "enrichment": {
+        "tmdb_type": "tv",
+        "tmdb_id": "292554",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
+        "id": "tmdb:292554",
+        "imdb_id": "tt37205939",
+        "tvdb_id": "464142",
+        "description": "At a speed-dating event, Taika hits it off with a woman named Ayano, a doctor who’s eager to have children. However, just as the matching couples are about to be announced, he panics and makes a break for it when his fears about his erectile dysfunction begin to surface... Later, at an appointment for his condition, Taika is shocked to discover that his doctor is none other than Ayano herself! On top of that, he realizes that when he's with Ayano, his erectile dysfunction disappears! This is a story about two people who decide to enter into a secret contractual marriage with one goal, to have a child in less than a year!",
+        "poster": "https://image.tmdb.org/t/p/w500/4KouLBIT2W1aacqMx9sxuHCwYEY.jpg",
+        "background": "https://image.tmdb.org/t/p/original/nwzPP53GpK3ZvKh191GJyLXbLvA.jpg",
+        "releaseInfo": "2025",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 6.2,
+        "mal_id": "61742",
+        "episodes": 8,
+        "anilist_id": "193607",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx193607-gz99SDr9wgmq.png",
+        "anilist_background": "",
+        "anilist_description": "At a speed-dating event, Taika hits it off with a woman named Ayano, a doctor who's eager to have children. However, just as the matching couples are about to be announced, he panics and makes a break for it when his fears about his erectile dysfunction begin to surface...\n\nLater, at an appointment for his condition, Taika is shocked to discover that his doctor is none other than Ayano herself! On top of that, he realizes that when he's with Ayano, his erectile dysfunction disappears!\n\n(Source: OceanVeil)\n\nNote: Episode 1 received an advanced distribution on AnimeFesta on June 13th, 2025. The start date reflects the start of the regular series broadcasting.",
+        "anilist_genres": [
+          "Hentai",
+          "Romance"
+        ],
+        "anilist_year": "2025",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "デキちゃうまで婚(Dub)(OA)",
       "episodes": 0
     },
     "218": {
@@ -6785,34 +6823,6 @@
       "japanese": "[Dub] Bubblegum Crash",
       "episodes": 0
     },
-    "188": {
-      "name": "Riding Bean",
-      "romaji": "Riding Bean",
-      "summary": "Getaway driver Bean Bandit unexpectedly ends up trying to return a kidnapped child to an elite estate, when a past job comes back to haunt him.",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-05-27T00:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "817",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/817/large.jpg",
-        "tmdb_type": "movie",
-        "tmdb_id": "[55374]",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:[55374]",
-        "episodes": 1,
-        "v": 4,
-        "refresh_after": "2026-11-14"
-      },
-      "japanese": "Riding Bean",
-      "episodes": 0
-    },
     "192": {
       "name": "[Dub] Metal Skin Panic Madox-01",
       "romaji": "[Dub] Metal Skin Panic Madox-01",
@@ -6837,6 +6847,48 @@
         "method": "kitsu-fribb",
         "confidence": 1.0,
         "id": "tmdb:[62961]",
+        "v": 4,
+        "refresh_after": "2026-11-19"
+      }
+    },
+    "191": {
+      "name": "[Dub] Time Of Eve",
+      "romaji": "[Dub] Time Of Eve",
+      "japanese": "[Dub] Time Of Eve",
+      "summary": "In the near future, two high school boys stumble upon a secluded café with one rule: robots and humans are to be treated as equals.",
+      "rating": "age_13_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-05-27T00:00:00.000-07:00",
+      "season": "",
+      "episodes": 0,
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": true,
+      "enrichment": {
+        "kitsu_id": "7661",
+        "anilist_id": "3167",
+        "mal_id": "3167",
+        "anidb_id": "5132",
+        "episodes": 6,
+        "tmdb_type": "tv",
+        "tmdb_id": "60937",
+        "method": "tmdb-title-search",
+        "confidence": 1.0,
+        "id": "tmdb:60937",
+        "imdb_id": "tt1506339",
+        "tvdb_id": "84709",
+        "description": "The future, probably Japan. Robots have long been put into practical use, and androids have just come into use. Influenced by the Robot Ethics Committee, it's become common sense for people to treat androids like household appliances. Their appearance – indistinguishable from humans except for the ring over each android's head – has led some people to empathize unnecessarily with androids. Known as \"android-holics\", such people have become a social problem. Rikuo, a high school student, has been taught from childhood that androids are not to be viewed as humans, and has always used them as convenient tools. One day, Rikuo discovers some strange data in the behavior records of his family's household android, Sammy. Rikuo and his friend Masaki trace Sammy's movements, only to discover a mysterious café that features a house rule that \"humans and robots are to be treated the same\".",
+        "poster": "https://image.tmdb.org/t/p/w500/2lLQ25Bfe2gd72mMbYbeiEVGWj3.jpg",
+        "background": "https://image.tmdb.org/t/p/original/lBNrI9aqQUZwAmHCsPQvE9MSKMG.jpg",
+        "releaseInfo": "2008",
+        "genres": [
+          "Animation",
+          "Sci-Fi & Fantasy",
+          "Drama"
+        ],
+        "tmdb_rating": 7.4,
         "v": 4,
         "refresh_after": "2026-11-19"
       }
@@ -6911,47 +6963,33 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "191": {
-      "name": "[Dub] Time Of Eve",
-      "romaji": "[Dub] Time Of Eve",
-      "japanese": "[Dub] Time Of Eve",
-      "summary": "In the near future, two high school boys stumble upon a secluded café with one rule: robots and humans are to be treated as equals.",
-      "rating": "age_13_plus",
+    "188": {
+      "name": "Riding Bean",
+      "romaji": "Riding Bean",
+      "summary": "Getaway driver Bean Bandit unexpectedly ends up trying to return a kidnapped child to an elite estate, when a past job comes back to haunt him.",
+      "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2025-05-27T00:00:00.000-07:00",
       "season": "",
-      "episodes": 0,
-      "first_seen": "2026-10-27",
+      "first_seen": "2026-10-13",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
-        "kitsu_id": "7661",
-        "anilist_id": "3167",
-        "mal_id": "3167",
-        "anidb_id": "5132",
-        "episodes": 6,
-        "tmdb_type": "tv",
-        "tmdb_id": "60937",
-        "method": "tmdb-title-search",
+        "kitsu_id": "817",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/817/large.jpg",
+        "tmdb_type": "movie",
+        "tmdb_id": "[55374]",
+        "method": "kitsu-fribb",
         "confidence": 1.0,
-        "id": "tmdb:60937",
-        "imdb_id": "tt1506339",
-        "tvdb_id": "84709",
-        "description": "The future, probably Japan. Robots have long been put into practical use, and androids have just come into use. Influenced by the Robot Ethics Committee, it's become common sense for people to treat androids like household appliances. Their appearance – indistinguishable from humans except for the ring over each android's head – has led some people to empathize unnecessarily with androids. Known as \"android-holics\", such people have become a social problem. Rikuo, a high school student, has been taught from childhood that androids are not to be viewed as humans, and has always used them as convenient tools. One day, Rikuo discovers some strange data in the behavior records of his family's household android, Sammy. Rikuo and his friend Masaki trace Sammy's movements, only to discover a mysterious café that features a house rule that \"humans and robots are to be treated the same\".",
-        "poster": "https://image.tmdb.org/t/p/w500/2lLQ25Bfe2gd72mMbYbeiEVGWj3.jpg",
-        "background": "https://image.tmdb.org/t/p/original/lBNrI9aqQUZwAmHCsPQvE9MSKMG.jpg",
-        "releaseInfo": "2008",
-        "genres": [
-          "Animation",
-          "Sci-Fi & Fantasy",
-          "Drama"
-        ],
-        "tmdb_rating": 7.4,
+        "id": "tmdb:[55374]",
+        "episodes": 1,
         "v": 4,
-        "refresh_after": "2026-11-19"
-      }
+        "refresh_after": "2026-11-14"
+      },
+      "japanese": "Riding Bean",
+      "episodes": 0
     },
     "170": {
       "name": "Fire in His Fingertips 2 -My Boyfriend is a Fireman-",
@@ -6979,10 +7017,10 @@
       "japanese": "指先から本気の熱情2-恋人は消防士-",
       "episodes": 0
     },
-    "169": {
-      "name": "Married Couple Swap",
-      "romaji": "Fufukoukan ~ modorenai yoru ~",
-      "summary": "Reiji and his wife joined their friends on a getaway to a traditional Japanese inn, hoping to conceive a child. However, their plans took an unexpected turn when Reiji was seduced by his friend's wife, while his own wife engaged in a passionate affair with their mutual friend. Amidst forbidden desires and the thrill of pushing boundaries, the four of them delved deeper into temptation. As they surrendered to their carnal passions, could they ever reclaim the innocence of their marriages?",
+    "165": {
+      "name": "Simple yet Sexy",
+      "romaji": "Jimihen!!~ Jimiko wo kaechau jun'iseikouyuu ~",
+      "summary": "Minimal makeup, messy hair, baggy clothes… There's nothing really attractive about Rena Yukuhashi. Ryohei Hachiya asks Rena out for dinner because his boss forces him to. He was expecting the dinner to be boring, but the girl who turned up was...?!",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
@@ -6993,23 +7031,16 @@
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
-        "mal_id": "55616",
+        "kitsu_id": "43848",
+        "mal_id": "44044",
         "episodes": 8,
-        "anilist_id": "168253",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168253-AgwIeG1kRNsU.jpg",
-        "anilist_background": "",
-        "anilist_description": "\"Shall we join them?\"\nReiji, accompanied by his wife Kanade and their close friends Kosuke and Asuka, had visited the inn for vacation. On the first day, during dinner, a heated argument broke out between the two couples, and Asuka dragged Reiji away to her room. But from inside, he could hear his wife Kanade's restless sighs...(Source: Coolmic)\n\nNote: The complete edition with explicit scenes was distributed web via Comic Festa Anime Zone. The on-air version was broadcasted on Tokyo MX and BS11.",
-        "anilist_genres": [
-          "Hentai"
-        ],
-        "anilist_year": "2023",
         "method": "offline-db",
         "confidence": 0.95,
-        "id": "anilist:168253",
+        "id": "kitsu:43848",
         "v": 4,
         "refresh_after": "2026-11-13"
       },
-      "japanese": "夫婦交歓～戻れない夜～",
+      "japanese": "じみへんっ!!～地味子を変えちゃう純異性交遊～",
       "episodes": 0
     },
     "168": {
@@ -7060,10 +7091,10 @@
       "japanese": "３秒後、野獣。～合コンで隅にいた彼は肉食でした（OA）",
       "episodes": 0
     },
-    "165": {
-      "name": "Simple yet Sexy",
-      "romaji": "Jimihen!!~ Jimiko wo kaechau jun'iseikouyuu ~",
-      "summary": "Minimal makeup, messy hair, baggy clothes… There's nothing really attractive about Rena Yukuhashi. Ryohei Hachiya asks Rena out for dinner because his boss forces him to. He was expecting the dinner to be boring, but the girl who turned up was...?!",
+    "169": {
+      "name": "Married Couple Swap",
+      "romaji": "Fufukoukan ~ modorenai yoru ~",
+      "summary": "Reiji and his wife joined their friends on a getaway to a traditional Japanese inn, hoping to conceive a child. However, their plans took an unexpected turn when Reiji was seduced by his friend's wife, while his own wife engaged in a passionate affair with their mutual friend. Amidst forbidden desires and the thrill of pushing boundaries, the four of them delved deeper into temptation. As they surrendered to their carnal passions, could they ever reclaim the innocence of their marriages?",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
@@ -7074,16 +7105,49 @@
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
-        "kitsu_id": "43848",
-        "mal_id": "44044",
+        "mal_id": "55616",
         "episodes": 8,
+        "anilist_id": "168253",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168253-AgwIeG1kRNsU.jpg",
+        "anilist_background": "",
+        "anilist_description": "\"Shall we join them?\"\nReiji, accompanied by his wife Kanade and their close friends Kosuke and Asuka, had visited the inn for vacation. On the first day, during dinner, a heated argument broke out between the two couples, and Asuka dragged Reiji away to her room. But from inside, he could hear his wife Kanade's restless sighs...(Source: Coolmic)\n\nNote: The complete edition with explicit scenes was distributed web via Comic Festa Anime Zone. The on-air version was broadcasted on Tokyo MX and BS11.",
+        "anilist_genres": [
+          "Hentai"
+        ],
+        "anilist_year": "2023",
         "method": "offline-db",
         "confidence": 0.95,
-        "id": "kitsu:43848",
+        "id": "anilist:168253",
         "v": 4,
         "refresh_after": "2026-11-13"
       },
-      "japanese": "じみへんっ!!～地味子を変えちゃう純異性交遊～",
+      "japanese": "夫婦交歓～戻れない夜～",
+      "episodes": 0
+    },
+    "164": {
+      "name": "Crazy Over His Fingers",
+      "romaji": "Ore no yubi de midarero. ~ Heitengo futarikiri no saronde... ~",
+      "summary": "\"Do my fingers turn you on?\" Fumi works as an assistant at a popular salon in town. One of the top hairdressers, Sosuke, is her trainer. One day, during training, Fumi accidentally splashes water onto Sosuke... She thought that he would be angry, but...?! \"Why can't I touch you?\" She's charmed by his beautiful fingers...she can't deny him...",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-05-03T00:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "43106",
+        "mal_id": "41332",
+        "episodes": 8,
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "kitsu:43106",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
       "episodes": 0
     },
     "161": {
@@ -7194,32 +7258,6 @@
         "refresh_after": "2026-11-13"
       },
       "japanese": "指先から本気の熱情-幼なじみは消防士-(OA)",
-      "episodes": 0
-    },
-    "164": {
-      "name": "Crazy Over His Fingers",
-      "romaji": "Ore no yubi de midarero. ~ Heitengo futarikiri no saronde... ~",
-      "summary": "\"Do my fingers turn you on?\" Fumi works as an assistant at a popular salon in town. One of the top hairdressers, Sosuke, is her trainer. One day, during training, Fumi accidentally splashes water onto Sosuke... She thought that he would be angry, but...?! \"Why can't I touch you?\" She's charmed by his beautiful fingers...she can't deny him...",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-05-03T00:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "43106",
-        "mal_id": "41332",
-        "episodes": 8,
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "kitsu:43106",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "俺の指で乱れろ。～閉店後二人きりのサロンで…～",
       "episodes": 0
     },
     "167": {
@@ -7368,6 +7406,44 @@
       "japanese": "やたらやらしい深見くん(OA)(Dub)",
       "episodes": 0
     },
+    "135": {
+      "name": "[Dub] I Want to be His Prey",
+      "romaji": "Ohkamisan wa taberaretai",
+      "summary": "I want you to be the first one to eat me. Akazu saves Okami as a pervert is about to snatch her skirt. She invites Akazu to her home to treat his wounds when he finds out that Okami had planned everything! \"I'm a teacher, and you're...\" Will Okami's plans succeed? Or will Akazu hold back?",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-03-29T00:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": true,
+      "enrichment": {
+        "tmdb_type": "tv",
+        "tmdb_id": "106342",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
+        "id": "tmdb:106342",
+        "imdb_id": "tt12768024",
+        "tvdb_id": "388746",
+        "description": "Having a run in with the \"skirt bandit,\" Ookami almost has her skirt stolen. Her teacher, Akagashira, passes by and becomes her hero after stopping the theft. As thanks, Ookami invites Akagashira to her home, but she has another reason for bringing him over.",
+        "poster": "https://image.tmdb.org/t/p/w500/iRwRV4CzpC6KyW7WbE9OsjICIlD.jpg",
+        "background": "https://image.tmdb.org/t/p/original/tgxwnRw5cgjMnNXOjb7sYt5Yxyq.jpg",
+        "releaseInfo": "2020",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 4.9,
+        "kitsu_id": "43430",
+        "mal_id": "42517",
+        "episodes": 3,
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "オオカミさんは食べられたい(OA)(Dub)",
+      "episodes": 0
+    },
     "131": {
       "name": "[Dub] Show Time! 2",
       "romaji": "Shoutaimu! 2 ~ Uta no onesan datte shitai",
@@ -7426,44 +7502,6 @@
         "refresh_after": "2026-11-13"
       },
       "japanese": "王子の本命は悪役令嬢(OA)(Dub)",
-      "episodes": 0
-    },
-    "135": {
-      "name": "[Dub] I Want to be His Prey",
-      "romaji": "Ohkamisan wa taberaretai",
-      "summary": "I want you to be the first one to eat me. Akazu saves Okami as a pervert is about to snatch her skirt. She invites Akazu to her home to treat his wounds when he finds out that Okami had planned everything! \"I'm a teacher, and you're...\" Will Okami's plans succeed? Or will Akazu hold back?",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-03-29T00:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": true,
-      "enrichment": {
-        "tmdb_type": "tv",
-        "tmdb_id": "106342",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
-        "id": "tmdb:106342",
-        "imdb_id": "tt12768024",
-        "tvdb_id": "388746",
-        "description": "Having a run in with the \"skirt bandit,\" Ookami almost has her skirt stolen. Her teacher, Akagashira, passes by and becomes her hero after stopping the theft. As thanks, Ookami invites Akagashira to her home, but she has another reason for bringing him over.",
-        "poster": "https://image.tmdb.org/t/p/w500/iRwRV4CzpC6KyW7WbE9OsjICIlD.jpg",
-        "background": "https://image.tmdb.org/t/p/original/tgxwnRw5cgjMnNXOjb7sYt5Yxyq.jpg",
-        "releaseInfo": "2020",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 4.9,
-        "kitsu_id": "43430",
-        "mal_id": "42517",
-        "episodes": 3,
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "オオカミさんは食べられたい(OA)(Dub)",
       "episodes": 0
     },
     "133": {
@@ -7554,46 +7592,6 @@
       "japanese": "指先から本気の熱情2-恋人は消防士-(OA)(Dub)",
       "episodes": 0
     },
-    "115": {
-      "name": "[Dub] The Titan's Bride",
-      "romaji": "Kyojinzoku no hanayome",
-      "summary": "I've finally found you... My Bride!!! Basketball-loving high school student, Koichi, was relaxing in his room. Next thing he knew, he was in a different world with a titan in front of him... He was in Tildant, the country of titans, and in front of him was the prince, Caius. Then, the first thing that Koichi got was... a proposal?! Human X Titan. A BL with a huge height difference in a different world starts here!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-03-15T00:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": true,
-      "enrichment": {
-        "kitsu_id": "43092",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/43092/large.jpg",
-        "tmdb_type": "tv",
-        "tmdb_id": "103830",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:103830",
-        "imdb_id": "tt12362250",
-        "tvdb_id": "382658",
-        "description": "Koichi, a student about to graduate, is summoned to a world of Titans. It's the land of Tildant, where the prince, Caius, appears in front of Koichi and says, \"I want you to be my bride and give birth to my baby!\"",
-        "poster": "https://image.tmdb.org/t/p/w500/bYaYGcY4lNLkvuxYupTRwRrnaqQ.jpg",
-        "background": "https://image.tmdb.org/t/p/original/kLVtqq3yiDU8sXvGizqy1bbBHl.jpg",
-        "releaseInfo": "2020",
-        "genres": [
-          "Animation",
-          "Comedy",
-          "Sci-Fi & Fantasy"
-        ],
-        "tmdb_rating": 6.6,
-        "episodes": 9,
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "巨人族の花嫁(OA)(Dub)",
-      "episodes": 0
-    },
     "119": {
       "name": "[Dub] Fire in His Fingertips -My Childhood Friend is a Fireman-",
       "romaji": "Yubisaki kara honki no netsujou -osananajimi wa shouboushi-",
@@ -7670,38 +7668,44 @@
       "japanese": "魔王イブロギアに身を捧げよ(OA)(Dub)",
       "episodes": 0
     },
-    "40": {
-      "name": "Show Time! 2",
-      "romaji": "Shoutaimu! 2 ~ Uta no onesan datte shitai",
-      "summary": "Minami, the famous singer from a kids TV show, has started dating single father Shouji. They need to keep their relationship a secret so that she can continue to be an idol, but a scandal might be heading their way?!",
+    "115": {
+      "name": "[Dub] The Titan's Bride",
+      "romaji": "Kyojinzoku no hanayome",
+      "summary": "I've finally found you... My Bride!!! Basketball-loving high school student, Koichi, was relaxing in his room. Next thing he knew, he was in a different world with a titan in front of him... He was in Tildant, the country of titans, and in front of him was the prince, Caius. Then, the first thing that Koichi got was... a proposal?! Human X Titan. A BL with a huge height difference in a different world starts here!",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
-      "start_at": "2025-02-14T00:00:00.000-08:00",
-      "season": "Season2",
+      "start_at": "2025-03-15T00:00:00.000-07:00",
+      "season": "",
       "first_seen": "2026-10-13",
       "last_seen": "2026-11-13",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
-        "mal_id": "50469",
-        "episodes": 8,
-        "anilist_id": "142136",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142136-IfRvyT2SrGdc.jpg",
-        "anilist_background": "",
-        "anilist_description": "The second season of Showtime!: Uta no Onee-san Datte Shitai.\n\nNote: The complete edition with explicit scenes was distributed on web via Comic Festa Anime Zone. The censored version was broadcasted on Tokyo MX and BS11.",
-        "anilist_genres": [
-          "Hentai",
-          "Romance"
+        "kitsu_id": "43092",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/43092/large.jpg",
+        "tmdb_type": "tv",
+        "tmdb_id": "103830",
+        "method": "kitsu-fribb",
+        "confidence": 1.0,
+        "id": "tmdb:103830",
+        "imdb_id": "tt12362250",
+        "tvdb_id": "382658",
+        "description": "Koichi, a student about to graduate, is summoned to a world of Titans. It's the land of Tildant, where the prince, Caius, appears in front of Koichi and says, \"I want you to be my bride and give birth to my baby!\"",
+        "poster": "https://image.tmdb.org/t/p/w500/bYaYGcY4lNLkvuxYupTRwRrnaqQ.jpg",
+        "background": "https://image.tmdb.org/t/p/original/kLVtqq3yiDU8sXvGizqy1bbBHl.jpg",
+        "releaseInfo": "2020",
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Sci-Fi & Fantasy"
         ],
-        "anilist_year": "2022",
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "anilist:142136",
+        "tmdb_rating": 6.6,
+        "episodes": 9,
         "v": 4,
-        "refresh_after": "2026-11-14"
+        "refresh_after": "2026-11-13"
       },
-      "japanese": "しょうたいむ！２～歌のお姉さんだってしたい(OA)",
+      "japanese": "巨人族の花嫁(OA)(Dub)",
       "episodes": 0
     },
     "41": {
@@ -7736,6 +7740,132 @@
         "refresh_after": "2026-11-13"
       },
       "japanese": "じょしおちっ！～2階から女の子が…降ってきた！？～(OA)",
+      "episodes": 0
+    },
+    "40": {
+      "name": "Show Time! 2",
+      "romaji": "Shoutaimu! 2 ~ Uta no onesan datte shitai",
+      "summary": "Minami, the famous singer from a kids TV show, has started dating single father Shouji. They need to keep their relationship a secret so that she can continue to be an idol, but a scandal might be heading their way?!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-02-14T00:00:00.000-08:00",
+      "season": "Season2",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "mal_id": "50469",
+        "episodes": 8,
+        "anilist_id": "142136",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142136-IfRvyT2SrGdc.jpg",
+        "anilist_background": "",
+        "anilist_description": "The second season of Showtime!: Uta no Onee-san Datte Shitai.\n\nNote: The complete edition with explicit scenes was distributed on web via Comic Festa Anime Zone. The censored version was broadcasted on Tokyo MX and BS11.",
+        "anilist_genres": [
+          "Hentai",
+          "Romance"
+        ],
+        "anilist_year": "2022",
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "anilist:142136",
+        "v": 4,
+        "refresh_after": "2026-11-14"
+      },
+      "japanese": "しょうたいむ！２～歌のお姉さんだってしたい(OA)",
+      "episodes": 0
+    },
+    "106": {
+      "name": "Seduced by My Best Friend",
+      "romaji": "Kurogyaru ni nattakara shin'yu to shite mita.",
+      "summary": "Playboy Shion gets turned into a girl?! The first thing his bestfriend Rui had in mind was…",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-02-11T00:00:00.000-08:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "44102",
+        "mal_id": "47591",
+        "episodes": 8,
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "kitsu:44102",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "黒ギャルになったから親友としてみた。(OA)",
+      "episodes": 0
+    },
+    "114": {
+      "name": "The Titan's Bride",
+      "romaji": "Kyojinzoku no hanayome",
+      "summary": "I've finally found you... My Bride!!! Basketball-loving high school student, Koichi, was relaxing in his room. Next thing he knew, he was in a different world with a titan in front of him... He was in Tildant, the country of titans, and in front of him was the prince, Caius. Then, the first thing that Koichi got was... a proposal?! Human X Titan. A BL with a huge height difference in a different world starts here!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-02-11T00:00:00.000-08:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "43092",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/43092/large.jpg",
+        "tmdb_type": "tv",
+        "tmdb_id": "103830",
+        "method": "kitsu-fribb",
+        "confidence": 1.0,
+        "id": "tmdb:103830",
+        "imdb_id": "tt12362250",
+        "tvdb_id": "382658",
+        "description": "Koichi, a student about to graduate, is summoned to a world of Titans. It's the land of Tildant, where the prince, Caius, appears in front of Koichi and says, \"I want you to be my bride and give birth to my baby!\"",
+        "poster": "https://image.tmdb.org/t/p/w500/bYaYGcY4lNLkvuxYupTRwRrnaqQ.jpg",
+        "background": "https://image.tmdb.org/t/p/original/kLVtqq3yiDU8sXvGizqy1bbBHl.jpg",
+        "releaseInfo": "2020",
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Sci-Fi & Fantasy"
+        ],
+        "tmdb_rating": 6.6,
+        "episodes": 9,
+        "v": 4,
+        "refresh_after": "2026-11-14"
+      },
+      "japanese": "巨人族の花嫁(OA)",
+      "episodes": 0
+    },
+    "111": {
+      "name": "My Matchmaking Partner Is My Student, An Aggressive Troublemaker",
+      "romaji": "Omiaiaite wa oshiego, tsuyokina, mondaiji.",
+      "summary": "Nano is a very popular teacher at school but always has problems with the troublemaker Souji. One day she goes to a matchmaking and meets a very nice guy. Only until she finds out that the matchmaking partner was Souji. Can Nano get away from Souji?!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-02-11T00:00:00.000-08:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "13782",
+        "mal_id": "36198",
+        "episodes": 12,
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "kitsu:13782",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "お見合い相手は教え子、強気な、問題児。(OA)",
       "episodes": 0
     },
     "110": {
@@ -7774,41 +7904,6 @@
         "refresh_after": "2026-11-13"
       },
       "japanese": "スカートの中はケダモノでした。(OA)",
-      "episodes": 0
-    },
-    "113": {
-      "name": "Overflow",
-      "romaji": "Obafuro",
-      "summary": "After being together since childhood, the relationship of the 3 changes by one accident in the... Bath!? A story showing how to express love to someone who has been too close to you for a long time.",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-02-11T00:00:00.000-08:00",
-      "season": "Subtitle",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "mal_id": "40746",
-        "episodes": 8,
-        "anilist_id": "113417",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113417-yofUQOwPXWuE.png",
-        "anilist_background": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/113417-GIeryhlioQZB.jpg",
-        "anilist_description": "\"Brother, are we really taking a bath together?\"\n\nAnd so, a forbidden bathing experience began. Me, my sister, and childhood friend—one man and two women—are sharing one bath. After involuntarily \"overflowing,\" the sister's secret love come out?!\n\nThis is a young romantic comedy that won't let you say, \"it's over!\"\n\n(Source: Official Site, translated)",
-        "anilist_genres": [
-          "Comedy",
-          "Hentai",
-          "Romance"
-        ],
-        "anilist_year": "2020",
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "anilist:113417",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "おーばーふろぉ(OA)",
       "episodes": 0
     },
     "109": {
@@ -8085,96 +8180,209 @@
       "japanese": "異世界の湯",
       "episodes": 0
     },
-    "106": {
-      "name": "Seduced by My Best Friend",
-      "romaji": "Kurogyaru ni nattakara shin'yu to shite mita.",
-      "summary": "Playboy Shion gets turned into a girl?! The first thing his bestfriend Rui had in mind was…",
+    "113": {
+      "name": "Overflow",
+      "romaji": "Obafuro",
+      "summary": "After being together since childhood, the relationship of the 3 changes by one accident in the... Bath!? A story showing how to express love to someone who has been too close to you for a long time.",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2025-02-11T00:00:00.000-08:00",
-      "season": "",
+      "season": "Subtitle",
       "first_seen": "2026-10-13",
       "last_seen": "2026-11-13",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
-        "kitsu_id": "44102",
-        "mal_id": "47591",
+        "mal_id": "40746",
         "episodes": 8,
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "kitsu:44102",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "黒ギャルになったから親友としてみた。(OA)",
-      "episodes": 0
-    },
-    "111": {
-      "name": "My Matchmaking Partner Is My Student, An Aggressive Troublemaker",
-      "romaji": "Omiaiaite wa oshiego, tsuyokina, mondaiji.",
-      "summary": "Nano is a very popular teacher at school but always has problems with the troublemaker Souji. One day she goes to a matchmaking and meets a very nice guy. Only until she finds out that the matchmaking partner was Souji. Can Nano get away from Souji?!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-02-11T00:00:00.000-08:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "13782",
-        "mal_id": "36198",
-        "episodes": 12,
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "kitsu:13782",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "お見合い相手は教え子、強気な、問題児。(OA)",
-      "episodes": 0
-    },
-    "114": {
-      "name": "The Titan's Bride",
-      "romaji": "Kyojinzoku no hanayome",
-      "summary": "I've finally found you... My Bride!!! Basketball-loving high school student, Koichi, was relaxing in his room. Next thing he knew, he was in a different world with a titan in front of him... He was in Tildant, the country of titans, and in front of him was the prince, Caius. Then, the first thing that Koichi got was... a proposal?! Human X Titan. A BL with a huge height difference in a different world starts here!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-02-11T00:00:00.000-08:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "43092",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/43092/large.jpg",
-        "tmdb_type": "tv",
-        "tmdb_id": "103830",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:103830",
-        "imdb_id": "tt12362250",
-        "tvdb_id": "382658",
-        "description": "Koichi, a student about to graduate, is summoned to a world of Titans. It's the land of Tildant, where the prince, Caius, appears in front of Koichi and says, \"I want you to be my bride and give birth to my baby!\"",
-        "poster": "https://image.tmdb.org/t/p/w500/bYaYGcY4lNLkvuxYupTRwRrnaqQ.jpg",
-        "background": "https://image.tmdb.org/t/p/original/kLVtqq3yiDU8sXvGizqy1bbBHl.jpg",
-        "releaseInfo": "2020",
-        "genres": [
-          "Animation",
+        "anilist_id": "113417",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113417-yofUQOwPXWuE.png",
+        "anilist_background": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/113417-GIeryhlioQZB.jpg",
+        "anilist_description": "\"Brother, are we really taking a bath together?\"\n\nAnd so, a forbidden bathing experience began. Me, my sister, and childhood friend—one man and two women—are sharing one bath. After involuntarily \"overflowing,\" the sister's secret love come out?!\n\nThis is a young romantic comedy that won't let you say, \"it's over!\"\n\n(Source: Official Site, translated)",
+        "anilist_genres": [
           "Comedy",
-          "Sci-Fi & Fantasy"
+          "Hentai",
+          "Romance"
         ],
-        "tmdb_rating": 6.6,
-        "episodes": 9,
+        "anilist_year": "2020",
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "anilist:113417",
         "v": 4,
-        "refresh_after": "2026-11-14"
+        "refresh_after": "2026-11-13"
       },
-      "japanese": "巨人族の花嫁(OA)",
+      "japanese": "おーばーふろぉ(OA)",
+      "episodes": 0
+    },
+    "45": {
+      "name": "Secret Mission - Undercover Agents Never Back Down!",
+      "romaji": "Shikuretto misshon~ sennyusousakan wa zettaini makenai! ~",
+      "summary": "Narcotics Enforcement Agent, Riko Ikazuchi, is currently undercover with her junior colleague Noma in an apartment that serves as the hideout for a criminal organization. Despite Riko and Noma posing as a newlywed couple, the criminals begin to suspect them after not hearing any marital intimacy during the night. In order to convince them that they are a loving couple, Noma starts touching Riko's body—!?",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2024-11-20T00:00:00.000-08:00",
+      "season": "Subtitle",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "tmdb_type": "tv",
+        "tmdb_id": "233643",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
+        "id": "tmdb:233643",
+        "tvdb_id": "430477",
+        "description": "Narcotics Enforcement Agent Riko Ikazuchi is undercover with her junior colleague Noma in an apartment that serves as the hideout for a criminal organization. Despite Riko and Noma posing as a newlywed couple, the criminals begin to suspect them after not hearing any marital intimacy during the night. To convince them that they are a loving couple, Noma starts touching Riko's body...",
+        "poster": "https://image.tmdb.org/t/p/w500/xZV8e1iKi85PFZlbQBdznvtpAVJ.jpg",
+        "background": "https://image.tmdb.org/t/p/original/9FEXhTENjLPgmv7ElYGMnTUKxdu.jpg",
+        "releaseInfo": "2023",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 6.4,
+        "mal_id": "56497",
+        "episodes": 8,
+        "anilist_id": "169728",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169728-4zB1f8gfzA30.jpg",
+        "anilist_background": "",
+        "anilist_description": "Riko Ikazuchi is an undercover agent who keeps her true identity hidden while infiltrating different crime scenes. She is posing as a newlywed with her junior colleague Noma in an apartment where a criminal organization is based.(Source: Coolmic)\n\nNote: Episode 1 received an advanced distribution on AnimeFesta on September 8th, 2023. The start date reflects the start of the regular series broadcasting.",
+        "anilist_genres": [
+          "Hentai"
+        ],
+        "anilist_year": "2023",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "しーくれっとみっしょん～潜入捜査官は絶対に負けない！～(OA)",
+      "episodes": 0
+    },
+    "44": {
+      "name": "Harem Camp!",
+      "romaji": "Haremu kyanpu!",
+      "summary": "Why don't we sleep together tonight? Four girls in a tent way too small for five people... Kensuke thought it would only be a one-night harem camp... so what are the girls doing at his work place?! This is the beginning of a daily life that promises to be spicy!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2024-11-20T00:00:00.000-08:00",
+      "season": "Subtitle",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "background": "https://image.tmdb.org/t/p/original/xIioKjaioyNLW38OMugFmn15DI6.jpg",
+        "confidence": 1.0,
+        "description": "The story follows teacher and veteran solo camper Kensuke, who forms a camping group with four girls.",
+        "genres": [
+          "Animation"
+        ],
+        "id": "tmdb:207840",
+        "method": "tmdb-title-search",
+        "poster": "https://image.tmdb.org/t/p/w500/dsaYRfBviInhrulwtHOyg1KB4ct.jpg",
+        "releaseInfo": "2022",
+        "tmdb_id": "207840",
+        "tmdb_rating": 7.0,
+        "tmdb_type": "tv",
+        "tvdb_id": "423395",
+        "mal_id": "52717",
+        "episodes": 8,
+        "anilist_id": "153567",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153567-V6GcuDVPbKdW.jpg",
+        "anilist_background": "",
+        "anilist_description": "Kensuke was enjoying some solo camping when he suddenly has to share his tent with three girls and their boyfriend... or not?\n(Source: Coolmic)\n\nNote: The complete edition with explicit scenes was distributed web via Comic Festa Anime Zone. The censored version was broadcasted on Tokyo MX and BS11.",
+        "anilist_genres": [
+          "Comedy",
+          "Ecchi",
+          "Slice of Life"
+        ],
+        "anilist_year": "2022",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "ハーレムきゃんぷっ！(OA)",
+      "episodes": 0
+    },
+    "35": {
+      "name": "Adults Dunno How to Love!",
+      "romaji": "Otona nya koi no shikata ga wakarane!",
+      "summary": "It's been such a long time since I felt the feeling of love... Coincidence or destiny? A girl who has no interest in guys and a guy who has no interest in girls? After meeting at a mixer they did not plan to attend, Mio and Shuji end up having a \"one-nighter\". Both do not expect much, but this meeting seems a bit different than usual... \"That was so damn good...\" \"Why...?\" \"Could it be...chemistry?!\" Can they find the feeling of \"Love\" once again...?",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2024-11-20T00:00:00.000-08:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "mal_id": "42714",
+        "episodes": 8,
+        "anilist_id": "123081",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx123081-zOJLMkOjchpG.png",
+        "anilist_background": "",
+        "anilist_description": "Mio Sudou is an office lady who has not had a boyfriend in five years and has forgotten what it is like to be in love. Shuji Majima is an overseas insurance consultant who has not had a girlfriend in seven years despite being highly eligible. Mio meets Shuji at a matchmaking party, but finds him revolting as he states, \"I'm not into women.\" However, a provocative comment by Mio takes things in an unexpected direction.\n\nNote: The anime will have two versions, each with it's own cast. The \"On-Air\" version will air on TV, while a \"Premium\" version, which contains explicit content, will stream on the ComicFesta Anime website",
+        "anilist_genres": [
+          "Ecchi",
+          "Romance"
+        ],
+        "anilist_year": "2020",
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "anilist:123081",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "大人にゃ恋の仕方がわからねぇ！(OA)",
+      "episodes": 0
+    },
+    "48": {
+      "name": "Taisho Era Contract Marriage ~ The Substitute Bride and a Soldier's Fierce Love",
+      "romaji": "Taishou itsuwari buraidaru ~ migawari hanayome to gunpuku no mouai",
+      "summary": "\"Are you saying you're fine with me making you cry out all night?\"Asako, despite her status as a viscount's daughter, is shunned in high society. One day, a marriage proposal arrives suddenly for her younger sister. The prospective groom? None other than Captain Kido, a renowned soldier known for his ice-cold demeanor. Rumors swirl that he seeks a bride solely for the purpose of bearing children... To protect her precious younger sister, Asako volunteers as a substitute bride.Thus begins a false marriage for the sole purpose of bearing a child...",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2024-11-20T00:00:00.000-08:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "tmdb_type": "tv",
+        "tmdb_id": "271026",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
+        "id": "tmdb:271026",
+        "tvdb_id": "439589",
+        "description": "I used to think there was no love in marriage... Until I met a fierce and passionate soldier! Despite being the daughter of a viscount, Asako is rejected by high society and treated as a nuisance by her parents. When a marriage proposal arrives suddenly for Asako's younger sister from none other than Captain Kido, a soldier known for his coldness, she doesn't hesitate for a moment. To protect her precious younger sister, Asako volunteers as... a substitute bride!",
+        "poster": "https://image.tmdb.org/t/p/w500/zuyHvEPNLmTQrIPnLmXcyru7Y2u.jpg",
+        "background": "https://image.tmdb.org/t/p/original/uuZhNaarXYhM2kyuzG61kMLpYcP.jpg",
+        "releaseInfo": "2024",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 6.3,
+        "mal_id": "59698",
+        "episodes": 8,
+        "anilist_id": "180747",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180747-lZQkFwah0k8b.png",
+        "anilist_background": "",
+        "anilist_description": "\"I'll have you birth my child in place of your sister.\" Asako thought that there was no love in marriages... but the fingers of this cold-blooded soldier were unexpectedly sweet, passionate, and fierce...\n\nAsako was despite being the viscount's daughter shunned in high society. One day, a marriage proposal arrives suddenly for her younger sister. The prospective groom? None other than Captain Kido, a renowned soldier known for is ice-cold demeanor. Rumors swirl that he seeks a bride solely to bear his children... To protect her precious younger sister, Asako volunteers as a substitute bride.\n\nThus begins a false marriage for the sole purpose of bearing a child...?!\n\n(Source: Sueiseisha)\n\nNote: Episode 1 received an advanced distribution on AnimeFesta on September 13th, 2024. The start date reflects the start of the regular series broadcasting.",
+        "anilist_genres": [
+          "Drama",
+          "Hentai",
+          "Romance"
+        ],
+        "anilist_year": "2024",
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "大正偽りブラヰダル～身代わり花嫁と軍服の猛愛(OA)",
       "episodes": 0
     },
     "37": {
@@ -8259,125 +8467,6 @@
       "japanese": "森のくまさん、冬眠中。(OA)",
       "episodes": 0
     },
-    "39": {
-      "name": "Show Time!",
-      "romaji": "Shoutaimu! ~ Uta no onesan datte shitai",
-      "summary": "Minami was frustrated that TV show singers don't have the time to date someone, or the freedom to make love… But her life changes when she unexpectedly meets her fan Kana and Kana's father Shouji. Even a TV show singer needs sex…",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2024-11-20T00:00:00.000-08:00",
-      "season": "Season1",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "45481",
-        "anilist_id": "139283",
-        "mal_id": "42584",
-        "episodes": 1,
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "kitsu:45481",
-        "v": 4,
-        "refresh_after": "2026-11-14"
-      },
-      "japanese": "しょうたいむ！～歌のお姉さんだってしたい(OA)",
-      "episodes": 0
-    },
-    "48": {
-      "name": "Taisho Era Contract Marriage ~ The Substitute Bride and a Soldier's Fierce Love",
-      "romaji": "Taishou itsuwari buraidaru ~ migawari hanayome to gunpuku no mouai",
-      "summary": "\"Are you saying you're fine with me making you cry out all night?\"Asako, despite her status as a viscount's daughter, is shunned in high society. One day, a marriage proposal arrives suddenly for her younger sister. The prospective groom? None other than Captain Kido, a renowned soldier known for his ice-cold demeanor. Rumors swirl that he seeks a bride solely for the purpose of bearing children... To protect her precious younger sister, Asako volunteers as a substitute bride.Thus begins a false marriage for the sole purpose of bearing a child...",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2024-11-20T00:00:00.000-08:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "tmdb_type": "tv",
-        "tmdb_id": "271026",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
-        "id": "tmdb:271026",
-        "tvdb_id": "439589",
-        "description": "I used to think there was no love in marriage... Until I met a fierce and passionate soldier! Despite being the daughter of a viscount, Asako is rejected by high society and treated as a nuisance by her parents. When a marriage proposal arrives suddenly for Asako's younger sister from none other than Captain Kido, a soldier known for his coldness, she doesn't hesitate for a moment. To protect her precious younger sister, Asako volunteers as... a substitute bride!",
-        "poster": "https://image.tmdb.org/t/p/w500/zuyHvEPNLmTQrIPnLmXcyru7Y2u.jpg",
-        "background": "https://image.tmdb.org/t/p/original/uuZhNaarXYhM2kyuzG61kMLpYcP.jpg",
-        "releaseInfo": "2024",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 6.3,
-        "mal_id": "59698",
-        "episodes": 8,
-        "anilist_id": "180747",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180747-lZQkFwah0k8b.png",
-        "anilist_background": "",
-        "anilist_description": "\"I'll have you birth my child in place of your sister.\" Asako thought that there was no love in marriages... but the fingers of this cold-blooded soldier were unexpectedly sweet, passionate, and fierce...\n\nAsako was despite being the viscount's daughter shunned in high society. One day, a marriage proposal arrives suddenly for her younger sister. The prospective groom? None other than Captain Kido, a renowned soldier known for is ice-cold demeanor. Rumors swirl that he seeks a bride solely to bear his children... To protect her precious younger sister, Asako volunteers as a substitute bride.\n\nThus begins a false marriage for the sole purpose of bearing a child...?!\n\n(Source: Sueiseisha)\n\nNote: Episode 1 received an advanced distribution on AnimeFesta on September 13th, 2024. The start date reflects the start of the regular series broadcasting.",
-        "anilist_genres": [
-          "Drama",
-          "Hentai",
-          "Romance"
-        ],
-        "anilist_year": "2024",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "大正偽りブラヰダル～身代わり花嫁と軍服の猛愛(OA)",
-      "episodes": 0
-    },
-    "44": {
-      "name": "Harem Camp!",
-      "romaji": "Haremu kyanpu!",
-      "summary": "Why don't we sleep together tonight? Four girls in a tent way too small for five people... Kensuke thought it would only be a one-night harem camp... so what are the girls doing at his work place?! This is the beginning of a daily life that promises to be spicy!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2024-11-20T00:00:00.000-08:00",
-      "season": "Subtitle",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "background": "https://image.tmdb.org/t/p/original/xIioKjaioyNLW38OMugFmn15DI6.jpg",
-        "confidence": 1.0,
-        "description": "The story follows teacher and veteran solo camper Kensuke, who forms a camping group with four girls.",
-        "genres": [
-          "Animation"
-        ],
-        "id": "tmdb:207840",
-        "method": "tmdb-title-search",
-        "poster": "https://image.tmdb.org/t/p/w500/dsaYRfBviInhrulwtHOyg1KB4ct.jpg",
-        "releaseInfo": "2022",
-        "tmdb_id": "207840",
-        "tmdb_rating": 7.0,
-        "tmdb_type": "tv",
-        "tvdb_id": "423395",
-        "mal_id": "52717",
-        "episodes": 8,
-        "anilist_id": "153567",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153567-V6GcuDVPbKdW.jpg",
-        "anilist_background": "",
-        "anilist_description": "Kensuke was enjoying some solo camping when he suddenly has to share his tent with three girls and their boyfriend... or not?\n(Source: Coolmic)\n\nNote: The complete edition with explicit scenes was distributed web via Comic Festa Anime Zone. The censored version was broadcasted on Tokyo MX and BS11.",
-        "anilist_genres": [
-          "Comedy",
-          "Ecchi",
-          "Slice of Life"
-        ],
-        "anilist_year": "2022",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "ハーレムきゃんぷっ！(OA)",
-      "episodes": 0
-    },
     "46": {
       "name": "Adam's Sweet Agony",
       "romaji": "Modaeteyo Adamukun",
@@ -8423,68 +8512,31 @@
       "japanese": "悶えてよアダムくん(OA)",
       "episodes": 0
     },
-    "42": {
-      "name": "XL Boss",
-      "romaji": "XL joushi.",
-      "summary": "Watase applies for a quality control tester job and ends up with a box full of XL size condoms. Her boss Sudo offers help with the \"testing\" which leads her to learn a lot about XL. Add another XL guy, Riku, and...?! An XL love triangle story starts here!",
+    "39": {
+      "name": "Show Time!",
+      "romaji": "Shoutaimu! ~ Uta no onesan datte shitai",
+      "summary": "Minami was frustrated that TV show singers don't have the time to date someone, or the freedom to make love… But her life changes when she unexpectedly meets her fan Kana and Kana's father Shouji. Even a TV show singer needs sex…",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2024-11-20T00:00:00.000-08:00",
-      "season": "",
+      "season": "Season1",
       "first_seen": "2026-10-13",
       "last_seen": "2026-11-13",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
-        "tmdb_type": "tv",
-        "tmdb_id": "93821",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
-        "id": "tmdb:93821",
-        "imdb_id": "tt11628576",
-        "tvdb_id": "407203",
-        "description": "Running short of money, office lady Saki Watase is introduced to a part-time job where she's tasked with reviewing XL-size condoms. While receiving an escort home after a night of drinking, Saki's \"demon\" boss Keisuke Sudou notices that she's carrying a large quantity of condom. Once Saki explains her circumstances, Keisuke reveals that he is XL-size. A romance between the two thus begins.",
-        "poster": "https://image.tmdb.org/t/p/w500/g69Q5Wc4DDpjpmWMKg2ElY1QPQt.jpg",
-        "background": "https://image.tmdb.org/t/p/original/kNfWTUji2C7L0bNuNZ6qHx9vzun.jpg",
-        "releaseInfo": "2019",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 5.9,
-        "kitsu_id": "42509",
-        "mal_id": "40254",
-        "episodes": 8,
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "XL上司。(OA)",
-      "episodes": 0
-    },
-    "43": {
-      "name": "Game World Reincarnation",
-      "romaji": "Ouji no honmei wa akuyakureijou",
-      "summary": "I died, got reincarnated,my beloved prince is in front of me, and I'm... The villainess!? I need to get him hooked up with the heroine, but why is he coming after me! Is this the bad end...?",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2024-11-20T00:00:00.000-08:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "45606",
-        "mal_id": "49223",
-        "episodes": 8,
+        "kitsu_id": "45481",
+        "anilist_id": "139283",
+        "mal_id": "42584",
+        "episodes": 1,
         "method": "offline-db",
         "confidence": 0.95,
-        "id": "kitsu:45606",
+        "id": "kitsu:45481",
         "v": 4,
         "refresh_after": "2026-11-14"
       },
-      "japanese": "王子の本命は悪役令嬢(OA)",
+      "japanese": "しょうたいむ！～歌のお姉さんだってしたい(OA)",
       "episodes": 0
     },
     "34": {
@@ -8525,48 +8577,30 @@
       "japanese": "オオカミさんは食べられたい(OA)",
       "episodes": 0
     },
-    "45": {
-      "name": "Secret Mission - Undercover Agents Never Back Down!",
-      "romaji": "Shikuretto misshon~ sennyusousakan wa zettaini makenai! ~",
-      "summary": "Narcotics Enforcement Agent, Riko Ikazuchi, is currently undercover with her junior colleague Noma in an apartment that serves as the hideout for a criminal organization. Despite Riko and Noma posing as a newlywed couple, the criminals begin to suspect them after not hearing any marital intimacy during the night. In order to convince them that they are a loving couple, Noma starts touching Riko's body—!?",
+    "43": {
+      "name": "Game World Reincarnation",
+      "romaji": "Ouji no honmei wa akuyakureijou",
+      "summary": "I died, got reincarnated,my beloved prince is in front of me, and I'm... The villainess!? I need to get him hooked up with the heroine, but why is he coming after me! Is this the bad end...?",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2024-11-20T00:00:00.000-08:00",
-      "season": "Subtitle",
+      "season": "",
       "first_seen": "2026-10-13",
       "last_seen": "2026-11-13",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
-        "tmdb_type": "tv",
-        "tmdb_id": "233643",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
-        "id": "tmdb:233643",
-        "tvdb_id": "430477",
-        "description": "Narcotics Enforcement Agent Riko Ikazuchi is undercover with her junior colleague Noma in an apartment that serves as the hideout for a criminal organization. Despite Riko and Noma posing as a newlywed couple, the criminals begin to suspect them after not hearing any marital intimacy during the night. To convince them that they are a loving couple, Noma starts touching Riko's body...",
-        "poster": "https://image.tmdb.org/t/p/w500/xZV8e1iKi85PFZlbQBdznvtpAVJ.jpg",
-        "background": "https://image.tmdb.org/t/p/original/9FEXhTENjLPgmv7ElYGMnTUKxdu.jpg",
-        "releaseInfo": "2023",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 6.4,
-        "mal_id": "56497",
+        "kitsu_id": "45606",
+        "mal_id": "49223",
         "episodes": 8,
-        "anilist_id": "169728",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169728-4zB1f8gfzA30.jpg",
-        "anilist_background": "",
-        "anilist_description": "Riko Ikazuchi is an undercover agent who keeps her true identity hidden while infiltrating different crime scenes. She is posing as a newlywed with her junior colleague Noma in an apartment where a criminal organization is based.(Source: Coolmic)\n\nNote: Episode 1 received an advanced distribution on AnimeFesta on September 8th, 2023. The start date reflects the start of the regular series broadcasting.",
-        "anilist_genres": [
-          "Hentai"
-        ],
-        "anilist_year": "2023",
+        "method": "offline-db",
+        "confidence": 0.95,
+        "id": "kitsu:45606",
         "v": 4,
-        "refresh_after": "2026-11-13"
+        "refresh_after": "2026-11-14"
       },
-      "japanese": "しーくれっとみっしょん～潜入捜査官は絶対に負けない！～(OA)",
+      "japanese": "王子の本命は悪役令嬢(OA)",
       "episodes": 0
     },
     "47": {
@@ -8614,40 +8648,6 @@
         "refresh_after": "2026-11-13"
       },
       "japanese": "当て馬キャラのくせして、スパダリ王子に寵愛されています。(OA)",
-      "episodes": 0
-    },
-    "35": {
-      "name": "Adults Dunno How to Love!",
-      "romaji": "Otona nya koi no shikata ga wakarane!",
-      "summary": "It's been such a long time since I felt the feeling of love... Coincidence or destiny? A girl who has no interest in guys and a guy who has no interest in girls? After meeting at a mixer they did not plan to attend, Mio and Shuji end up having a \"one-nighter\". Both do not expect much, but this meeting seems a bit different than usual... \"That was so damn good...\" \"Why...?\" \"Could it be...chemistry?!\" Can they find the feeling of \"Love\" once again...?",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2024-11-20T00:00:00.000-08:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-13",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "mal_id": "42714",
-        "episodes": 8,
-        "anilist_id": "123081",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx123081-zOJLMkOjchpG.png",
-        "anilist_background": "",
-        "anilist_description": "Mio Sudou is an office lady who has not had a boyfriend in five years and has forgotten what it is like to be in love. Shuji Majima is an overseas insurance consultant who has not had a girlfriend in seven years despite being highly eligible. Mio meets Shuji at a matchmaking party, but finds him revolting as he states, \"I'm not into women.\" However, a provocative comment by Mio takes things in an unexpected direction.\n\nNote: The anime will have two versions, each with it's own cast. The \"On-Air\" version will air on TV, while a \"Premium\" version, which contains explicit content, will stream on the ComicFesta Anime website",
-        "anilist_genres": [
-          "Ecchi",
-          "Romance"
-        ],
-        "anilist_year": "2020",
-        "method": "offline-db",
-        "confidence": 0.95,
-        "id": "anilist:123081",
-        "v": 4,
-        "refresh_after": "2026-11-13"
-      },
-      "japanese": "大人にゃ恋の仕方がわからねぇ！(OA)",
       "episodes": 0
     },
     "36": {
@@ -8699,6 +8699,44 @@
       },
       "japanese": "魔王イブロギアに身を捧げよ(OA)",
       "episodes": 0
+    },
+    "42": {
+      "name": "XL Boss",
+      "romaji": "XL joushi.",
+      "summary": "Watase applies for a quality control tester job and ends up with a box full of XL size condoms. Her boss Sudo offers help with the \"testing\" which leads her to learn a lot about XL. Add another XL guy, Riku, and...?! An XL love triangle story starts here!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2024-11-20T00:00:00.000-08:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-13",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "tmdb_type": "tv",
+        "tmdb_id": "93821",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
+        "id": "tmdb:93821",
+        "imdb_id": "tt11628576",
+        "tvdb_id": "407203",
+        "description": "Running short of money, office lady Saki Watase is introduced to a part-time job where she's tasked with reviewing XL-size condoms. While receiving an escort home after a night of drinking, Saki's \"demon\" boss Keisuke Sudou notices that she's carrying a large quantity of condom. Once Saki explains her circumstances, Keisuke reveals that he is XL-size. A romance between the two thus begins.",
+        "poster": "https://image.tmdb.org/t/p/w500/g69Q5Wc4DDpjpmWMKg2ElY1QPQt.jpg",
+        "background": "https://image.tmdb.org/t/p/original/kNfWTUji2C7L0bNuNZ6qHx9vzun.jpg",
+        "releaseInfo": "2019",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 5.9,
+        "kitsu_id": "42509",
+        "mal_id": "40254",
+        "episodes": 8,
+        "v": 4,
+        "refresh_after": "2026-11-13"
+      },
+      "japanese": "XL上司。(OA)",
+      "episodes": 0
     }
   },
   "home_rows": [
@@ -8731,6 +8769,7 @@
       "catalog_id": "oceanveil-home-newest",
       "name": "Newest Addition",
       "ids": [
+        "547",
         "570",
         "560",
         "559",
@@ -8740,8 +8779,8 @@
         "545",
         "546",
         "543",
-        "539",
         "540",
+        "539",
         "527",
         "530",
         "529",
@@ -8769,8 +8808,7 @@
         "500",
         "497",
         "496",
-        "485",
-        "486"
+        "485"
       ]
     },
     {
@@ -8981,10 +9019,10 @@
       "catalog_id": "oceanveil-home-completed",
       "name": "Completed",
       "ids": [
-        "545",
         "546",
-        "539",
+        "545",
         "540",
+        "539",
         "527",
         "517",
         "519",
@@ -8992,14 +9030,15 @@
         "505",
         "503",
         "498",
-        "501",
         "502",
+        "501",
         "500",
         "497",
         "496",
         "485",
         "486",
         "484",
+        "445",
         "483",
         "469",
         "481",
@@ -9040,18 +9079,18 @@
         "399",
         "397",
         "389",
-        "386",
-        "385",
-        "388",
         "387",
-        "392",
+        "385",
+        "386",
+        "388",
         "393",
+        "392",
         "391",
         "355",
-        "367",
         "366",
-        "383",
+        "367",
         "384",
+        "383",
         "370",
         "365",
         "354",
@@ -9068,8 +9107,8 @@
         "346",
         "348",
         "305",
-        "326",
         "325",
+        "326",
         "324",
         "323",
         "311",
@@ -9094,15 +9133,15 @@
         "297",
         "293",
         "292",
-        "290",
         "291",
+        "290",
         "278",
         "269",
         "277",
         "268",
         "273",
-        "275",
         "280",
+        "275",
         "276",
         "258",
         "272",
@@ -9117,44 +9156,46 @@
         "221",
         "231",
         "222",
-        "220",
         "216",
+        "220",
         "218",
         "198",
         "196",
         "195",
         "193",
         "194",
-        "188",
         "192",
+        "191",
         "189",
         "190",
-        "191",
+        "188",
         "170",
-        "169",
-        "168",
         "165",
+        "168",
+        "169",
+        "164",
         "161",
         "162",
         "163",
-        "164",
         "167",
         "148",
         "81",
         "146",
+        "135",
         "131",
         "127",
-        "135",
         "133",
         "129",
         "125",
-        "115",
         "119",
         "117",
-        "40",
+        "115",
         "41",
+        "40",
+        "106",
+        "114",
+        "111",
         "110",
-        "113",
         "109",
         "108",
         "107",
@@ -9162,22 +9203,20 @@
         "78",
         "77",
         "112",
-        "106",
-        "111",
-        "114",
+        "113",
+        "45",
+        "44",
+        "35",
+        "48",
         "37",
         "38",
-        "39",
-        "48",
-        "44",
         "46",
-        "42",
-        "43",
+        "39",
         "34",
-        "45",
+        "43",
         "47",
-        "35",
-        "36"
+        "36",
+        "42"
       ]
     },
     {
@@ -9406,6 +9445,7 @@
       "catalog_id": "oceanveil-home-genre-4",
       "name": "BL Section",
       "ids": [
+        "547",
         "559",
         "481",
         "470",
@@ -9425,12 +9465,12 @@
         "133",
         "117",
         "115",
-        "106",
         "77",
+        "106",
         "114",
         "36",
-        "38",
-        "47"
+        "47",
+        "38"
       ]
     }
   ]
