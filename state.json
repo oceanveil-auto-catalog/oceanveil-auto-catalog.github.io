@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-15T10:54:36+00:00",
+  "updated_utc": "2026-11-15T22:51:38+00:00",
   "titles": {
     "547": {
       "name": "[KR] One-Room TA",
@@ -8680,7 +8680,7 @@
           "Action & Adventure",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 7.2,
+        "tmdb_rating": 7.19,
         "mal_id": "47792",
         "anidb_id": "16057",
         "episodes": 9,
@@ -8695,7 +8695,7 @@
         ],
         "anilist_year": "2021",
         "v": 4,
-        "refresh_after": "2026-11-14"
+        "refresh_after": "2026-11-22"
       },
       "japanese": "魔王イブロギアに身を捧げよ(OA)",
       "episodes": 0
