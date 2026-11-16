@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-15T22:51:38+00:00",
+  "updated_utc": "2026-11-16T11:18:11+00:00",
   "titles": {
     "547": {
       "name": "[KR] One-Room TA",
@@ -14,7 +14,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -52,7 +52,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -91,7 +91,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -132,7 +132,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -172,7 +172,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -211,7 +211,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -250,7 +250,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -274,9 +274,9 @@
           "Animation",
           "Drama"
         ],
-        "tmdb_rating": 6.484,
+        "tmdb_rating": 6.495,
         "v": 4,
-        "refresh_after": "2026-11-15"
+        "refresh_after": "2026-11-23"
       }
     },
     "546": {
@@ -291,7 +291,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-28",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -330,7 +330,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-28",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -369,7 +369,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -409,7 +409,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -449,7 +449,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -489,7 +489,7 @@
       "season": "OVA",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -531,7 +531,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -572,7 +572,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -613,7 +613,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -653,7 +653,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -701,7 +701,7 @@
       "start_at": "2026-10-04T09:05:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -740,7 +740,7 @@
       "start_at": "2026-10-04T09:05:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -787,7 +787,7 @@
       "start_at": "2026-10-04T09:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -837,7 +837,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -879,7 +879,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -918,7 +918,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -959,7 +959,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1003,7 +1003,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1040,7 +1040,7 @@
       "start_at": "2026-09-18T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1088,7 +1088,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1137,7 +1137,7 @@
       "season": "Season3",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1174,7 +1174,7 @@
       "start_at": "2026-09-11T01:05:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1221,7 +1221,7 @@
       "start_at": "2026-09-11T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1271,7 +1271,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1309,7 +1309,7 @@
       "start_at": "2026-09-03T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1350,7 +1350,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1391,7 +1391,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1431,7 +1431,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1473,7 +1473,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1513,7 +1513,7 @@
       "start_at": "2026-08-22T16:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1550,7 +1550,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1587,7 +1587,7 @@
       "start_at": "2026-08-16T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1631,7 +1631,7 @@
       "start_at": "2026-08-13T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1671,7 +1671,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1710,7 +1710,7 @@
       "start_at": "2026-08-08T12:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1758,7 +1758,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1797,7 +1797,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1834,7 +1834,7 @@
       "start_at": "2026-07-25T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1880,7 +1880,7 @@
       "season": "Main",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1920,7 +1920,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1962,7 +1962,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2004,7 +2004,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2030,7 +2030,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2071,7 +2071,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2113,7 +2113,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2153,7 +2153,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2202,7 +2202,7 @@
       "season": "Edited",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2242,7 +2242,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2282,7 +2282,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2321,7 +2321,7 @@
       "start_at": "2026-06-12T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2367,7 +2367,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2409,7 +2409,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -2451,7 +2451,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2490,7 +2490,7 @@
       "start_at": "2026-06-02T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -2532,7 +2532,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2569,7 +2569,7 @@
       "start_at": "2026-05-20T10:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2610,7 +2610,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2650,7 +2650,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2691,7 +2691,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2730,7 +2730,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2770,7 +2770,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2811,7 +2811,7 @@
       "season": "Season3",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2849,7 +2849,7 @@
       "start_at": "2026-04-23T10:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2890,7 +2890,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2930,7 +2930,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2970,7 +2970,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3009,7 +3009,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3049,7 +3049,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3086,7 +3086,7 @@
       "start_at": "2026-04-05T09:10:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": true,
       "dubbed": false,
       "enrichment": {
@@ -3125,7 +3125,7 @@
       "start_at": "2026-04-05T09:05:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3162,7 +3162,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3203,7 +3203,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3243,7 +3243,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3280,7 +3280,7 @@
       "start_at": "2026-03-13T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3319,7 +3319,7 @@
       "start_at": "2026-03-13T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3356,7 +3356,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3384,81 +3384,6 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "387": {
-      "name": "Dragoon",
-      "romaji": "Ryuki denshou",
-      "summary": "A fateful encounter foreshadowing a grand battle with the Dragoon!! A boy, not yet a hero, vows to fight for a girl's fragile smile...",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2026-03-11T10:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "3384",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3384/large.jpg",
-        "tmdb_type": "tv",
-        "tmdb_id": "45153",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:45153",
-        "imdb_id": "tt4829622",
-        "tvdb_id": "401051",
-        "description": "When the young swordsman, Sedon, finds the beautiful Miu unconscious and naked in the snow, he has no idea that she is the product of an evil experiment. Nor is he aware that ruthless soldiers have been ordered to track her down and bring her back. But soon he discovers just how important Miu is to an evil plan that involves treacherous royalty, bloodthirsty killers and a devastating power within May herself.",
-        "poster": "https://image.tmdb.org/t/p/w500/iRzgxOlVoDKu39p48RO8PO21oqq.jpg",
-        "releaseInfo": "1997",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 4.5,
-        "episodes": 3,
-        "v": 4,
-        "refresh_after": "2026-11-21"
-      },
-      "japanese": "竜機伝承",
-      "episodes": 0
-    },
-    "385": {
-      "name": "Variable Geo",
-      "romaji": "Variaburu-jio",
-      "summary": "Yuka Takeuchi is the utmost powerful waitress! What does she keep fighting for?! Beautiful girls enter the martial arts tournament ‘V.G.’. Glory, honor, prize money… The winner takes it all, while the loser is destined to lose everything, even their dignity. However, something within them draws them to fight. What awaits the girls inside the ring... Despair or hope…? The fists respond to the soul's gong!!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2026-03-11T10:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "kitsu_id": "1063",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1063/large.jpg",
-        "tmdb_type": "tv",
-        "tmdb_id": "43935",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:43935",
-        "imdb_id": "tt0368402",
-        "tvdb_id": "154471",
-        "description": "The special of the day is Variable Geo-a brutal battle between waitresses who serve up generous portions of energy blasts and vicious side orders of murderous martial artistry.\n\nFor buffed beauties who make below-minimum wages, VG is the perfect way to make some fast cash. The victorious walk away with millions, and the defeated lose everything.\n\nBut this high-stakes sport has dark forces and dubious practices behind the fun and games. Lethal injections make steroids seem like vitamins. Instead of team prayer, there's demonic possession. Athletic sponsors are malevolent corporations with a more frightening agenda than increased market share. It's all just part of the game.",
-        "poster": "https://image.tmdb.org/t/p/w500/lKJaUSowWpzt7PEj3uMdltkzgZY.jpg",
-        "background": "https://image.tmdb.org/t/p/original/2rb4VFP952UdUQYfgBxoIA4bwHW.jpg",
-        "releaseInfo": "1997",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 5.5,
-        "episodes": 3,
-        "v": 4,
-        "refresh_after": "2026-11-21"
-      },
-      "japanese": "ヴァリアブル・ジオ",
-      "episodes": 0
-    },
     "386": {
       "name": "Super Goddess Dangaiser 3",
       "romaji": "Choushinki Dangaiza 3",
@@ -3469,7 +3394,7 @@
       "start_at": "2026-03-11T10:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3510,7 +3435,7 @@
       "start_at": "2026-03-11T10:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3539,21 +3464,96 @@
       "japanese": "電脳戦隊ヴギィ'ズ★エンジェル",
       "episodes": 0
     },
-    "393": {
-      "name": "[Dub] Black Jack (The Complete OVA Series Dubbed)",
+    "387": {
+      "name": "Dragoon",
+      "romaji": "Ryuki denshou",
+      "summary": "A fateful encounter foreshadowing a grand battle with the Dragoon!! A boy, not yet a hero, vows to fight for a girl's fragile smile...",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2026-03-11T10:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-16",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "3384",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3384/large.jpg",
+        "tmdb_type": "tv",
+        "tmdb_id": "45153",
+        "method": "kitsu-fribb",
+        "confidence": 1.0,
+        "id": "tmdb:45153",
+        "imdb_id": "tt4829622",
+        "tvdb_id": "401051",
+        "description": "When the young swordsman, Sedon, finds the beautiful Miu unconscious and naked in the snow, he has no idea that she is the product of an evil experiment. Nor is he aware that ruthless soldiers have been ordered to track her down and bring her back. But soon he discovers just how important Miu is to an evil plan that involves treacherous royalty, bloodthirsty killers and a devastating power within May herself.",
+        "poster": "https://image.tmdb.org/t/p/w500/iRzgxOlVoDKu39p48RO8PO21oqq.jpg",
+        "releaseInfo": "1997",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 4.5,
+        "episodes": 3,
+        "v": 4,
+        "refresh_after": "2026-11-21"
+      },
+      "japanese": "竜機伝承",
+      "episodes": 0
+    },
+    "385": {
+      "name": "Variable Geo",
+      "romaji": "Variaburu-jio",
+      "summary": "Yuka Takeuchi is the utmost powerful waitress! What does she keep fighting for?! Beautiful girls enter the martial arts tournament ‘V.G.’. Glory, honor, prize money… The winner takes it all, while the loser is destined to lose everything, even their dignity. However, something within them draws them to fight. What awaits the girls inside the ring... Despair or hope…? The fists respond to the soul's gong!!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2026-03-11T10:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-16",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "kitsu_id": "1063",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1063/large.jpg",
+        "tmdb_type": "tv",
+        "tmdb_id": "43935",
+        "method": "kitsu-fribb",
+        "confidence": 1.0,
+        "id": "tmdb:43935",
+        "imdb_id": "tt0368402",
+        "tvdb_id": "154471",
+        "description": "The special of the day is Variable Geo-a brutal battle between waitresses who serve up generous portions of energy blasts and vicious side orders of murderous martial artistry.\n\nFor buffed beauties who make below-minimum wages, VG is the perfect way to make some fast cash. The victorious walk away with millions, and the defeated lose everything.\n\nBut this high-stakes sport has dark forces and dubious practices behind the fun and games. Lethal injections make steroids seem like vitamins. Instead of team prayer, there's demonic possession. Athletic sponsors are malevolent corporations with a more frightening agenda than increased market share. It's all just part of the game.",
+        "poster": "https://image.tmdb.org/t/p/w500/lKJaUSowWpzt7PEj3uMdltkzgZY.jpg",
+        "background": "https://image.tmdb.org/t/p/original/2rb4VFP952UdUQYfgBxoIA4bwHW.jpg",
+        "releaseInfo": "1997",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 5.5,
+        "episodes": 3,
+        "v": 4,
+        "refresh_after": "2026-11-21"
+      },
+      "japanese": "ヴァリアブル・ジオ",
+      "episodes": 0
+    },
+    "392": {
+      "name": "Black Jack (the Complete OVA Series)",
       "romaji": "Burakku jakku",
-      "japanese": "ブラックジャック(Dub)",
+      "japanese": "ブラックジャック",
       "summary": "When mysterious medical ailments strike, the mysterious Black Jack is who to call - an unlicensed doctor who can solve any malady... for a price.",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2026-03-10T10:00:00.000-07:00",
-      "season": "Dubbed",
+      "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "1364",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1364/large.jpg",
@@ -3578,21 +3578,21 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "392": {
-      "name": "Black Jack (the Complete OVA Series)",
+    "393": {
+      "name": "[Dub] Black Jack (The Complete OVA Series Dubbed)",
       "romaji": "Burakku jakku",
-      "japanese": "ブラックジャック",
+      "japanese": "ブラックジャック(Dub)",
       "summary": "When mysterious medical ailments strike, the mysterious Black Jack is who to call - an unlicensed doctor who can solve any malady... for a price.",
       "rating": "age_16_plus",
       "simulcast": false,
       "completed": true,
       "start_at": "2026-03-10T10:00:00.000-07:00",
-      "season": "Subtitle",
+      "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "1364",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/1364/large.jpg",
@@ -3627,7 +3627,7 @@
       "start_at": "2026-03-09T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3670,7 +3670,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3709,7 +3709,7 @@
       "season": "OVA",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3751,7 +3751,7 @@
       "season": "OVA",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3781,10 +3781,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "384": {
-      "name": "[Dub] Master of Martial Hearts",
+    "383": {
+      "name": "Master of Martial Hearts",
       "romaji": "Zettai shougeki",
-      "japanese": "絶対衝激(Dub)",
+      "japanese": "絶対衝激",
       "summary": "Platonic Heart, a legendary jewel that grants any single wish of the woman who possesses it... High school girl, Aya Iseshima, steps onto the battlefield as if guided by a mysterious fate. What awaits her there—hope or despair? The curtain rises now on a battle where the girls stake their dreams!",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -3793,9 +3793,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "3886",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3886/large.jpg",
@@ -3821,10 +3821,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "383": {
-      "name": "Master of Martial Hearts",
+    "384": {
+      "name": "[Dub] Master of Martial Hearts",
       "romaji": "Zettai shougeki",
-      "japanese": "絶対衝激",
+      "japanese": "絶対衝激(Dub)",
       "summary": "Platonic Heart, a legendary jewel that grants any single wish of the woman who possesses it... High school girl, Aya Iseshima, steps onto the battlefield as if guided by a mysterious fate. What awaits her there—hope or despair? The curtain rises now on a battle where the girls stake their dreams!",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -3833,9 +3833,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "3886",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3886/large.jpg",
@@ -3871,7 +3871,7 @@
       "start_at": "2026-02-22T18:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3913,7 +3913,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3963,7 +3963,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4002,7 +4002,7 @@
       "start_at": "2026-02-12T18:00:00.000-08:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4031,10 +4031,10 @@
       "japanese": "がぁ〜でぃあんHearts♡",
       "episodes": 0
     },
-    "371": {
-      "name": "Henkei Shoujo",
+    "372": {
+      "name": "[Dub] Henkei Shoujo",
       "romaji": "Henkei shoujo",
-      "japanese": "変形少女",
+      "japanese": "変形少女(Dub)",
       "summary": "What would you do if a girl close to you suddenly morphs into a vehicle? A never-before-seen characterization of beautiful girls that entirely change form! Check out each episode for more details!",
       "rating": "pg",
       "simulcast": false,
@@ -4043,9 +4043,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "13311",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/13311/large.jpg",
@@ -4069,10 +4069,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "372": {
-      "name": "[Dub] Henkei Shoujo",
+    "371": {
+      "name": "Henkei Shoujo",
       "romaji": "Henkei shoujo",
-      "japanese": "変形少女(Dub)",
+      "japanese": "変形少女",
       "summary": "What would you do if a girl close to you suddenly morphs into a vehicle? A never-before-seen characterization of beautiful girls that entirely change form! Check out each episode for more details!",
       "rating": "pg",
       "simulcast": false,
@@ -4081,9 +4081,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "13311",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/13311/large.jpg",
@@ -4119,7 +4119,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4160,7 +4160,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4197,7 +4197,7 @@
       "start_at": "2026-01-27T10:00:00.000-08:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4223,7 +4223,7 @@
       "start_at": "2026-01-21T10:00:00.000-08:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4265,7 +4265,7 @@
       "start_at": "2026-01-09T08:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4307,7 +4307,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4355,7 +4355,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4392,7 +4392,7 @@
       "start_at": "2026-01-04T08:05:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4439,7 +4439,7 @@
       "start_at": "2026-01-04T08:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4489,7 +4489,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4516,6 +4516,49 @@
         "refresh_after": "2026-11-19"
       }
     },
+    "326": {
+      "name": "[Dub] Negima!?",
+      "romaji": "Negima!?",
+      "japanese": "ネギま！？(Dub)",
+      "summary": "Negi Springfield is a ten-year-old boy who graduated from a magic school in Wales, UK, and became an apprentice wizard. Aspiring to become a Magister Magi—a top-tier wizard like his father—he is sent to Mahora Academy in Japan for training. Mahora Academy is a massive campus city with over 30,000 students. Its vast grounds house every educational facility imaginable, from university to kindergarten, along with student dorms, a hospital, restaurants, and even a huge arcade. Negi becomes the homeroom teacher for Class 2-A in the girls' middle school division. Immediately, the girls in his class start treating him like a child, calling him “Kid Teacher.” To make matters worse, despite there being a severe punishment if he reveals himself as a magician, Asuna Kagurazaka, one of his students, nearly suspects his true identity on his very first day. Then, as there are no vacant rooms, he ends up sharing a dorm room with Asuna and Konoka Konoe in the girls' dormitory! And to top it all off, a mysterious Dracula incident occurs. Can Negi Sensei earn the trust of his students who he's now forced to fight for? And can he overcome this trial to become a “Magister Magi” like his father?",
+      "rating": "pg",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2026-01-01T15:00:00.000-08:00",
+      "season": "Main",
+      "episodes": 0,
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-16",
+      "nsfw": false,
+      "dubbed": true,
+      "enrichment": {
+        "kitsu_id": "135",
+        "anilist_id": "157",
+        "mal_id": "157",
+        "anidb_id": "2605",
+        "episodes": 26,
+        "tmdb_type": "tv",
+        "tmdb_id": "8859",
+        "method": "tmdb-title-search",
+        "confidence": 1.0,
+        "id": "tmdb:8859",
+        "imdb_id": "tt0480493",
+        "tvdb_id": "75869",
+        "description": "Vampires, robots, sorcery… And that’s all before Gym Class! Welcome to Mahora Academy, an all-girls school where the impossible and the enchanting are a part of the curriculum. It’s the start of the new school year and emotions run rampant as the girls of Class 2-A meet the newest staff addition – Negi Springfield. A ten-year-old Welsh born prodigy, Negi has more problems than he has students. As a wizard-in-training, this academic appointment is the final requirement in his quest to become a Magister Magorum. But if he messes things up and the girls find out, existence as an exotic ermine will be his fate!",
+        "poster": "https://image.tmdb.org/t/p/w500/pfEiIQQ1n3LgSRznpoDWpniCnfo.jpg",
+        "background": "https://image.tmdb.org/t/p/original/9KJTPglkgWXbyzTkqIOgA6y8Dv6.jpg",
+        "releaseInfo": "2005",
+        "genres": [
+          "Animation",
+          "Action & Adventure",
+          "Comedy",
+          "Sci-Fi & Fantasy"
+        ],
+        "tmdb_rating": 6.1,
+        "v": 4,
+        "refresh_after": "2026-11-19"
+      }
+    },
     "325": {
       "name": "Negima!?",
       "romaji": "Negima!?",
@@ -4528,7 +4571,7 @@
       "season": "Main",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4559,53 +4602,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "326": {
-      "name": "[Dub] Negima!?",
-      "romaji": "Negima!?",
-      "japanese": "ネギま！？(Dub)",
-      "summary": "Negi Springfield is a ten-year-old boy who graduated from a magic school in Wales, UK, and became an apprentice wizard. Aspiring to become a Magister Magi—a top-tier wizard like his father—he is sent to Mahora Academy in Japan for training. Mahora Academy is a massive campus city with over 30,000 students. Its vast grounds house every educational facility imaginable, from university to kindergarten, along with student dorms, a hospital, restaurants, and even a huge arcade. Negi becomes the homeroom teacher for Class 2-A in the girls' middle school division. Immediately, the girls in his class start treating him like a child, calling him “Kid Teacher.” To make matters worse, despite there being a severe punishment if he reveals himself as a magician, Asuna Kagurazaka, one of his students, nearly suspects his true identity on his very first day. Then, as there are no vacant rooms, he ends up sharing a dorm room with Asuna and Konoka Konoe in the girls' dormitory! And to top it all off, a mysterious Dracula incident occurs. Can Negi Sensei earn the trust of his students who he's now forced to fight for? And can he overcome this trial to become a “Magister Magi” like his father?",
-      "rating": "pg",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2026-01-01T15:00:00.000-08:00",
-      "season": "Main",
-      "episodes": 0,
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
-      "nsfw": false,
-      "dubbed": true,
-      "enrichment": {
-        "kitsu_id": "135",
-        "anilist_id": "157",
-        "mal_id": "157",
-        "anidb_id": "2605",
-        "episodes": 26,
-        "tmdb_type": "tv",
-        "tmdb_id": "8859",
-        "method": "tmdb-title-search",
-        "confidence": 1.0,
-        "id": "tmdb:8859",
-        "imdb_id": "tt0480493",
-        "tvdb_id": "75869",
-        "description": "Vampires, robots, sorcery… And that’s all before Gym Class! Welcome to Mahora Academy, an all-girls school where the impossible and the enchanting are a part of the curriculum. It’s the start of the new school year and emotions run rampant as the girls of Class 2-A meet the newest staff addition – Negi Springfield. A ten-year-old Welsh born prodigy, Negi has more problems than he has students. As a wizard-in-training, this academic appointment is the final requirement in his quest to become a Magister Magorum. But if he messes things up and the girls find out, existence as an exotic ermine will be his fate!",
-        "poster": "https://image.tmdb.org/t/p/w500/pfEiIQQ1n3LgSRznpoDWpniCnfo.jpg",
-        "background": "https://image.tmdb.org/t/p/original/9KJTPglkgWXbyzTkqIOgA6y8Dv6.jpg",
-        "releaseInfo": "2005",
-        "genres": [
-          "Animation",
-          "Action & Adventure",
-          "Comedy",
-          "Sci-Fi & Fantasy"
-        ],
-        "tmdb_rating": 6.1,
-        "v": 4,
-        "refresh_after": "2026-11-19"
-      }
-    },
-    "324": {
-      "name": "[Dub] Green Green",
+    "323": {
+      "name": "Green Green",
       "romaji": "Grin Grin",
-      "japanese": "グリーングリーン(Dub)",
+      "japanese": "グリーングリーン",
       "summary": "A group of guys get sent to what they think, is an all boys school, however they soon realize it is inhabited by women for the summer.",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -4614,9 +4614,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "112",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/112/large.jpg",
@@ -4641,10 +4641,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "323": {
-      "name": "Green Green",
+    "324": {
+      "name": "[Dub] Green Green",
       "romaji": "Grin Grin",
-      "japanese": "グリーングリーン",
+      "japanese": "グリーングリーン(Dub)",
       "summary": "A group of guys get sent to what they think, is an all boys school, however they soon realize it is inhabited by women for the summer.",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -4653,9 +4653,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "112",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/112/large.jpg",
@@ -4692,7 +4692,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4723,10 +4723,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "309": {
-      "name": "[Dub] Kite: Liberator",
+    "308": {
+      "name": "Kite: Liberator",
       "romaji": "Kaito ribereita",
-      "japanese": "カイト リベレイター(Dub)",
+      "japanese": "カイト リベレイター",
       "summary": "A teenage assassin is cleaning up the grimy streets of Tokyo.  This notorious hitman is actually a polite young lady.  Could the placid face of an innocent high school girl really disguise such a ruthless killer?",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -4735,9 +4735,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "2935",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/2935/large.jpg",
@@ -4764,10 +4764,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "308": {
-      "name": "Kite: Liberator",
+    "309": {
+      "name": "[Dub] Kite: Liberator",
       "romaji": "Kaito ribereita",
-      "japanese": "カイト リベレイター",
+      "japanese": "カイト リベレイター(Dub)",
       "summary": "A teenage assassin is cleaning up the grimy streets of Tokyo.  This notorious hitman is actually a polite young lady.  Could the placid face of an innocent high school girl really disguise such a ruthless killer?",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -4776,9 +4776,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "2935",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/2935/large.jpg",
@@ -4817,7 +4817,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4854,7 +4854,7 @@
       "start_at": "2025-12-12T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4901,7 +4901,7 @@
       "start_at": "2025-12-12T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4951,7 +4951,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4992,7 +4992,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5031,7 +5031,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5068,7 +5068,7 @@
       "start_at": "2025-12-04T15:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5110,7 +5110,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5149,7 +5149,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5188,7 +5188,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5227,7 +5227,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5267,7 +5267,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5305,7 +5305,7 @@
       "start_at": "2025-11-18T18:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5335,7 +5335,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5364,10 +5364,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "298": {
-      "name": "Grenadier:  The Beautiful Warrior",
+    "299": {
+      "name": "[Dub] Grenadier:  The Beautiful Warrior",
       "romaji": "Gureneda 〜 hohoemi no senshi 〜",
-      "japanese": "グレネーダー 〜ほほえみの閃士〜",
+      "japanese": "グレネーダー 〜ほほえみの閃士〜(Dub)",
       "summary": "In her journey to bring peace to the world, Rushuna incorporates an unusual attack method...and a set of amazing gun skills.  Along the way, she convinces a skilled samurai to join her in her quest.",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -5376,9 +5376,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": false,
+      "dubbed": true,
       "enrichment": {
         "kitsu_id": "272",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/272/large.jpg",
@@ -5405,10 +5405,10 @@
         "refresh_after": "2026-11-19"
       }
     },
-    "299": {
-      "name": "[Dub] Grenadier:  The Beautiful Warrior",
+    "298": {
+      "name": "Grenadier:  The Beautiful Warrior",
       "romaji": "Gureneda 〜 hohoemi no senshi 〜",
-      "japanese": "グレネーダー 〜ほほえみの閃士〜(Dub)",
+      "japanese": "グレネーダー 〜ほほえみの閃士〜",
       "summary": "In her journey to bring peace to the world, Rushuna incorporates an unusual attack method...and a set of amazing gun skills.  Along the way, she convinces a skilled samurai to join her in her quest.",
       "rating": "age_16_plus",
       "simulcast": false,
@@ -5417,9 +5417,9 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
-      "dubbed": true,
+      "dubbed": false,
       "enrichment": {
         "kitsu_id": "272",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/272/large.jpg",
@@ -5458,7 +5458,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5498,7 +5498,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5538,7 +5538,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5580,7 +5580,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5620,7 +5620,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5660,7 +5660,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5697,7 +5697,7 @@
       "start_at": "2025-10-28T18:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5739,7 +5739,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5778,7 +5778,7 @@
       "start_at": "2025-10-07T18:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5818,7 +5818,7 @@
       "start_at": "2025-10-05T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5851,7 +5851,7 @@
       "start_at": "2025-10-05T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5890,7 +5890,7 @@
       "start_at": "2025-10-05T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5925,7 +5925,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5963,7 +5963,7 @@
       "start_at": "2025-10-03T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6013,7 +6013,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6051,7 +6051,7 @@
       "start_at": "2025-09-20T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -6096,7 +6096,7 @@
       "start_at": "2025-09-13T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6143,7 +6143,7 @@
       "start_at": "2025-08-16T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6191,7 +6191,7 @@
       "start_at": "2025-08-09T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6232,7 +6232,7 @@
       "start_at": "2025-08-02T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6260,7 +6260,7 @@
       "start_at": "2025-07-23T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -6288,47 +6288,6 @@
       "japanese": "人妻の唇は缶チューハイの味がして(Dub)(OA)",
       "episodes": 0
     },
-    "224": {
-      "name": "I Tried Asking While Kowtowing",
-      "romaji": "Dogeza de tanondemita",
-      "summary": "Believe it or not, a short anime adaptation of Funatsukazuki’s popular doujin series is set for release!! Suwaru Doge just can't help but want to discover many things a girl has to offer. So his last resort to win them over is... that's right, \"Kowtow.\" Suwaru Doge persistently kowtows until he gets the favor, troubling and embarrassing the girls with his abrupt conduct. Is there no limit to kowtowing?! Will all the girls expose themselves in the end?! Now everybody, \"Let's Kowtow!!\"",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-07-23T00:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
-      "nsfw": false,
-      "dubbed": false,
-      "enrichment": {
-        "tmdb_type": "tv",
-        "tmdb_id": "106691",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
-        "id": "tmdb:106691",
-        "imdb_id": "tt12803708",
-        "tvdb_id": "388536",
-        "description": "\"Grovel enough, and you'll get what you want.\"  This is the motto that Suwaru Doge firmly stands by, believing that kneeling and begging will grant him the majestic view of a woman's naked body. After realizing the power of groveling in the dogeza stance, Doge wastes no time in exploiting it for lewd requests. Targeting the cutest and hottest girls in the school, he is one step closer to his goal of beholding their nude bodies, no matter what harm it may cause to his social standing.",
-        "poster": "https://image.tmdb.org/t/p/w500/9oBtxCKWXyWLdZ8vukVSeVaHRgU.jpg",
-        "background": "https://image.tmdb.org/t/p/original/4PLlVJFQAIRLlRvMyoplHDdNahp.jpg",
-        "releaseInfo": "2020",
-        "genres": [
-          "Animation",
-          "Comedy"
-        ],
-        "tmdb_rating": 4.984,
-        "kitsu_id": "43589",
-        "anilist_id": "122137",
-        "mal_id": "42571",
-        "anidb_id": "15659",
-        "episodes": 12,
-        "v": 4,
-        "refresh_after": "2026-11-21"
-      },
-      "japanese": "土下座で頼んでみた",
-      "episodes": 0
-    },
     "225": {
       "name": "[Unedited] I Tried Asking While Kowtowing",
       "romaji": "Honki de dogeza de tanondemita",
@@ -6339,7 +6298,7 @@
       "start_at": "2025-07-23T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6370,6 +6329,47 @@
       "japanese": "本気で土下座で頼んでみた",
       "episodes": 0
     },
+    "224": {
+      "name": "I Tried Asking While Kowtowing",
+      "romaji": "Dogeza de tanondemita",
+      "summary": "Believe it or not, a short anime adaptation of Funatsukazuki’s popular doujin series is set for release!! Suwaru Doge just can't help but want to discover many things a girl has to offer. So his last resort to win them over is... that's right, \"Kowtow.\" Suwaru Doge persistently kowtows until he gets the favor, troubling and embarrassing the girls with his abrupt conduct. Is there no limit to kowtowing?! Will all the girls expose themselves in the end?! Now everybody, \"Let's Kowtow!!\"",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-07-23T00:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-16",
+      "nsfw": false,
+      "dubbed": false,
+      "enrichment": {
+        "tmdb_type": "tv",
+        "tmdb_id": "106691",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
+        "id": "tmdb:106691",
+        "imdb_id": "tt12803708",
+        "tvdb_id": "388536",
+        "description": "\"Grovel enough, and you'll get what you want.\"  This is the motto that Suwaru Doge firmly stands by, believing that kneeling and begging will grant him the majestic view of a woman's naked body. After realizing the power of groveling in the dogeza stance, Doge wastes no time in exploiting it for lewd requests. Targeting the cutest and hottest girls in the school, he is one step closer to his goal of beholding their nude bodies, no matter what harm it may cause to his social standing.",
+        "poster": "https://image.tmdb.org/t/p/w500/9oBtxCKWXyWLdZ8vukVSeVaHRgU.jpg",
+        "background": "https://image.tmdb.org/t/p/original/4PLlVJFQAIRLlRvMyoplHDdNahp.jpg",
+        "releaseInfo": "2020",
+        "genres": [
+          "Animation",
+          "Comedy"
+        ],
+        "tmdb_rating": 4.984,
+        "kitsu_id": "43589",
+        "anilist_id": "122137",
+        "mal_id": "42571",
+        "anidb_id": "15659",
+        "episodes": 12,
+        "v": 4,
+        "refresh_after": "2026-11-21"
+      },
+      "japanese": "土下座で頼んでみた",
+      "episodes": 0
+    },
     "221": {
       "name": "This Boy is a Professional Wizard",
       "romaji": "Kono danshi, mahou ga oshigoto desu.",
@@ -6380,7 +6380,7 @@
       "start_at": "2025-07-19T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6420,7 +6420,7 @@
       "start_at": "2025-07-18T11:05:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6461,7 +6461,7 @@
       "start_at": "2025-07-12T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6490,52 +6490,6 @@
       "japanese": "この男子、石化に悩んでます。",
       "episodes": 0
     },
-    "216": {
-      "name": "Marry Me, Let's Have a Baby!",
-      "romaji": "Dekichaumadekon",
-      "summary": "Please marry me with having a baby in mind! Here's the birth of an extraordinary contract marriage story about having a baby within a year! At the marriage hunting party, Taika hits it off with Ayano, who wants a child. However, Taika is actually impotent, and runs out midway through the party. One day, on his visit to the hospital for his ED treatment, he finds out that the doctor who is in charge is Ayano! From the original manga that gained popularity for its groundbreaking scenario!! Don't miss it!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2025-07-06T09:00:00.000-07:00",
-      "season": "",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
-      "nsfw": true,
-      "dubbed": false,
-      "enrichment": {
-        "tmdb_type": "tv",
-        "tmdb_id": "292554",
-        "confidence": 1.0,
-        "method": "tmdb-title-search",
-        "id": "tmdb:292554",
-        "imdb_id": "tt37205939",
-        "tvdb_id": "464142",
-        "description": "At a speed-dating event, Taika hits it off with a woman named Ayano, a doctor who’s eager to have children. However, just as the matching couples are about to be announced, he panics and makes a break for it when his fears about his erectile dysfunction begin to surface... Later, at an appointment for his condition, Taika is shocked to discover that his doctor is none other than Ayano herself! On top of that, he realizes that when he's with Ayano, his erectile dysfunction disappears! This is a story about two people who decide to enter into a secret contractual marriage with one goal, to have a child in less than a year!",
-        "poster": "https://image.tmdb.org/t/p/w500/4KouLBIT2W1aacqMx9sxuHCwYEY.jpg",
-        "background": "https://image.tmdb.org/t/p/original/nwzPP53GpK3ZvKh191GJyLXbLvA.jpg",
-        "releaseInfo": "2025",
-        "genres": [
-          "Animation"
-        ],
-        "tmdb_rating": 6.2,
-        "mal_id": "61742",
-        "episodes": 8,
-        "anilist_id": "193607",
-        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx193607-gz99SDr9wgmq.png",
-        "anilist_background": "",
-        "anilist_description": "At a speed-dating event, Taika hits it off with a woman named Ayano, a doctor who's eager to have children. However, just as the matching couples are about to be announced, he panics and makes a break for it when his fears about his erectile dysfunction begin to surface...\n\nLater, at an appointment for his condition, Taika is shocked to discover that his doctor is none other than Ayano herself! On top of that, he realizes that when he's with Ayano, his erectile dysfunction disappears!\n\n(Source: OceanVeil)\n\nNote: Episode 1 received an advanced distribution on AnimeFesta on June 13th, 2025. The start date reflects the start of the regular series broadcasting.",
-        "anilist_genres": [
-          "Hentai",
-          "Romance"
-        ],
-        "anilist_year": "2025",
-        "v": 4,
-        "refresh_after": "2026-11-21"
-      },
-      "japanese": "デキちゃうまで婚(OA)",
-      "episodes": 0
-    },
     "220": {
       "name": "[Dub] Marry Me, Let's Have a Baby!",
       "romaji": "Dekichaumadekon",
@@ -6546,7 +6500,7 @@
       "start_at": "2025-07-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -6582,6 +6536,52 @@
       "japanese": "デキちゃうまで婚(Dub)(OA)",
       "episodes": 0
     },
+    "216": {
+      "name": "Marry Me, Let's Have a Baby!",
+      "romaji": "Dekichaumadekon",
+      "summary": "Please marry me with having a baby in mind! Here's the birth of an extraordinary contract marriage story about having a baby within a year! At the marriage hunting party, Taika hits it off with Ayano, who wants a child. However, Taika is actually impotent, and runs out midway through the party. One day, on his visit to the hospital for his ED treatment, he finds out that the doctor who is in charge is Ayano! From the original manga that gained popularity for its groundbreaking scenario!! Don't miss it!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2025-07-06T09:00:00.000-07:00",
+      "season": "",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-11-16",
+      "nsfw": true,
+      "dubbed": false,
+      "enrichment": {
+        "tmdb_type": "tv",
+        "tmdb_id": "292554",
+        "confidence": 1.0,
+        "method": "tmdb-title-search",
+        "id": "tmdb:292554",
+        "imdb_id": "tt37205939",
+        "tvdb_id": "464142",
+        "description": "At a speed-dating event, Taika hits it off with a woman named Ayano, a doctor who’s eager to have children. However, just as the matching couples are about to be announced, he panics and makes a break for it when his fears about his erectile dysfunction begin to surface... Later, at an appointment for his condition, Taika is shocked to discover that his doctor is none other than Ayano herself! On top of that, he realizes that when he's with Ayano, his erectile dysfunction disappears! This is a story about two people who decide to enter into a secret contractual marriage with one goal, to have a child in less than a year!",
+        "poster": "https://image.tmdb.org/t/p/w500/4KouLBIT2W1aacqMx9sxuHCwYEY.jpg",
+        "background": "https://image.tmdb.org/t/p/original/nwzPP53GpK3ZvKh191GJyLXbLvA.jpg",
+        "releaseInfo": "2025",
+        "genres": [
+          "Animation"
+        ],
+        "tmdb_rating": 6.2,
+        "mal_id": "61742",
+        "episodes": 8,
+        "anilist_id": "193607",
+        "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx193607-gz99SDr9wgmq.png",
+        "anilist_background": "",
+        "anilist_description": "At a speed-dating event, Taika hits it off with a woman named Ayano, a doctor who's eager to have children. However, just as the matching couples are about to be announced, he panics and makes a break for it when his fears about his erectile dysfunction begin to surface...\n\nLater, at an appointment for his condition, Taika is shocked to discover that his doctor is none other than Ayano herself! On top of that, he realizes that when he's with Ayano, his erectile dysfunction disappears!\n\n(Source: OceanVeil)\n\nNote: Episode 1 received an advanced distribution on AnimeFesta on June 13th, 2025. The start date reflects the start of the regular series broadcasting.",
+        "anilist_genres": [
+          "Hentai",
+          "Romance"
+        ],
+        "anilist_year": "2025",
+        "v": 4,
+        "refresh_after": "2026-11-21"
+      },
+      "japanese": "デキちゃうまで婚(OA)",
+      "episodes": 0
+    },
     "218": {
       "name": "Chuhai Lips: Canned Flavor of Married Women",
       "romaji": "Hitozuma no kuchibiru wa kanchuhai no ajigashite",
@@ -6592,7 +6592,7 @@
       "start_at": "2025-07-01T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": true,
       "dubbed": false,
       "enrichment": {
@@ -6630,7 +6630,7 @@
       "start_at": "2025-06-21T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6671,7 +6671,7 @@
       "start_at": "2025-06-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6712,7 +6712,7 @@
       "start_at": "2025-06-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6753,7 +6753,7 @@
       "start_at": "2025-06-02T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6793,7 +6793,7 @@
       "start_at": "2025-06-02T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6835,7 +6835,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6863,7 +6863,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6903,7 +6903,7 @@
       "start_at": "2025-05-27T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6933,7 +6933,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6973,7 +6973,7 @@
       "start_at": "2025-05-27T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7001,7 +7001,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7027,7 +7027,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7053,7 +7053,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7101,7 +7101,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7134,7 +7134,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7160,7 +7160,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7198,7 +7198,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7244,7 +7244,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7270,7 +7270,7 @@
       "start_at": "2025-04-30T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7309,7 +7309,7 @@
       "start_at": "2025-04-06T09:20:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7348,7 +7348,7 @@
       "start_at": "2025-04-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7382,7 +7382,7 @@
       "start_at": "2025-04-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7416,7 +7416,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7454,7 +7454,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7488,7 +7488,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7514,7 +7514,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7549,7 +7549,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7576,7 +7576,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7602,7 +7602,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7628,7 +7628,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7678,7 +7678,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -7718,7 +7718,7 @@
       "start_at": "2025-02-14T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7752,7 +7752,7 @@
       "start_at": "2025-02-14T00:00:00.000-08:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7786,7 +7786,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7812,7 +7812,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7852,7 +7852,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7878,7 +7878,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7916,7 +7916,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -7954,7 +7954,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8004,7 +8004,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8050,7 +8050,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8097,7 +8097,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8123,7 +8123,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8149,7 +8149,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8190,7 +8190,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8225,7 +8225,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8269,7 +8269,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8315,7 +8315,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8349,7 +8349,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8395,7 +8395,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8442,7 +8442,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8477,7 +8477,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8522,7 +8522,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8549,7 +8549,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8587,7 +8587,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8613,7 +8613,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8660,7 +8660,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8710,7 +8710,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -8830,54 +8830,54 @@
       "ids": [
         "542",
         "566",
-        "445",
-        "432",
-        "528",
-        "551",
-        "485",
-        "547",
-        "544",
-        "431",
-        "106",
-        "529",
         "522",
-        "470",
+        "485",
+        "445",
         "268",
-        "81",
-        "113",
-        "570",
+        "431",
         "532",
-        "462",
-        "536",
-        "389",
-        "500",
-        "399",
+        "544",
+        "302",
+        "556",
         "538",
-        "534",
-        "526",
-        "520",
-        "414",
-        "224",
-        "36",
-        "524",
-        "472",
-        "326",
-        "324",
-        "273",
-        "247",
-        "117",
-        "77",
-        "38",
-        "560",
-        "546",
-        "471",
-        "416",
-        "391",
+        "432",
+        "470",
+        "528",
+        "536",
+        "547",
         "46",
-        "43",
-        "517",
-        "502",
-        "161"
+        "113",
+        "273",
+        "529",
+        "551",
+        "534",
+        "560",
+        "81",
+        "524",
+        "324",
+        "47",
+        "472",
+        "462",
+        "41",
+        "106",
+        "44",
+        "500",
+        "340",
+        "481",
+        "464",
+        "107",
+        "391",
+        "36",
+        "570",
+        "520",
+        "498",
+        "399",
+        "165",
+        "110",
+        "412",
+        "114",
+        "447",
+        "272"
       ]
     },
     {
@@ -9079,24 +9079,24 @@
         "399",
         "397",
         "389",
-        "387",
-        "385",
         "386",
         "388",
-        "393",
+        "387",
+        "385",
         "392",
+        "393",
         "391",
         "355",
         "366",
         "367",
-        "384",
         "383",
+        "384",
         "370",
         "365",
         "354",
         "369",
-        "371",
         "372",
+        "371",
         "350",
         "353",
         "342",
@@ -9107,13 +9107,13 @@
         "346",
         "348",
         "305",
-        "325",
         "326",
-        "324",
+        "325",
         "323",
+        "324",
         "311",
-        "309",
         "308",
+        "309",
         "344",
         "338",
         "340",
@@ -9128,8 +9128,8 @@
         "300",
         "303",
         "302",
-        "298",
         "299",
+        "298",
         "297",
         "293",
         "292",
@@ -9151,13 +9151,13 @@
         "242",
         "241",
         "227",
-        "224",
         "225",
+        "224",
         "221",
         "231",
         "222",
-        "216",
         "220",
+        "216",
         "218",
         "198",
         "196",
@@ -9393,8 +9393,8 @@
         "297",
         "293",
         "292",
-        "290",
         "291",
+        "290",
         "278",
         "269",
         "277",
