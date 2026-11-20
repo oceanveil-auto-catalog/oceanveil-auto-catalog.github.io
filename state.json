@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-20T00:39:44+00:00",
+  "updated_utc": "2026-11-20T11:40:44+00:00",
   "titles": {
     "562": {
       "name": "[Dub] Osamu Tezuka's Phoenix",
@@ -556,7 +556,7 @@
         ],
         "tmdb_rating": 6.9,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "527": {
@@ -966,7 +966,7 @@
       "dubbed": false,
       "enrichment": {
         "kitsu_id": "49877",
-        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/49877/poster_image/4850b0a42082f0554af1dd38bf4e7bfe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261112%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261112T234030Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=dd6205cb69a4bdb9baba778b2ff6f444d49f5b45d02ee4a706fbbc49417082c3",
+        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/49877/poster_image/4850b0a42082f0554af1dd38bf4e7bfe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261120%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261120T114032Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=62f433d172c106511db5b6ca49d4b529454943156fa139c2472f3519b50165dd",
         "episodes": 12,
         "tmdb_type": "tv",
         "tmdb_id": "283938",
@@ -985,7 +985,7 @@
         ],
         "tmdb_rating": 8.7,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "520": {
@@ -1582,7 +1582,7 @@
         ],
         "tmdb_rating": 6.3,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "500": {
@@ -2267,9 +2267,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.231,
+        "tmdb_rating": 7.2,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "462": {
@@ -2516,9 +2516,9 @@
           "Sci-Fi & Fantasy",
           "Action & Adventure"
         ],
-        "tmdb_rating": 7.885,
+        "tmdb_rating": 7.883,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "419": {
@@ -3035,9 +3035,9 @@
           "Mystery",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 8.0,
+        "tmdb_rating": 7.995,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "416": {
@@ -3268,9 +3268,9 @@
           "Mystery",
           "Crime"
         ],
-        "tmdb_rating": 7.728,
+        "tmdb_rating": 7.726,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "394": {
@@ -3696,7 +3696,7 @@
         ],
         "tmdb_rating": 6.7,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "391": {
@@ -3860,7 +3860,47 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
+      }
+    },
+    "384": {
+      "name": "[Dub] Master of Martial Hearts",
+      "romaji": "Zettai shougeki",
+      "japanese": "絶対衝激(Dub)",
+      "summary": "Platonic Heart, a legendary jewel that grants any single wish of the woman who possesses it... High school girl, Aya Iseshima, steps onto the battlefield as if guided by a mysterious fate. What awaits her there—hope or despair? The curtain rises now on a battle where the girls stake their dreams!",
+      "rating": "age_16_plus",
+      "simulcast": false,
+      "completed": true,
+      "start_at": "2026-02-23T15:00:00.000-08:00",
+      "season": "",
+      "episodes": 0,
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-20",
+      "nsfw": false,
+      "dubbed": true,
+      "enrichment": {
+        "kitsu_id": "3886",
+        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3886/large.jpg",
+        "episodes": 5,
+        "tmdb_type": "tv",
+        "tmdb_id": "87852",
+        "method": "kitsu-fribb",
+        "confidence": 1.0,
+        "id": "tmdb:87852",
+        "imdb_id": "tt1339394",
+        "tvdb_id": "84176",
+        "description": "Aya’s life takes a sadistic turn when she enters a girl-on-girl martial arts tournament. She’s out to prove she can take a pounding as well as the other knock-outs in this clandestine competition, and if she survives a series of fabric-shredding fights with titillating teachers, sultry stewardesses, and moe maidens, Aya’s wish will be granted by a mysterious jewel known as the Platonic Heart.",
+        "poster": "https://image.tmdb.org/t/p/w500/vFvw0fo4U5tkBfC5ipylF3eJElD.jpg",
+        "background": "https://image.tmdb.org/t/p/original/w8shBSTWFRdT182nPszKoEj7bVL.jpg",
+        "releaseInfo": "2008",
+        "genres": [
+          "Animation",
+          "Sci-Fi & Fantasy",
+          "Action & Adventure"
+        ],
+        "tmdb_rating": 5.0,
+        "v": 4,
+        "refresh_after": "2026-11-27"
       }
     },
     "383": {
@@ -3901,46 +3941,6 @@
         "tmdb_rating": 5.0,
         "v": 4,
         "refresh_after": "2026-11-27"
-      }
-    },
-    "384": {
-      "name": "[Dub] Master of Martial Hearts",
-      "romaji": "Zettai shougeki",
-      "japanese": "絶対衝激(Dub)",
-      "summary": "Platonic Heart, a legendary jewel that grants any single wish of the woman who possesses it... High school girl, Aya Iseshima, steps onto the battlefield as if guided by a mysterious fate. What awaits her there—hope or despair? The curtain rises now on a battle where the girls stake their dreams!",
-      "rating": "age_16_plus",
-      "simulcast": false,
-      "completed": true,
-      "start_at": "2026-02-23T15:00:00.000-08:00",
-      "season": "",
-      "episodes": 0,
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-11-20",
-      "nsfw": false,
-      "dubbed": true,
-      "enrichment": {
-        "kitsu_id": "3886",
-        "kitsu_poster": "https://media.kitsu.app/anime/poster_images/3886/large.jpg",
-        "episodes": 5,
-        "tmdb_type": "tv",
-        "tmdb_id": "87852",
-        "method": "kitsu-fribb",
-        "confidence": 1.0,
-        "id": "tmdb:87852",
-        "imdb_id": "tt1339394",
-        "tvdb_id": "87961",
-        "description": "Aya’s life takes a sadistic turn when she enters a girl-on-girl martial arts tournament. She’s out to prove she can take a pounding as well as the other knock-outs in this clandestine competition, and if she survives a series of fabric-shredding fights with titillating teachers, sultry stewardesses, and moe maidens, Aya’s wish will be granted by a mysterious jewel known as the Platonic Heart.",
-        "poster": "https://image.tmdb.org/t/p/w500/vFvw0fo4U5tkBfC5ipylF3eJElD.jpg",
-        "background": "https://image.tmdb.org/t/p/original/w8shBSTWFRdT182nPszKoEj7bVL.jpg",
-        "releaseInfo": "2008",
-        "genres": [
-          "Animation",
-          "Sci-Fi & Fantasy",
-          "Action & Adventure"
-        ],
-        "tmdb_rating": 5.0,
-        "v": 4,
-        "refresh_after": "2026-11-19"
       }
     },
     "370": {
@@ -4071,7 +4071,7 @@
         ],
         "tmdb_rating": 7.894,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "369": {
@@ -4186,7 +4186,7 @@
         ],
         "tmdb_rating": 4.8,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "350": {
@@ -4595,7 +4595,7 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "325": {
@@ -4679,9 +4679,9 @@
           "Comedy",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 6.1,
+        "tmdb_rating": 6.074,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "323": {
@@ -4759,7 +4759,7 @@
         ],
         "tmdb_rating": 5.4,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "311": {
@@ -4882,9 +4882,9 @@
           "Action & Adventure",
           "Drama"
         ],
-        "tmdb_rating": 7.28,
+        "tmdb_rating": 7.259,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "344": {
@@ -5135,9 +5135,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.1,
+        "tmdb_rating": 7.116,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "310": {
@@ -5255,7 +5255,7 @@
         ],
         "tmdb_rating": 5.5,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "322": {
@@ -5497,7 +5497,7 @@
         ],
         "tmdb_rating": 6.1,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "297": {
@@ -5577,7 +5577,7 @@
         ],
         "tmdb_rating": 4.9,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "292": {
@@ -5699,7 +5699,7 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "278": {
@@ -6004,7 +6004,7 @@
         ],
         "tmdb_rating": 6.5,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "258": {
@@ -7012,9 +7012,9 @@
           "Sci-Fi & Fantasy",
           "Drama"
         ],
-        "tmdb_rating": 7.4,
+        "tmdb_rating": 7.443,
         "v": 4,
-        "refresh_after": "2026-11-19"
+        "refresh_after": "2026-11-27"
       }
     },
     "189": {
@@ -8885,53 +8885,53 @@
         "542",
         "566",
         "522",
-        "544",
-        "485",
-        "560",
-        "431",
-        "470",
-        "435",
-        "538",
-        "269",
-        "268",
-        "507",
         "529",
-        "464",
-        "432",
-        "113",
-        "47",
-        "562",
-        "445",
-        "531",
-        "273",
-        "536",
-        "389",
-        "167",
-        "106",
-        "524",
-        "43",
-        "551",
-        "543",
-        "81",
-        "520",
-        "467",
-        "416",
-        "224",
-        "36",
-        "561",
-        "556",
-        "546",
-        "323",
-        "46",
-        "526",
-        "163",
-        "42",
-        "530",
-        "500",
+        "544",
+        "399",
+        "291",
         "498",
+        "431",
+        "485",
+        "414",
+        "346",
+        "536",
+        "326",
+        "560",
+        "470",
         "321",
+        "299",
+        "268",
+        "559",
+        "520",
+        "227",
         "320",
-        "161"
+        "471",
+        "412",
+        "538",
+        "163",
+        "161",
+        "109",
+        "570",
+        "543",
+        "507",
+        "389",
+        "162",
+        "275",
+        "44",
+        "534",
+        "462",
+        "372",
+        "324",
+        "273",
+        "164",
+        "42",
+        "496",
+        "432",
+        "391",
+        "323",
+        "247",
+        "168",
+        "167"
       ]
     },
     {
@@ -9144,8 +9144,8 @@
         "355",
         "366",
         "367",
-        "383",
         "384",
+        "383",
         "370",
         "365",
         "354",
