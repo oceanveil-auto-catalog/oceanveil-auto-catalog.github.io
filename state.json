@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-20T11:40:44+00:00",
+  "updated_utc": "2026-11-21T00:00:14+00:00",
   "titles": {
     "562": {
       "name": "[Dub] Osamu Tezuka's Phoenix",
@@ -117,9 +117,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.0,
-        "refresh_after": "2026-11-20",
-        "v": 4
+        "tmdb_rating": 7.2,
+        "v": 4,
+        "refresh_after": "2026-11-28"
       }
     },
     "570": {
@@ -237,9 +237,9 @@
           "Drama",
           "Comedy"
         ],
-        "tmdb_rating": 5.4,
+        "tmdb_rating": 5.2,
         "v": 4,
-        "refresh_after": "2026-11-20"
+        "refresh_after": "2026-11-28"
       }
     },
     "556": {
@@ -397,7 +397,7 @@
         ],
         "tmdb_rating": 4.2,
         "v": 4,
-        "refresh_after": "2026-11-20"
+        "refresh_after": "2026-11-28"
       }
     },
     "546": {
@@ -797,10 +797,10 @@
         "id": "tmdb:334504",
         "imdb_id": "tt45831796",
         "method": "tmdb-title-search",
-        "poster": "https://image.tmdb.org/t/p/w500/qR5xF8fibmKIHYuDwtvOvDv01h2.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/dYJOSnFf9O9hDcTbSyZPQb5Xnb8.jpg",
         "releaseInfo": "2026",
         "tmdb_id": "334504",
-        "tmdb_rating": 8.0,
+        "tmdb_rating": 7.3,
         "tmdb_type": "tv",
         "tvdb_id": "478562",
         "kitsu_id": "50740",
@@ -815,7 +815,7 @@
         ],
         "anilist_year": "2026",
         "v": 4,
-        "refresh_after": "2026-11-20"
+        "refresh_after": "2026-11-28"
       },
       "japanese": "人付き合いが苦手な未亡人の雪女さんと呪いの指輪(Dub)（OA)",
       "episodes": 0
@@ -854,7 +854,7 @@
         "tvdb_id": "477658",
         "episodes": 12,
         "v": 4,
-        "refresh_after": "2026-11-20"
+        "refresh_after": "2026-11-28"
       },
       "japanese": "彼女の友達（OA)",
       "episodes": 0
@@ -5168,14 +5168,14 @@
         "poster": "https://image.tmdb.org/t/p/w500/2YLoMavlrbMyK2CuYzmMu9GdheO.jpg",
         "releaseInfo": "2018",
         "tmdb_id": "82867",
-        "tmdb_rating": 6.841,
+        "tmdb_rating": 6.867,
         "tmdb_type": "tv",
         "tvdb_id": "352684",
         "kitsu_id": "41151",
         "kitsu_poster": "https://media.kitsu.app/anime/poster_images/41151/large.jpg",
         "episodes": 13,
         "v": 4,
-        "refresh_after": "2026-11-20"
+        "refresh_after": "2026-11-28"
       },
       "japanese": "抱かれたい男1位に脅されています。",
       "episodes": 0
