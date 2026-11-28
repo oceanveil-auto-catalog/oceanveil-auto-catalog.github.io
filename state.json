@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_utc": "2026-11-27T12:21:04+00:00",
+  "updated_utc": "2026-11-28T01:28:42+00:00",
   "titles": {
     "568": {
       "name": "[Dub] Amazing Nurse Nanako",
@@ -14,7 +14,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-11-26",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -53,7 +53,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-11-26",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -92,7 +92,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-11-22",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -118,7 +118,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-11-22",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -144,7 +144,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-11-18",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -185,7 +185,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-11-18",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -226,7 +226,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -264,7 +264,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -303,7 +303,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -344,7 +344,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -384,7 +384,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -423,12 +423,12 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
         "kitsu_id": "49877",
-        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/49877/poster_image/4850b0a42082f0554af1dd38bf4e7bfe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261120%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261120T003916Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=f0ba9d7972d83ec9bc8346dcfa5736762af52bdd568837c9e51e4c62edfff219",
+        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/49877/poster_image/4850b0a42082f0554af1dd38bf4e7bfe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261128%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261128T012821Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=58aea9adf73ada2e7080e65f6e8246ebb84ef42f8ec127254ddbc7fa1b9ba0a1",
         "episodes": 12,
         "tmdb_type": "tv",
         "tmdb_id": "283938",
@@ -445,9 +445,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 8.7,
+        "tmdb_rating": 8.6,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "551": {
@@ -462,7 +462,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -503,7 +503,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-28",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -542,7 +542,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-28",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -581,7 +581,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -606,7 +606,7 @@
         ],
         "tmdb_rating": 5.5,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "540": {
@@ -621,7 +621,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -646,7 +646,7 @@
         ],
         "tmdb_rating": 6.9,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "539": {
@@ -661,7 +661,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -701,7 +701,7 @@
       "season": "OVA",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -728,7 +728,7 @@
         ],
         "tmdb_rating": 6.2,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "530": {
@@ -743,7 +743,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -767,9 +767,9 @@
           "Mystery",
           "Crime"
         ],
-        "tmdb_rating": 7.726,
+        "tmdb_rating": 7.721,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "529": {
@@ -784,7 +784,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -810,7 +810,7 @@
         ],
         "tmdb_rating": 7.894,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "531": {
@@ -825,7 +825,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -848,9 +848,9 @@
           "Mystery",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 7.995,
+        "tmdb_rating": 8.0,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "544": {
@@ -865,12 +865,12 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
         "kitsu_id": "50338",
-        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/50338/poster_image/487a04862ba11ee73f7445a3c8d60ac2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261120%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261120T003919Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=9713725e9a3432a00b513a2936c3359c981dd6e99f20d975aabfdd30277e9299",
+        "kitsu_poster": "https://kitsu-production-media.s3.us-west-002.backblazeb2.com/anime/50338/poster_image/487a04862ba11ee73f7445a3c8d60ac2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002d6013655cdc00000000003%2F20261128%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20261128T012825Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=2d26ba22dafd1219555cf5e0adb2f1aaae600f5fa89983555ea54e6d27ce369e",
         "anilist_id": "160803",
         "mal_id": "54344",
         "anilist_poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx160803-Rcr3IvhE7q9c.png",
@@ -900,7 +900,7 @@
         ],
         "tmdb_rating": 0.0,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "538": {
@@ -913,7 +913,7 @@
       "start_at": "2026-10-04T09:05:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -952,7 +952,7 @@
       "start_at": "2026-10-04T09:05:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -999,7 +999,7 @@
       "start_at": "2026-10-04T09:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1049,7 +1049,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1074,9 +1074,9 @@
           "Comedy",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 7.3,
+        "tmdb_rating": 7.271,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "542": {
@@ -1091,7 +1091,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1130,7 +1130,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1154,9 +1154,9 @@
           "Sci-Fi & Fantasy",
           "Action & Adventure"
         ],
-        "tmdb_rating": 8.009,
+        "tmdb_rating": 7.988,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "532": {
@@ -1171,7 +1171,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1198,9 +1198,9 @@
           "Mystery",
           "Crime"
         ],
-        "tmdb_rating": 7.481,
+        "tmdb_rating": 7.5,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "517": {
@@ -1215,7 +1215,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1239,7 +1239,7 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "519": {
@@ -1252,7 +1252,7 @@
       "start_at": "2026-09-18T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1300,7 +1300,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1334,7 +1334,7 @@
         ],
         "tmdb_rating": 7.2,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "506": {
@@ -1349,7 +1349,7 @@
       "season": "Season3",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1373,7 +1373,7 @@
         ],
         "tmdb_rating": 7.73,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "524": {
@@ -1386,7 +1386,7 @@
       "start_at": "2026-09-11T01:05:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1433,7 +1433,7 @@
       "start_at": "2026-09-11T01:00:00.000-07:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1483,7 +1483,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1508,7 +1508,7 @@
         ],
         "tmdb_rating": 6.7,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "505": {
@@ -1521,7 +1521,7 @@
       "start_at": "2026-09-03T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1562,7 +1562,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1588,7 +1588,7 @@
           "Animation"
         ],
         "tmdb_rating": 6.6,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "498": {
@@ -1603,7 +1603,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1628,7 +1628,7 @@
         ],
         "tmdb_rating": 6.5,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "501": {
@@ -1643,7 +1643,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1670,7 +1670,7 @@
         ],
         "tmdb_rating": 6.3,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "502": {
@@ -1685,7 +1685,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1725,7 +1725,7 @@
       "start_at": "2026-08-22T16:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1762,7 +1762,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1786,7 +1786,7 @@
         ],
         "tmdb_rating": 6.9,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "496": {
@@ -1799,7 +1799,7 @@
       "start_at": "2026-08-16T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1843,7 +1843,7 @@
       "start_at": "2026-08-13T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1883,7 +1883,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1909,7 +1909,7 @@
         ],
         "tmdb_rating": 7.73,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "484": {
@@ -1922,7 +1922,7 @@
       "start_at": "2026-08-08T12:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -1970,7 +1970,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -1994,7 +1994,7 @@
         ],
         "tmdb_rating": 7.0,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "483": {
@@ -2009,7 +2009,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2033,7 +2033,7 @@
         ],
         "tmdb_rating": 7.5,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "435": {
@@ -2048,7 +2048,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -2073,9 +2073,9 @@
           "Sci-Fi & Fantasy",
           "Action & Adventure"
         ],
-        "tmdb_rating": 7.883,
+        "tmdb_rating": 7.874,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "393": {
@@ -2090,7 +2090,7 @@
       "season": "Dubbed",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -2114,7 +2114,7 @@
         ],
         "tmdb_rating": 6.7,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "467": {
@@ -2129,7 +2129,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2155,7 +2155,7 @@
         ],
         "tmdb_rating": 7.73,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "416": {
@@ -2170,7 +2170,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2194,7 +2194,7 @@
         ],
         "tmdb_rating": 6.2,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "400": {
@@ -2209,7 +2209,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2234,7 +2234,7 @@
         ],
         "tmdb_rating": 5.4,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "432": {
@@ -2249,7 +2249,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2273,7 +2273,7 @@
         ],
         "tmdb_rating": 7.0,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "419": {
@@ -2288,7 +2288,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2314,7 +2314,7 @@
         ],
         "tmdb_rating": 7.6,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "429": {
@@ -2329,7 +2329,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2353,9 +2353,9 @@
           "Romance",
           "Animation"
         ],
-        "tmdb_rating": 8.279,
+        "tmdb_rating": 8.283,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "448": {
@@ -2370,7 +2370,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2396,7 +2396,7 @@
         ],
         "tmdb_rating": 7.6,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "414": {
@@ -2409,7 +2409,7 @@
       "start_at": "2026-04-05T09:05:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -2444,7 +2444,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2470,7 +2470,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "Subtitle",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2505,7 +2505,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2552,7 +2552,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-11-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2591,7 +2591,7 @@
       "season": "Season1",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2616,9 +2616,9 @@
           "Comedy",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 7.3,
+        "tmdb_rating": 7.271,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "307": {
@@ -2633,7 +2633,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -2657,7 +2657,7 @@
         ],
         "tmdb_rating": 5.5,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "302": {
@@ -2672,7 +2672,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2713,7 +2713,7 @@
       "season": "Season3",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2738,7 +2738,7 @@
         ],
         "tmdb_rating": 6.686,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "273": {
@@ -2751,7 +2751,7 @@
       "start_at": "2025-10-05T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2786,7 +2786,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-11-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2833,7 +2833,7 @@
       "start_at": "2025-10-07T18:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2873,7 +2873,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2913,7 +2913,7 @@
       "season": "Edited",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2936,9 +2936,9 @@
           "Comedy",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 8.2,
+        "tmdb_rating": 8.084,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "320": {
@@ -2953,7 +2953,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-26",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -2975,9 +2975,9 @@
           "Animation",
           "Comedy"
         ],
-        "tmdb_rating": 7.116,
+        "tmdb_rating": 7.1,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "247": {
@@ -2990,7 +2990,7 @@
       "start_at": "2025-09-20T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -3035,7 +3035,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3075,7 +3075,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3097,9 +3097,9 @@
           "Animation",
           "Drama"
         ],
-        "tmdb_rating": 6.488,
+        "tmdb_rating": 6.5,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "81": {
@@ -3112,7 +3112,7 @@
       "start_at": "2025-04-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3146,7 +3146,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3174,7 +3174,7 @@
       "season": "Subtitle",
       "episodes": 0,
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3207,7 +3207,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3259,7 +3259,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3286,7 +3286,7 @@
         ],
         "tmdb_rating": 8.0,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "297": {
@@ -3301,7 +3301,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3326,7 +3326,7 @@
         ],
         "tmdb_rating": 4.9,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "291": {
@@ -3341,7 +3341,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3366,7 +3366,7 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "292": {
@@ -3381,7 +3381,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-26",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3423,7 +3423,7 @@
       "season": "Season2",
       "episodes": 0,
       "first_seen": "2026-11-26",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3462,7 +3462,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-11-26",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3505,7 +3505,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3528,9 +3528,9 @@
           "Action & Adventure",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 6.107,
+        "tmdb_rating": 6.1,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "465": {
@@ -3545,7 +3545,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3568,9 +3568,9 @@
           "Comedy",
           "Drama"
         ],
-        "tmdb_rating": 6.843,
+        "tmdb_rating": 6.833,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "433": {
@@ -3585,7 +3585,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3609,7 +3609,7 @@
         ],
         "tmdb_rating": 6.5,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "373": {
@@ -3624,7 +3624,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3648,7 +3648,7 @@
         ],
         "tmdb_rating": 7.0,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "364": {
@@ -3663,7 +3663,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -3687,7 +3687,7 @@
         ],
         "tmdb_rating": 7.7,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "469": {
@@ -3700,7 +3700,7 @@
       "start_at": "2026-07-25T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3744,7 +3744,7 @@
       "start_at": "2026-06-02T18:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3784,7 +3784,7 @@
       "start_at": "2026-03-09T10:00:00.000-07:00",
       "season": "Dubbed",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3827,7 +3827,7 @@
       "season": "OVA",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3854,7 +3854,7 @@
         ],
         "tmdb_rating": 5.9,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "384": {
@@ -3869,7 +3869,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3894,7 +3894,7 @@
         ],
         "tmdb_rating": 5.0,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "372": {
@@ -3909,7 +3909,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3932,7 +3932,7 @@
         ],
         "tmdb_rating": 4.8,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "346": {
@@ -3945,7 +3945,7 @@
       "start_at": "2026-01-04T08:05:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -3992,7 +3992,7 @@
       "start_at": "2026-01-04T08:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4042,7 +4042,7 @@
       "season": "Main",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4068,9 +4068,9 @@
           "Comedy",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 6.074,
+        "tmdb_rating": 6.1,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "324": {
@@ -4085,7 +4085,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4109,7 +4109,7 @@
         ],
         "tmdb_rating": 5.4,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "309": {
@@ -4124,7 +4124,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4150,7 +4150,7 @@
         ],
         "tmdb_rating": 7.259,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "321": {
@@ -4165,7 +4165,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4204,7 +4204,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4230,7 +4230,7 @@
         ],
         "tmdb_rating": 6.1,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "275": {
@@ -4243,7 +4243,7 @@
       "start_at": "2025-10-05T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4276,7 +4276,7 @@
       "start_at": "2025-09-13T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4323,7 +4323,7 @@
       "start_at": "2025-07-23T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -4361,7 +4361,7 @@
       "start_at": "2025-07-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": true,
       "dubbed": true,
       "enrichment": {
@@ -4407,7 +4407,7 @@
       "start_at": "2025-06-21T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4448,7 +4448,7 @@
       "start_at": "2025-06-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4489,7 +4489,7 @@
       "start_at": "2025-06-02T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4531,7 +4531,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4556,9 +4556,9 @@
           "Sci-Fi & Fantasy",
           "Drama"
         ],
-        "tmdb_rating": 7.443,
+        "tmdb_rating": 7.4,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "189": {
@@ -4571,7 +4571,7 @@
       "start_at": "2025-05-27T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4599,7 +4599,7 @@
       "start_at": "2025-04-30T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4638,7 +4638,7 @@
       "start_at": "2025-04-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4672,7 +4672,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4706,7 +4706,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4732,7 +4732,7 @@
       "start_at": "2025-03-29T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4770,7 +4770,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4805,7 +4805,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -4834,7 +4834,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4869,7 +4869,7 @@
         ],
         "tmdb_rating": 6.8,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "310": {
@@ -4882,7 +4882,7 @@
       "start_at": "2025-12-04T15:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4924,7 +4924,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -4955,9 +4955,9 @@
           "Animation",
           "Sci-Fi & Fantasy"
         ],
-        "tmdb_rating": 5.25,
+        "tmdb_rating": 5.2,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "269": {
@@ -4970,7 +4970,7 @@
       "start_at": "2025-10-28T18:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5012,7 +5012,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5034,9 +5034,9 @@
           "Animation",
           "Drama"
         ],
-        "tmdb_rating": 6.542,
+        "tmdb_rating": 6.635,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "340": {
@@ -5049,7 +5049,7 @@
       "start_at": "2025-12-12T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5097,7 +5097,7 @@
       "start_at": "2025-07-06T09:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": true,
       "dubbed": false,
       "enrichment": {
@@ -5143,7 +5143,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5190,7 +5190,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5236,7 +5236,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5283,7 +5283,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5330,7 +5330,7 @@
       "start_at": "2026-01-27T10:00:00.000-08:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5356,7 +5356,7 @@
       "start_at": "2026-01-21T10:00:00.000-08:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5400,7 +5400,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5423,9 +5423,9 @@
           "Drama",
           "Comedy"
         ],
-        "tmdb_rating": 5.364,
+        "tmdb_rating": 5.4,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "170": {
@@ -5438,7 +5438,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5464,7 +5464,7 @@
       "start_at": "2025-05-10T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5512,7 +5512,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5538,7 +5538,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5564,7 +5564,7 @@
       "start_at": "2025-05-03T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5610,7 +5610,7 @@
       "start_at": "2025-03-22T00:00:00.000-07:00",
       "season": "Season2",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5636,7 +5636,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "Season1",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -5662,7 +5662,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5700,7 +5700,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5726,7 +5726,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5772,7 +5772,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5822,7 +5822,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5860,7 +5860,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5894,7 +5894,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5932,7 +5932,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5960,7 +5960,7 @@
       "season": "Main",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -5985,7 +5985,7 @@
         ],
         "tmdb_rating": 6.2,
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "470": {
@@ -6000,7 +6000,7 @@
       "season": "",
       "episodes": 0,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6011,7 +6011,7 @@
         "confidence": 1.0,
         "id": "kitsu:50769",
         "v": 4,
-        "refresh_after": "2026-11-27"
+        "refresh_after": "2026-12-05"
       }
     },
     "258": {
@@ -6024,7 +6024,7 @@
       "start_at": "2025-10-03T18:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6072,7 +6072,7 @@
       "start_at": "2025-08-16T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6120,7 +6120,7 @@
       "start_at": "2025-08-09T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6161,7 +6161,7 @@
       "start_at": "2025-08-02T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6189,7 +6189,7 @@
       "start_at": "2025-07-19T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6229,7 +6229,7 @@
       "start_at": "2025-07-12T12:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6268,7 +6268,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6308,7 +6308,7 @@
       "start_at": "2025-03-15T00:00:00.000-07:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": true,
       "enrichment": {
@@ -6358,7 +6358,7 @@
       "start_at": "2025-02-11T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
@@ -6398,7 +6398,7 @@
       "start_at": "2024-11-20T00:00:00.000-08:00",
       "season": "",
       "first_seen": "2026-10-13",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "nsfw": false,
       "dubbed": false,
       "enrichment": {
